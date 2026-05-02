@@ -3,7 +3,6 @@ import pathlib
 import sys
 
 from scrapers.osm import OSMScraper
-from scrapers.yellowpages import YellowPagesScraper
 from scrapers.wikidata import WikidataScraper
 from dedup import dedup
 
@@ -22,7 +21,7 @@ def write_csv(path: pathlib.Path, records: list[dict]) -> None:
 def main() -> None:
     raw: list[dict] = []
 
-    scrapers = [OSMScraper(), WikidataScraper(), YellowPagesScraper()]
+    scrapers = [OSMScraper(), WikidataScraper()]
 
     for scraper in scrapers:
         name = type(scraper).__name__
