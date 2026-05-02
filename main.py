@@ -1,6 +1,7 @@
 import csv
 import pathlib
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from scrapers.osm import OSMScraper
 from scrapers.wikidata import WikidataScraper
@@ -23,14 +24,18 @@ def main() -> None:
 
     scrapers = [OSMScraper(), WikidataScraper()]
 
-    for scraper in scrapers:
-        name = type(scraper).__name__
-        try:
-            batch = list(scraper.scrape())
-            print(f"[{name}] collected {len(batch)} records")
-            raw.extend(batch)
-        except Exception as e:
-            print(f"[{name}] ERROR: {e}", file=sys.stderr)
+    def run(scraper):
+        return type(scraper).__name__, list(scraper.scrape())
+
+    with ThreadPoolExecutor(max_workers=len(scrapers)) as pool:
+        futures = {pool.submit(run, s): s for s in scrapers}
+        for future in as_completed(futures):
+            try:
+                name, batch = future.result()
+                print(f"[{name}] collected {len(batch)} records")
+                raw.extend(batch)
+            except Exception as e:
+                print(f"[{type(futures[future]).__name__}] ERROR: {e}", file=sys.stderr)
 
     print(f"\nTotal raw records: {len(raw)}")
     records = dedup(raw)
