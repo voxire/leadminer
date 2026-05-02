@@ -1,851 +1,890 @@
 name,category,address,phone,email,website,source,scraped_at
-Rosary Sisters Hospital,hospital,,+9611440800,info@hopitalrosaire.org,http://www.hopitalrosaire.org/,osm,2026-05-02T13:35:48.107767Z
-لبانون تاكسي,taxi,Beyrouth,+9611340719,,https://lebanontaxi.com/,osm,2026-05-02T13:35:48.107767Z
-ستاربكس,cafe,,+9611744305,,https://www.starbucks.com/,osm,2026-05-02T13:35:48.107767Z
-عبدالرحمان الحلاب,bakery,Tripoli,+9616444445,,https://www.hallab.com.lb/,osm,2026-05-02T13:35:48.107767Z
-أوتيل ماربل تاور,hotel,شارع نعمة يافت,+9611354586,info@marbletowerhotel.com,http://www.marbletowerhotel.com,osm,2026-05-02T13:35:48.107767Z
-مستشفى النيني,hospital,,+9616431400,,https://www.hopitalnini.com,osm,2026-05-02T13:35:48.107767Z
-أفران شمسين,bakery,طريق البحر السريع,+9615800658,,http://www.chamsine.net,osm,2026-05-02T13:35:48.107767Z
-Saydet Zgharta Hospital,hospital,زغرتا,+9616660575,,http://www.ehdenz.com,osm,2026-05-02T13:35:48.107767Z
-CompuWave,computers & CCTV,Int. Mainstreet,+9618340432,,http://www.compuwaveLB.com,osm,2026-05-02T13:35:48.107767Z
-مطعم أبو نعيم,restaurant,"12, شارع عمر بن عبد العزيز, بيروت",+9611750480,,https://www.facebook.com/AbuNaimHamra,osm,2026-05-02T13:35:48.107767Z
-ستاربكس,cafe,,+961 1 757 154,,https://locations.starbucks.com.lb/directory/mount-lebanon/zalka-road-zalka,osm,2026-05-02T13:35:48.107767Z
-سي اسويت,confectionery,Rue de Damas,+9611292444,,http://www.lebanon.com/seasweet/,osm,2026-05-02T13:35:48.107767Z
-Copas,restaurant,"برمانا, Broumana",+961 4 963 999,,http://www.copas.asia/,osm,2026-05-02T13:35:48.107767Z
-مستشفى شتورا,hospital,شتورا,+9618544022,,http://www.chtourahospital.com,osm,2026-05-02T13:35:48.107767Z
-EKT Katrangi,electronics,"شارع خليل مطران, Beyrouth",+961 1 820 020,,https://www.katranji.com,osm,2026-05-02T13:35:48.107767Z
-Softkube s.a.r.l.,company,"Slaf Street, Beyrouth",+9611494676,,https://softkube.com/,osm,2026-05-02T13:35:48.107767Z
-Sanita,company,,+9619477001,info@sanitalb.com,http://www.sanitalb.com,osm,2026-05-02T13:35:48.107767Z
-Khodr Jewelry,jewelry,شارع أمين منيمنة,+9611343539,info@khodrjewelry.com,https://www.khodrjewelry.com/,osm,2026-05-02T13:35:48.107767Z
-Centre de Design Farra,furniture,"155, طريق برمانا الرئيسية, Metn",+961 1 687 000,,http://www.farra.com,osm,2026-05-02T13:35:48.107767Z
-فندق نابليون,hotel,"شارع نعمة يافت, بيروت",+9611340013,,https://www.napoleonbeirut.com/,osm,2026-05-02T13:35:48.107767Z
-A New Earth Organic Store,supermarket,شارع زهرة الإحسان,+961 1 219 920,,https://www.anewearth.net/,osm,2026-05-02T13:35:48.107767Z
-تي إس سي بلوس,supermarket,"Al Sayyad Round About, Baabda",+961 5 955 200,,https://www.sultan-center.com/Default.aspx?pageId=525,osm,2026-05-02T13:35:48.107767Z
-Grand Hills,hotel,"Charkieh Main Road, Broumana",+961 4 868 888,reservations.grandhills@luxurycollection.com,https://www.marriott.com/hotels/travel/beylc-grand-hills-a-luxury-collection-hotel-and-spa-broumana/,osm,2026-05-02T13:35:48.107767Z
-The Peninsula,restaurant,,+961 4 540 240,info@thepeninsula.com.lb,https://www.thepeninsula.com.lb/,osm,2026-05-02T13:35:48.107767Z
-متحف الحياة البرية والبحرية,museum,,+961 9 222 054,,http://lmwm.org,osm,2026-05-02T13:35:48.107767Z
-بابل,restaurant,,+9614546546,,https://www.babelrestaurant.com/,osm,2026-05-02T13:35:48.107767Z
-صالح ديكو,furniture,"شارع ألفريد نقاش, بيروت",+961 1 398 449,info@salehdeo.com,https://salehdeco.com/,osm,2026-05-02T13:35:48.107767Z
-مستشفى سيدة المعونات جبيل,hospital,,+961 9 940 400,info@chu-nds.org,http://chu-nds.org/,osm,2026-05-02T13:35:48.107767Z
-Université Libano-Française,university,"Boulevard Béchara el Khoury, Tripoli",+961 6 425 608;+961 6 425 609,info@ulf.edu.lb,http://ulf.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-غرفة غرفة التجارة و الصناعة و الزراعة في طرابلس و لبنان الشمالي,administrative,"Bechara El Khoury, Tripoli",+9616425600,,https://cciat.org.lb/,osm,2026-05-02T13:35:48.107767Z
-ستوريوم صليبا,supermarket,,+9614922934,info@storiomsaliba.com,http://www.storiom.com.lb,osm,2026-05-02T13:35:48.107767Z
-مستشفى مظلوم,hospital,"شارع أشرف كبارة, طرابلس",+9616410025,info@newmazloum.com,http://newmazloum.com,osm,2026-05-02T13:35:48.107767Z
-السفارة التركية,diplomatic,,+961 4 528 061;+961 4 528 062;+961 4 528 063,ambassade.beyrouth@mfa.gov.tr,https://beyrut-be.mfa.gov.tr,osm,2026-05-02T13:35:48.107767Z
-دي آش إل,post_office,"شارع الأمير بشير, بيروت",+9611629700,,http://dhl.com.lb,osm,2026-05-02T13:35:48.107767Z
-SSCC Bikfaya,school,,+961 4 980 510,,http://www.bikfaya.sscc.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-Akiki Freres,beverages,Antelias - Akiki Freres Street,+9614444227,,https://www.akikifreres.com/,osm,2026-05-02T13:35:48.107767Z
-Hilton Beirut Habtoor Grand,hotel,"Charles De Gaulle Street, Beyrouth",+961 1 500 666,BeirutHabtoorGrand.Information@hilton.com,https://www.hilton.com/en/hotels/beyhghi-hilton-beirut-habtoor-grand,osm,2026-05-02T13:35:48.107767Z
-مجموعة البضن,clothes,طريق البحر,+9616600558,info@bodongroup.com,http://www.bodongroup.com,osm,2026-05-02T13:35:48.107767Z
-Media Square,photo,جل الديب,+9614719919,info@mediasquare.tv,https://www.mediasquare.tv/,osm,2026-05-02T13:35:48.107767Z
-مطعم برج,restaurant,,+9611453777,info@bridgerest.net,http://www.bridgerest.net,osm,2026-05-02T13:35:48.107767Z
-M.K Trading,pharmacy,أتستراد البحر,+9611876037,michoco50@hotmail.com,http://www.chocoreyo.com,osm,2026-05-02T13:35:48.107767Z
-الإغاثة الأولية الدولية,community_centre,طريق البحر,+9617733253,lib.hob.sai@pu-ami.org,http://www.premier-urgence.org,osm,2026-05-02T13:35:48.107767Z
-Zen Spa,cosmetics,Ksara round point,+9618507906,info@zenspalebanon.com,http://www.zenspalebanon.com,osm,2026-05-02T13:35:48.107767Z
-Chezena,beauty,ksara round point,+961 8 507 860,info@chezena.com,http://www.chezena.com,osm,2026-05-02T13:35:48.107767Z
-مستشفى سرحال,hospital,,+9614405050,h.serhal@sodetel.net.lb,http://www.hopitaldrsserhal.com/,osm,2026-05-02T13:35:48.107767Z
-السفارة الصينية,diplomatic,72 Rue Nicolas Ibrahim Sursock,+9611856133,,http://lb.china-embassy.org,osm,2026-05-02T13:35:48.107767Z
-شركة دريلرز,hardware,الثقافة,+9616425054,,http://www.drillerz.com,osm,2026-05-02T13:35:48.107767Z
-مطعم كرم,restaurant,"طريق كفرنون القطلبة, القبيات",+9616350227,info@karams.org,http://www.karams.org,osm,2026-05-02T13:35:48.107767Z
-KBC Workwear,tailor,,+9619219811,info@kbcworkwear.com,http://www.kbcworkwear.com,osm,2026-05-02T13:35:48.107767Z
-Amideast,government,"Beirut Central District, Bazerkan Building, First floor, Nijmeh Square, Next to the Parliament Beiru",+9611989901,,http://amideast.com.lb,osm,2026-05-02T13:35:48.107767Z
-مركز فرح العطاء كفيفان,community_centre,Kafifane Road,+9616721114,kfifane@offrejoie.org,https://www.offrejoie.org/,osm,2026-05-02T13:35:48.107767Z
-White City,convenience,Abi El-Lameh Street,+9611886880,,http://whitecity.com,osm,2026-05-02T13:35:48.107767Z
-منزل أبي راشد,guest_house,Dahr El-Arbeh,+9616720323,mhabeeabirached@gmail.com,https://www.couchsurfing.com/people/mhabe-camil-abirached,osm,2026-05-02T13:35:48.107767Z
-أندريه مارشا,jewelry,"55, Selim Abdel Adi",+9611337077,,https://www.andremarcha.com,osm,2026-05-02T13:35:48.107767Z
-سي سويت,convenience,"1 طريق, سن الفيل",+9611512225,info@seasweet.com,https://www.seasweet.com/,osm,2026-05-02T13:35:48.107767Z
-إميليو,confectionery,شارع 72,+9615460158,,http://www.emilioshop.com,osm,2026-05-02T13:35:48.107767Z
-السفارة الاسترالية,diplomatic,,+9611960600,,https://lebanon.embassy.gov.au/,osm,2026-05-02T13:35:48.107767Z
-السفارة البرازلية,diplomatic,شارع الجيش,+961 1 982 161,,http://beirute.itamaraty.gov.br,osm,2026-05-02T13:35:48.107767Z
-Primutech s.a.r.l.,electronics,Akram Radwan str.,+9615811013,,http://wwe.primutech.com,osm,2026-05-02T13:35:48.107767Z
-فتدق ديو روي,hotel,,+961 1 798 801,,http://www.duroyhotel.com,osm,2026-05-02T13:35:48.107767Z
-Bay Rock,restaurant,شارع فرسان الهيكل,+961 1 796 700,,https://bayrockcafe.com/,osm,2026-05-02T13:35:48.107767Z
-السفارة الملكية النرويجية,diplomatic,بيروت,+9611763200,,https://www.norway.no/en/lebanon,osm,2026-05-02T13:35:48.107767Z
-Mosaic,ngo,,+9611395445,mosaic@mosaic-mena.org,https://www.mosaicmena.org,osm,2026-05-02T13:35:48.107767Z
-Jean-Claude,restaurant,"Achrafieh Debbas, بيروت",+9611333532,info@breakfast-barn.com,https://www.breakfast-barn.com/,osm,2026-05-02T13:35:48.107767Z
-Kampaï,restaurant,شارع رفيق سلوم,+961 1 999 093,,http://www.kampai.co,osm,2026-05-02T13:35:48.107767Z
-بنت الهدى,religion,"بئر العبد, حارة حريك",+9611270285,,http://www.bintelhuda.com,osm,2026-05-02T13:35:48.107767Z
-بنت الهدى,religion,,+961 7 760 388,info@bintelhuda.com,http://www.bintelhuda.com,osm,2026-05-02T13:35:48.107767Z
-شركة برودانت,dentist,,+9614717332,,https://prodent-me.com/,osm,2026-05-02T13:35:48.107767Z
-Roland El Murr,driving_school,,+9611326200,,https://www.facebook.com/pages/Roland-El-Murr-Driving-School,osm,2026-05-02T13:35:48.107767Z
-Librairie Freiha,stationery,"شارع ساسين, الاشرفية",+9611324204,info@frayhamedia.com,http://www.frayhamedia.com,osm,2026-05-02T13:35:48.107767Z
-فرن الوفاء,bakery,طريق صيدا القديمة,+961 1 383 675,,http://alwafaabakery.com/,osm,2026-05-02T13:35:48.107767Z
-Socrate Restaurant,restaurant,"شارع 64, بيروت",+961 1 846646,,https://www.socrate.com,osm,2026-05-02T13:35:48.107767Z
-Crepaway,restaurant,Hamra Street,+961 1 289 389,,http://www.crepaway.com/,osm,2026-05-02T13:35:48.107767Z
-Carrefour,supermarket,,+961 1 296 300,,https://www.carrefourlebanon.com/,osm,2026-05-02T13:35:48.107767Z
-Mr. Brown,restaurant,جادة إلياس سركيس,+9611745545,,https://mrbrowndiner.com/,osm,2026-05-02T13:35:48.107767Z
-السفارة الدنماركية,diplomatic,بيروت,+9611991001,,https://libanon.um.dk,osm,2026-05-02T13:35:48.107767Z
-المدرسة الأنطوانيّة - جمهور,school,,+961 5 453 233,info@antonines-hazmieh.edu.lb,https://www.antonines-hazmieh.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-سفارة بنغلاديش,diplomatic,"Safara Al Kuwaiti Street, بئر حسن",+9611842586,beirutmission@gmail.com,https://bangladeshembassybeirut.org/,osm,2026-05-02T13:35:48.107767Z
-كمبيوتر أيكو,computer,طريق ميرنا الشالوحي,+9611488106,,http://www.computerecho.com,osm,2026-05-02T13:35:48.107767Z
-Toy House,toys,"أتستراد البحر, عاليه",+961 5 558 124,toyhouse-lb@hotmail.com,http://www.toyhouse-lb.com,osm,2026-05-02T13:35:48.107767Z
-سفارة اليونان بيروت,diplomatic,"شارع 21, بيروت",+961 4 521 700,gremb.bei@mfa.gr,https://www.mfa.gr/missionsabroad/en/lebanon.html,osm,2026-05-02T13:35:48.107767Z
-عيادة بيروت للعيون دكتور الكسندر عاصي,clinic,جادة سامي الصلح,+9611399299,,http://www.beiruteyeclinic.com/,osm,2026-05-02T13:35:48.107767Z
-Basic Outlet,variety_store,,+961 5 953 140,,https://basicoutletstores.com/,osm,2026-05-02T13:35:48.107767Z
-The Capital Insurance,insurance,Mar Maroun Street,+9611486686,capital@capital-cir.com,http://www.capital-cir.com,osm,2026-05-02T13:35:48.107767Z
-سفارة الهند,diplomatic,,+9611735922,,https://www.indianembassybeirut.gov.in,osm,2026-05-02T13:35:48.107767Z
-الصفارية,hotel,,+9619921066,info@hotelloriot.com,http://www.hotelloriot.com,osm,2026-05-02T13:35:48.107767Z
-Tartina Di Mare,restaurant,,+9619912292,,http://www.tartinadimare.com,osm,2026-05-02T13:35:48.107767Z
-Wooden Bakery,bakery,,+9614984121,,http://www.woodenbakery.com/,osm,2026-05-02T13:35:48.107767Z
-Malak Al Tawouk,fast_food,,+9619228005,,http://www.malakaltawouk.com/,osm,2026-05-02T13:35:48.107767Z
-السوق الحرة بيروت,mall,,+961 1 629 520,,http://www.beirutdutyfree.com/,osm,2026-05-02T13:35:48.107767Z
-بنك البحر المتوسط,bank,,+961 1 629 360,,https://www.bankmed.com.lb/,osm,2026-05-02T13:35:48.107767Z
-Cnam University Bikfaya,university,,+9614981321,,http://www.cnam-liban.fr/,osm,2026-05-02T13:35:48.107767Z
-المعهد الفرنسي,educational_institution,صيدا,+9617720192;+9617729592,saida@if-liban.com,https://institutfrancais-liban.com/,osm,2026-05-02T13:35:48.107767Z
-بيتزا هت,restaurant,,+961 4 928 581,,https://www.pizzahut-lb.com/,osm,2026-05-02T13:35:48.107767Z
-Domino's,fast_food,,+961 4 924 222,,https://www.dominos.com.lb/ar/,osm,2026-05-02T13:35:48.107767Z
-Sleep Comfort Grand Magasin,department_store,Rue El Khodr,+9611444444,,https://sleepcomfort.com/,osm,2026-05-02T13:35:48.107767Z
-Porky's,butcher,,+961 9 933 323,info@porkyslebanon.com,http://www.porkyslebanon.com/,osm,2026-05-02T13:35:48.107767Z
-Azrak,ice_cream,"70, Azrak",+9614821118,Riri@azrak.biz,http://azrak.biz,osm,2026-05-02T13:35:48.107767Z
-سورجل فرن الشباك,ice_cream,طريق الشام,+9611290902,,https://www.zomato.com/beirut/surgel-furn-el-chebbak-baabda-district,osm,2026-05-02T13:35:48.107767Z
-تصوير,photo,,+9611202996,,http://www.taswir.com/,osm,2026-05-02T13:35:48.107767Z
-Club de Campagne Ehden,hotel,,+961 6 560 651,info@ehdencountryclubhotel.com,http://www.ehdencountryclubhotel.com,osm,2026-05-02T13:35:48.107767Z
-مدرسة القديسة ريتا,school,الضبية,+961 4 544 125,,http://ecolesainterita.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-سفارة أرمينيا,diplomatic,,+961 4 418 860,,https://lebanon.mfa.am/ar,osm,2026-05-02T13:35:48.107767Z
-Randa Tabbah Jewelry,jewelry,شارع مريم جحشان,+961 1 215 288,info@randatabbah.com,https://www.randatabbah.com/,osm,2026-05-02T13:35:48.107767Z
-Randa Tabbah Jewelry,jewelry,شارع المخلصية,+9611975030,info@randatabbah.com,https://www.randatabbah.com/,osm,2026-05-02T13:35:48.107767Z
-بقجة,furniture,,+961 1 975976,info@bokja.com,http://www.bokja.com,osm,2026-05-02T13:35:48.107767Z
-Creative Space Beirut,educational_institution,,+9611201088,info@creativespacebeirut.com,https://www.creativespacebeirut.com/,osm,2026-05-02T13:35:48.107767Z
-مستشفى الساحل العام,hospital,Dergham street,+961 1 858 333,info@sahelhospital.com.lb,https://www.sahelhospital.com/ar,osm,2026-05-02T13:35:48.107767Z
-ورشة المعارف,ngo,,+961 1 397 454,,https://alwarsha.org/,osm,2026-05-02T13:35:48.107767Z
-مستشفى بخعازي,hospital,شارع عمر بن عبد العزيز,+9611742140,,http://www.bmg.com.lb,osm,2026-05-02T13:35:48.107767Z
-خوري كلينرز,laundry,,+961 1 689 629,,https://www.khourycleaners.com/,osm,2026-05-02T13:35:48.107767Z
-Rosa-Luxemburg-Stiftung,ngo,,+9611380893,,https://www.rosalux-lb.org/,osm,2026-05-02T13:35:48.107767Z
-دار النمر,gallery,,+9611367013,info@darelnimer.org,https://darelnimer.org/,osm,2026-05-02T13:35:48.107767Z
-CTS travel & Tourism,travel_agency,,+9611354333,,https://www.cts.com.lb/,osm,2026-05-02T13:35:48.107767Z
-Worldwide Travel & Tourism,travel_agency,,+9611366505,,http://worldwideTravel-lb.com,osm,2026-05-02T13:35:48.107767Z
-"Newtown Specialty Coffee Roasters,، Mina 1300",cafe,"1300, شارع رياض الصلح, Tripoli",+9616225002,,http://newtown.wheeeze.site/,osm,2026-05-02T13:35:48.107767Z
-فريحة ميديا,advertising_agency,"شارع ألفريد نقاش, بيروت",+961 1 201 740,info@frayhamedia.com,http://www.frayhamedia.com,osm,2026-05-02T13:35:48.107767Z
-Moussa Castle,museum,,+9615500106,,https://www.moussacastle.com/,osm,2026-05-02T13:35:48.107767Z
-السفارة السعوديّة,diplomatic,,+961 1 762 722,,https://embassies.mofa.gov.sa/sites/Lebanon,osm,2026-05-02T13:35:48.107767Z
-المورد الثقافي,ngo,,+9611360415,,https://mawred.org/,osm,2026-05-02T13:35:48.107767Z
-سفارة بلجيكا,diplomatic,"شارع الأمير بشير, بيروت",+9611976001,beirut@diplobel.fed.be,https://lebanon.diplomatie.belgium.be/,osm,2026-05-02T13:35:48.107767Z
-بي هايڤ,coworking,"شارع المهتما غاندي, بيروت",+9611355351,,http://www.thebhive.io/,osm,2026-05-02T13:35:48.107767Z
-سوزوكي دراجات نارية,company,Rue Fouad Chéhab,+9611496565,,https://suzukimotorcycleslebanon.com/,osm,2026-05-02T13:35:48.107767Z
-محمصة الرفاعي,convenience,Fouad Shehab Street,+9611495779,,https://store.alrifai.com,osm,2026-05-02T13:35:48.107767Z
-بنك بيروت,bank,"شارع فؤاد شهاب, سن الفيل",+961 5 955 262,,https://www.bankofbeirut.com,osm,2026-05-02T13:35:48.107767Z
-Byblos Bank,bank,Fouad Shehab Street,+9611485241,,http://www.byblosbank.com.lb,osm,2026-05-02T13:35:48.107767Z
-جورج نصر,department_store,"62, شارع 111, الدكوانة",+9611482462,,http://www.georgesnassr.com,osm,2026-05-02T13:35:48.107767Z
-Securité Assurance,insurance,Fouad Shehab Street,+9611517100,,https://www.securiteassurance.com/,osm,2026-05-02T13:35:48.107767Z
-جمعية توحيد شباب لبنان,company,Debbiyeh highway,+9617985210,,https://unitelebanonyouth.org,osm,2026-05-02T13:35:48.107767Z
-معمل التغذية,company,Debbiyeh Highway,+9615808808,,http://www.altaghziah.com/,osm,2026-05-02T13:35:48.107767Z
-بوظة بشير,ice_cream,"1 طريق, سنّ الفيل",+9611497110,,https://www.bachir.com,osm,2026-05-02T13:35:48.107767Z
-حركة مناهضة العنصريّة,ngo,,+9611788025,,https://armlebanon.org/,osm,2026-05-02T13:35:48.107767Z
-رفيق بواب,company,Debbiyeh,+9611340999,,http://raficbawabco.com,osm,2026-05-02T13:35:48.107767Z
-مركز الدامور الطبي,clinic,الدامور,+9615603603,,http://damour-mc.com,osm,2026-05-02T13:35:48.107767Z
-مؤسّسة الدراسات الفلسطينيّة,ngo,Beyrouth,+961 1 868 387,,https://www.palestine-studies.org/ar,osm,2026-05-02T13:35:48.107767Z
-Margherita,restaurant,,+961 9 830 816,,https://www.pizzeriamargherita.com/,osm,2026-05-02T13:35:48.107767Z
-المحطة الوقود إنترغاز,fuel,"طريق أنطلياس بكفيا, الرابية",+9614406493,,https://intergas-sal.business.site/,osm,2026-05-02T13:35:48.107767Z
-Microcity Computer Shop,computer,,+9611835478,,https://gomicrocity.com,osm,2026-05-02T13:35:48.107767Z
-Dprime Solutions,advertising_agency,"Mirna Chalouhi Highway, بوشرية",+9611255420,info@dprime-solutions.com,https://dprime-solutions.com/,osm,2026-05-02T13:35:48.107767Z
-ampm,convenience,"Achrafieh-Charles Malek Avenue, Beyrouth",+961 1 320 140,,https://www.facebook.com/pg/ampmmarketbeirut/posts/,osm,2026-05-02T13:35:48.107767Z
-Ambassade de Suisse,diplomatic,"Avenue Fouad Chéhab, Beyrouth",+9611324129,,https://www.eda.admin.ch/beirut,osm,2026-05-02T13:35:48.107767Z
-وزارة الاقتصاد والتجارة,government,"شارع الأمير بشير, بيروت",+9611982360,,https://economy.gov.lb,osm,2026-05-02T13:35:48.107767Z
-وزارة المهجّرين,government,"شارع عمر الداعوق, بيروت",+961 1 366 373,,http://www.ministryofdisplaced.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-وزارة البيئة,government,"مبنى اللعازارية, بيروت",+961 1 976 555,,http://www.moe.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-وزارة العمل,government,"بناية البراج، أوتوستراد الشياح, المشرفية",+961 1 556 803,,https://www.labor.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-وزارة الصناعة,government,,+961 1 427006,,http://www.industry.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-وزارة الإعلام,government,بيروت,+961 1 746 032,,http://www.ministryinfo.gov.lb,osm,2026-05-02T13:35:48.107767Z
-وزارة الثقافة,government,"شارع مدام كوري بناية حطب, الصنوبرة",+961 1 744 250,,http://culture.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-وزارة الزراعة,government,,+961 1 849 618,,http://www.agriculture.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-وزارة الشباب والرياضة,government,,+9611426658,,http://www.minijes.gov.lb,osm,2026-05-02T13:35:48.107767Z
-Le Lycee National,school,,+9615805500,,http://le-lycee-national.edu.lb,osm,2026-05-02T13:35:48.107767Z
-Cube 3DP,computer,,+9614535745,,https://cube3dp.com,osm,2026-05-02T13:35:48.107767Z
-أطباء بلا حدود,ngo,"شارع الحمرا, Beyrouth",+961 1 737 090,,https://www.msf.org/,osm,2026-05-02T13:35:48.107767Z
-السفارة الإماراتية فى بيروت,diplomatic,مار إلياس,+961 1 857 000,beirut@mofa.gov.ae,https://www.mofaic.gov.ae/missions/UAE-Missions-Abroad/UAE-Missions-Abroad-Details?countryId=4e740472-693c-4fec-88f8-c895fcdbf33b,osm,2026-05-02T13:35:48.107767Z
-Hajj Medical Center - Dr. Marcel Hajj MD,doctors,"Green Zone A building 71, النقاش",+9614520065,,https://linktr.ee/hajj.medical.center,osm,2026-05-02T13:35:48.107767Z
-جمعية الأمل والعطاء الخيرية,clinic,برجا,+9617921080,amalataa@outlook.com,https://www.amalataa.org/,osm,2026-05-02T13:35:48.107767Z
-بلدية دير الأحمر,townhall,,+9618320144,,http://www.deirelahmar.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-Municipality of Zgharta - Ehden,townhall,"Tripoli - Zgharta Rd, Zgharta",+9616660248;+9616660249,letters@zgharta.gov.lb,http://www.zgharta.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-Mairie d'Hadat,townhall,"Boulevard Camille Chamoun, Hadat",+961 5 466 923;+961 5 462 612;+961 5 466 417,,https://www.hadat.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-Municipality of Anjar,townhall,Chemin de la Municipalité,+9618800252;+9618820222,zahle-maallaka@idm.net.lb,http://zahle.gov.lb,osm,2026-05-02T13:35:48.107767Z
-Rouhana Jewelry,jewelry,طريق انطلياس بكفيّا,+961 4 927 055,info@rouhanajewellery.com,https://www.rouhana.co/,osm,2026-05-02T13:35:48.107767Z
-PrintCut,copyshop,,+9611281199,sales@printcut.net,https://printcut.net,osm,2026-05-02T13:35:48.107767Z
-بعثة الاتحاد الأوروبي,diplomatic,"شارع 62, بيروت",+961 1 956 900,delegation-lebanon@eeas.europa.eu,https://eeas.europa.eu/delegations/lebanon,osm,2026-05-02T13:35:48.107767Z
-Kassab Hospital,hospital,,+9617723900;+9617723700,info@kassabhospital.com,https://kassabhospital.com,osm,2026-05-02T13:35:48.107767Z
-Batrouniyat,restaurant,Dawra Street,+9616744510,info@batrouniyat.org,http://www.batrouniyat.org,osm,2026-05-02T13:35:48.107767Z
-Stars Tech,telecommunication,"شارع خليل مطران, Beyrouth",+961 1 820 003,support1@starstech-sys.com,https://www.starstech-sys.com/,osm,2026-05-02T13:35:48.107767Z
-Techpunto IT Solutions,computer,"شارع أمين منيمنة, بيروت",+9611743396,info@techpunto.com,http://www.techpunto.com,osm,2026-05-02T13:35:48.107767Z
-عيادة الدكتور بو حبيب,clinic,شارع 12,+961 4 416 979,neurologist@inbox.com,http://www.bouhabib.narod.ru/,osm,2026-05-02T13:35:48.107767Z
-The Parisian Hotel,hotel,,+9611361999,info@theparisianhotel.com,https://www.theparisianhotel.com,osm,2026-05-02T13:35:48.107767Z
-السفارة اليابانية,diplomatic,,+9611989751,,https://www.lb.emb-japan.go.jp,osm,2026-05-02T13:35:48.107767Z
-سفارة فنلندا,diplomatic,"جادة شارل مالك, بيروت",+961 1 218 860,,https://finlandabroad.fi/web/lbn,osm,2026-05-02T13:35:48.107767Z
-سفارة سلوفاكيا,diplomatic,"464, شارع كليمنصو, القنطاري",+961 1 367 422,emb.beirut@mzv.sk,https://www.mzv.sk/web/bejrut,osm,2026-05-02T13:35:48.107767Z
-Le Montagnou,restaurant,,+961 9 341 441,,http://www.montagnou.com/,osm,2026-05-02T13:35:48.107767Z
-Librairie Antoine Hamra,books,,+9611341470,,https://www.antoineonline.com/,osm,2026-05-02T13:35:48.107767Z
-Ka3kaya,restaurant,,+961 1 354 555,,https://www.ka3kaya.com/,osm,2026-05-02T13:35:48.107767Z
-سفارة بلغاريا,diplomatic,,+961 5 452 883,,https://www.mfa.bg/embassies/lebanon,osm,2026-05-02T13:35:48.107767Z
-Chateau Muzar,wine,,+961 9 925 127,,https://www.chateaumusar.com/,osm,2026-05-02T13:35:48.107767Z
-سفارة الأرجنتين,diplomatic,"161, شارع سرسق, بيروت",+961 1 210 803,,https://elbno.cancilleria.gob.ar,osm,2026-05-02T13:35:48.107767Z
-Loris,restaurant,شارع باستور,+9611567568,,https://www.loris.restaurant/,osm,2026-05-02T13:35:48.107767Z
-Empire Entertainment,company,"طريق الشام, بيروت",+9611616600,,https://www.empiremena.com/,osm,2026-05-02T13:35:48.107767Z
-IRAP,educational_institution,,+961 4 925 025,,http://iraplb.org/,osm,2026-05-02T13:35:48.107767Z
-Patisserie Main Sucrée,pastry,"شارع 52, ذوق الخراب",+961 4 541 060,,https://patisserie-main-sucree.business.site/,osm,2026-05-02T13:35:48.107767Z
-Hotel Le Noble,hotel,,+961 4 542 750,,https://hotellenoble.com/,osm,2026-05-02T13:35:48.107767Z
-Wunderman Thompson,company,"47, شارع البطريرك حويك, بيروت",+9611973030,,https://www.wundermanthompson.com/,osm,2026-05-02T13:35:48.107767Z
-UMAM D&R,ngo,شارع حارة حريك,+961 1 553 604,info@umam-dr.org,https://umam-dr.org/,osm,2026-05-02T13:35:48.107767Z
-Garage Riad El Hayek,car_repair,"Aboujaoude industrial center, Naher El Mot",+9611890661,,https://garageriadhayek.wordpress.com/,osm,2026-05-02T13:35:48.107767Z
-Das Küche,restaurant,,+961 1 442 887,,https://daskuche.me/,osm,2026-05-02T13:35:48.107767Z
-Delight,restaurant,Qalaa,+9615530577,,https://pizzadelight-hammana.business.site/?utm_source=gmb&utm_medium=referral,osm,2026-05-02T13:35:48.107767Z
-Institut Français - المركز الفرنسي,educational_institution,حي البياض,+961 7 764 398,,https://institutfrancais-liban.com,osm,2026-05-02T13:35:48.107767Z
-EcoConsulting,company,شارع جورج حداد,+9611971266,info@ecoconsulting.net,http://ecoconsulting.net,osm,2026-05-02T13:35:48.107767Z
-Globecast Near & Middle East,company,,+9611395111,,https://www.globecast.com/,osm,2026-05-02T13:35:48.107767Z
-Siège social SIDC,community_centre,Street 5,+9611482428,,https://sidc-lebanon.org/,osm,2026-05-02T13:35:48.107767Z
-Colortek Paints & Wallpapers,interior_decoration,شارع حنكاش الجديد,+9611242812,,https://www.colortek.eu/,osm,2026-05-02T13:35:48.107767Z
-Nextcare,insurance,,+961 1 504 000,lebanon@nextcarehealth.com,https://www.nextcarehealth.com,osm,2026-05-02T13:35:48.107767Z
-Frunch Eatery - Mar Mikhael,fast_food,شارع أرمينيا,+9611403303,,http://frunch-eatery.com,osm,2026-05-02T13:35:48.107767Z
-Keys'n Chords Music Academy,musical_instrument,شارع تامر ملاط,+961 1 795 914,,https://keysncords.com,osm,2026-05-02T13:35:48.107767Z
-Brush Art Paints,doityourself,شارع دار الفتوى,+961 1 706 773,,https://www.brushart.co/,osm,2026-05-02T13:35:48.107767Z
-IECD Beirut,ngo,شارع 506,+9611556338,,https://www.iecd.org/,osm,2026-05-02T13:35:48.107767Z
-بوتيك متحف الصابون في صيدا,gift,,+961 3 88 76 88,,https://sidonia.shop/,osm,2026-05-02T13:35:48.107767Z
-توتال بشامون,fuel,Rue Maktabet El Bachir,+9615813850,,https://totalenergies.com.lb/en,osm,2026-05-02T13:35:48.107767Z
-FS Office Supplies,electronics,,+961 5 950 180,,https://www.fsofficesupplies.net/,osm,2026-05-02T13:35:48.107767Z
-ATLAI,gift,,+961 5 951 172,,https://www.altailebanon.com/,osm,2026-05-02T13:35:48.107767Z
-الحويك,doityourself,Rue Ste. Mere Teresa,+9611880271,info@howayek.con,https://howayek.com,osm,2026-05-02T13:35:48.107767Z
-The HealthQuarters,clinic,شارع محمد بيضون,+961 1 425 182,,http://www.thehealthquarters.co/,osm,2026-05-02T13:35:48.107767Z
-بلدية بعلبك,townhall,ساحة السراي,+9618370214,,https://baalbeck-municipality.org/,osm,2026-05-02T13:35:48.107767Z
-Deek'Matic,restaurant,"Main road, Qornet Chehwen",+961 4 922 161,,https://menu.omegasoftware.ca/deekmatic,osm,2026-05-02T13:35:48.107767Z
-إم تي إس سي,metal_construction,جادة كميل شمعون,+9611452399,,https://www.mtsclb.com/ar/Home,osm,2026-05-02T13:35:48.107767Z
-Antranik Baljian and Sons (ABS Metals),metal_construction,شارع 81,+9611242605,,https://www.absmetals.com/en/Home,osm,2026-05-02T13:35:48.107767Z
-ديوان ماركت,supermarket,طريق صيدا القديمة,+961 5 810 850,,http://www.diwanhypermarket.com,osm,2026-05-02T13:35:48.107767Z
-مؤسسة حسن الجمل التجارية,appliance,شارع برج أبي حيدر,+9611307022,,https://aljamaltrading.com,osm,2026-05-02T13:35:48.107767Z
-Terabyte Computers Msaytbeh,computer,شارع بشير جنبلاط,+9611640501,,https://terabyte.computer/,osm,2026-05-02T13:35:48.107767Z
-Château Qanafar Boutique,wine,Amine Gemayel street,+961 1 398 782,contactus@chateauqanafar.com,https://www.chateauqanafar.com/,osm,2026-05-02T13:35:48.107767Z
-Baba Bahaa,toys,,+9615601535,,http://bababahaaonline.com,osm,2026-05-02T13:35:48.107767Z
-Kado Ghamlouch,toys,ميشال زكور,+961 1 547 447,,http://kadoghamloush.com,osm,2026-05-02T13:35:48.107767Z
-Beit Toureef,hotel,,+961 1 443 495,,https://beittoureef.com/,osm,2026-05-02T13:35:48.107767Z
-Zero&One,company,"1499, شارع ناصيف اليازجي",+9611669694,innovate@zeroandone.me,https://zeroandone.me,osm,2026-05-02T13:35:48.107767Z
-مجموعة البيال,community_centre,"أتستراد إميل لحود, Forn el Chebbak",+961 1 995 555,leb@biel-group.com,http://www.biel-group.com,osm,2026-05-02T13:35:48.107767Z
-وزارة الداخلية والبدلديّات,government,,+9611754200,,http://interior.gov.lb,osm,2026-05-02T13:35:48.107767Z
-أ ب ث الأشرفية,mall,,+961 1 212 888,,http://www.abc.com.lb/,osm,2026-05-02T13:35:48.107767Z
-سيتي مول,mall,أتستراد البحر,+961 1 905 555,,https://citymall.com.lb/,osm,2026-05-02T13:35:48.107767Z
-Intercontinental Mzaar Hotel,hotel,,+961 9 340 100,,https://www.ihg.com/intercontinental/hotels/gb/en/mzaar/mzrha/hoteldetail,osm,2026-05-02T13:35:48.107767Z
-مدرسة الإخوة المريميين الشانفيل,college,ديك المحدي,+961 4 913 327,,https://www.champville.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-الرسول الأعظم,hospital,,+9611458555;+9611456455;+9611456456,info@alrassoul.org,http://alrassoul.org/ar/,osm,2026-05-02T13:35:48.107767Z
-أ ب سي الضبية‎‎,mall,الضبية‎‎,+961 4 416 000,,http://www.abc.com.lb/,osm,2026-05-02T13:35:48.107767Z
-لو مول,mall,ضبية,+961 4 408 111,,https://www.lemall.com.lb/,osm,2026-05-02T13:35:48.107767Z
-هوم سنتر,furniture,سن الفيل,+961 5 956 448,,http://www.homecentrestores.com/,osm,2026-05-02T13:35:48.107767Z
-Hilton Beirut Metropolitan Palace,hotel,"Dimitri El Hayek, بيروت",+961 1 496 666,BeirutMetropolitanpalace.Information@hilton.com,https://www.hilton.com/en/hotels/beymphi-hilton-beirut-metropolitan-palace/,osm,2026-05-02T13:35:48.107767Z
-مستشفى يونيفيل,hospital,الناقورة,+9611925000,,https://unifil.unmissions.org/,osm,2026-05-02T13:35:48.107767Z
-سفارة فرنسا,diplomatic,"طريق الشام, Beyrouth",+961 1 420 000,,https://lb.ambafrance.org/,osm,2026-05-02T13:35:48.107767Z
-Four Points by Sheraton Le Verdun,hotel,"Verdun, Boulevard Saeb Salam, Beyrouth",+961 1 803 804,verdun.reservations@fourpointshotels.com,https://www.marriott.com/hotels/travel/beyfp-four-points-le-verdun/,osm,2026-05-02T13:35:48.107767Z
-فندق فور سيزنس,hotel,بيروت,+961 1 761 000,,https://www.fourseasons.com/beirut,osm,2026-05-02T13:35:48.107767Z
-مستشفى الروم,hospital,"Achrafieh, Beyrouth",+961 1 441 000,,https://www.stgeorgehospital.org/,osm,2026-05-02T13:35:48.107767Z
-الأكاديمية اللبنانية للفنون الجميلة,university,"شارع 23, سن الفيل",+9611480056,,https://alba.edu.lb,osm,2026-05-02T13:35:48.107767Z
-Hôpital Tal Chiha,hospital,,+9618823055,nicolas.khoury@telchiha.com,https://www.telchiha.com/,osm,2026-05-02T13:35:48.107767Z
-مستشفى سان لويس جونية,hospital,,+9619933334,,http://www.stherese.com/hop3.aspx,osm,2026-05-02T13:35:48.107767Z
-Jounieh Municipality,townhall,,+961 9 913 000,,http://www.jounieh.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-Monastery Saint Maron,monastery,Aannaya,+961 9 760 130,info@saintcharbel-annaya.com,https://saintcharbel.com/,osm,2026-05-02T13:35:48.107767Z
-STAL,company,,+9614400400,info@stal-me.com,http://www.stal-me.com,osm,2026-05-02T13:35:48.107767Z
-مستشفى جبل لبنان,hospital,شارع ميشال غاريوس,+961 5 957 000,mlh@mlh.com.lb,http://www.mlh.com.lb/,osm,2026-05-02T13:35:48.107767Z
-Collège des Frères Mont La Salle,school,"Route Principale Aïn Saadé, Aïn Saadé",+961 1 870 025,direction@montlasalle.edu.lb,http://www.montlasalle.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-مستشفى الحايك,hospital,"575, Street 9-04, Sin El Fil",+961 1 481 333,info@hopitalhayek.com,http://hayekhospital.com,osm,2026-05-02T13:35:48.107767Z
-وزارة التربية والتعليم العالي,government,,+961 1 772 000,,https://www.mehe.gov.lb/ar,osm,2026-05-02T13:35:48.107767Z
-Advanced Eye Care,clinic,Antelias-Naccache old road,+961 4 444 541,drwarrak@eyecare-lb.com,http://www.eyecare-lb.com,osm,2026-05-02T13:35:48.107767Z
-سفارة إيطاليا,diplomatic,"طريق القصر الرئاسي, بعبدا",+9615954955,,https://ambbeirut.esteri.it,osm,2026-05-02T13:35:48.107767Z
-السفارة الأميركية,diplomatic,بيروت,+961 4 543 600,,https://lb.usembassy.gov/,osm,2026-05-02T13:35:48.107767Z
-Portemilio Hotel,hotel,,+961 9 933 300,,https://www.portemilio.com/,osm,2026-05-02T13:35:48.107767Z
-The Rooms,hotel,,+961 9 914 514,info@theroomslb.com,https://theroomslb.com,osm,2026-05-02T13:35:48.107767Z
-سفارة إندونيسيا,diplomatic,,+961 5 924 682,,https://kemlu.go.id/beirut,osm,2026-05-02T13:35:48.107767Z
-الفلمنكي,cafe,"شارع شاتيلا, بيروت",+9611323456,,http://www.alfalamanki.com,osm,2026-05-02T13:35:48.107767Z
-The Grand Meshmosh Hotel,hostel,"درج مار نقولا, بيروت",+9611563465,thegrandmeshmosh@gmail.com,https://www.thegrandmeshmosh.com,osm,2026-05-02T13:35:48.107767Z
-هيلتون بيروت وسط المدينة,hotel,Rue Émir Majid Arslan,+961 1 951 111,beyhi_info@hilton.com,https://ar.hilton.com/ar_ar/hotels/hilton-beirut-downtown/,osm,2026-05-02T13:35:48.107767Z
-Colonel Beer Microbrewery,pub,,+9616743543,,https://colonelbeer.com/,osm,2026-05-02T13:35:48.107767Z
-مانشن,community_centre,,+9611379755,,https://mansionblatt.org,osm,2026-05-02T13:35:48.107767Z
-الجامعة الحديثة للإدارة والعلوم,university,,+961 1 371 884;+961 1 371 885;+961 1 371 886,,https://www.mubs.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-فندق الخيال الكبير,hotel,رياق‎‎,+961 8 900 901,info@alkhayalgrandhotel.com,https://alkhayalgrandhotel.com/,osm,2026-05-02T13:35:48.107767Z
-بلدية الغبيري,townhall,,+9611858630,,http://www.ghobeiry.gov.lb,osm,2026-05-02T13:35:48.107767Z
-مستشفى سانت تريز الحدث,hospital,"طريق 20, الحدث",+9615466780,,http://www.stherese.com/hop1.aspx,osm,2026-05-02T13:35:48.107767Z
-مدينة الواجهة البحرية - قاعة المدينة,townhall,,+961 4 444 145,,https://waterfrontcity.com/,osm,2026-05-02T13:35:48.107767Z
-بلدية قرنة شهوان – عين عار – بيت الككو – الحبوس,townhall,,+9614925013;+9614925604,info@chab.gov.lb,http://www.chab.gov.lb,osm,2026-05-02T13:35:48.107767Z
-Deek Duke,restaurant,شارع الحمرا,+961 1 344 744,,https://deekduke.com/,osm,2026-05-02T13:35:48.107767Z
-Aintoura Municipality,townhall,Aintoura,+9619232424,info@antoura.gov.lb,http://www.antoura.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-كلية مونتانا الدولية,school,,+9614914006,,http://montana.cpf.edu.lb/fr,osm,2026-05-02T13:35:48.107767Z
-مستشفى بيروت العام,hospital,,+961 1 850 213,,http://beirutgeneralhospital.com/,osm,2026-05-02T13:35:48.107767Z
-Choc en bouche,pastry,"choc en bouche Building, main street",96178813444,,https://chocenbouche.com,osm,2026-05-02T13:35:48.107767Z
-مركز كليمنصو الطبي,hospital,شارع 60,+9611372888,,https://www.cmc.com.lb/,osm,2026-05-02T13:35:48.107767Z
-Locanda,restaurant,,+961 9 944 333,,http://www.locandaalagranda.com/,osm,2026-05-02T13:35:48.107767Z
-سفارة جمهورية التشيك,diplomatic,"17, شارع 52, بعبدا",+961 5 929 010,beirut@embassy.mzv.cz,https://www.mzv.cz/beirut,osm,2026-05-02T13:35:48.107767Z
-four tables,restaurant,"شارع المحكمة العسكرية, رأس النبع",+961 1 614 066,,https://www.zomato.com/beirut/four-tables-ras-el-nabeh-beirut-district,osm,2026-05-02T13:35:48.107767Z
-مستشفى القلب المقدس,hospital,,+9615453500,,https://www.hsc-lb.com/,osm,2026-05-02T13:35:48.107767Z
-طراد,hospital,شارع جبران خليل جبران,+9611369494;+9611369495,info@tradhospital.com,https://www.tradhospital.com/,osm,2026-05-02T13:35:48.107767Z
-Lycée Alphonse De Lamartine Kfar Qahel,school,Kfar Qahel,+9616417082,,http://www.lycee-tripoli.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-مستشفى الزهراء,hospital,,+961 1 851 040,info@zhumc.org.lb,https://zhumc.org.lb/,osm,2026-05-02T13:35:48.107767Z
-نزل الفنار,hotel,صور,+961 7 741 111,,http://www.alfanarresort.com,osm,2026-05-02T13:35:48.107767Z
-وزارة الصحة,government,,+9611830300,,https://www.moph.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-وزارة شؤون الاجتماعية,government,,+9611611260,,https://www.socialaffairs.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-فندق ومنتجع كورال بيتش,hotel,,+9611859000,,https://www.coralbeachbeirut.com/,osm,2026-05-02T13:35:48.107767Z
-كلية استارز,school,,+961 07 769 772,z.info@scs.edu.lb,https://scs.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-جامعة الروح القدس الكسليك,university,,+961 9 600 000,,https://www.usek.edu.lb,osm,2026-05-02T13:35:48.107767Z
-لانكستر إيدن بي,hotel,,+9611838000,,https://lancasteredenbay.com,osm,2026-05-02T13:35:48.107767Z
-السفارة الرومانية,diplomatic,"طريق القصر الرئاسي, بعبدا",+961 5 924 848,,https://beirut.mae.ro,osm,2026-05-02T13:35:48.107767Z
-سبوت,mall,,+9615800719,,http://thespot.com.lb,osm,2026-05-02T13:35:48.107767Z
-Sands Hotes,hotel,Byblos,+9619546085,info@sandshotel.com,https://hotel-sands.com,osm,2026-05-02T13:35:48.107767Z
-Tiny But Mighty,restaurant,,+961 4 444 864,,http://tiny-mighty.com/,osm,2026-05-02T13:35:48.107767Z
-Adma Blue Screen,hotel,"4, Adma Yellow Zone Street, Adma",+961 9 856 500,frboueri@hotmail.com,https://admabluescreen.com/,osm,2026-05-02T13:35:48.107767Z
-Collège des Sœurs des Saints-Cœurs,school,,+9619920764,kfarhbab@sscc.edu.lb,https://www.kfarhbab.sscc.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-مركز كسروان الإستشفائي,hospital,,+961 9 857 300,info@kmc.com.lb,http://kmc.com.lb,osm,2026-05-02T13:35:48.107767Z
-Al Iman Hospital,hospital,,+9615557038;+9615557039;+9615557040,info@imanhospital.org,http://www.imanhospital.com,osm,2026-05-02T13:35:48.107767Z
-رزق,hospital,,+9611200800,info@laumcrh.com,https://www.laumcrh.com/,osm,2026-05-02T13:35:48.107767Z
-Akkar Rahal Hospital,hospital,,+9616690000,info@hopitalrahal.com,https://hopitalrahal.com/,osm,2026-05-02T13:35:48.107767Z
-Rahma Medical Center,hospital,,+9616448222,info@rahmahospital.org,http://www.rahmahospital.org/,osm,2026-05-02T13:35:48.107767Z
-Salah Ghandour Hospital,hospital,Route Rmeich-Bent Jbaïl,+961 7 450 100,,http://www.hayaa.org,osm,2026-05-02T13:35:48.107767Z
-Lycee Des Arts,school,,+961 1 543 910,,https://lyceedesarts.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-Al Koura Hospital,hospital,,+9616930981,info@hopital-alkoura.com.lb,http://www.hopital-alkoura.com.lb,osm,2026-05-02T13:35:48.107767Z
-مستشفى دار الأمل الجامعي,hospital,,+9618340620;+9618340621;+9618340622;+9618340623;+9618340624;+9618340626,info@dar-alamal.com,https://www.dar-alamal.com/,osm,2026-05-02T13:35:48.107767Z
-مستشفى الصليب للأمراض العقلية والنفسية,hospital,,+9614710224,,http://www.hopitalpsychiatriquedelacroix.org.lb/,osm,2026-05-02T13:35:48.107767Z
-ثانوية الإيمان,school,,+961 7 724 987;+961 7 729 585,,https://ihs.edu.lb,osm,2026-05-02T13:35:48.107767Z
-El Boutique Hotel,hotel,,+961 7 740 960,info@elbtqhotel.com,https://www.elbtqhotel.com/,osm,2026-05-02T13:35:48.107767Z
-LWIS Universal School of Lebanon,school,,+961 6 930 964;+961 6 930 965;+961 6 930 966,info@lwis-usl.edu.lb,http://www.lwis-usl.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-أصكرز مول,mall,,+961 7 732999,,https://www.lemall.com.lb/,osm,2026-05-02T13:35:48.107767Z
-Roadster,restaurant,جل الديب,+9614711 861,,https://www.roadsterdiner.com/,osm,2026-05-02T13:35:48.107767Z
-سفارة المكسيك,diplomatic,,+9614927356,,https://embamex.sre.gob.mx/libano,osm,2026-05-02T13:35:48.107767Z
-مستشفى حمود,hospital,"Dr. Ghassan Hammoud Street, صيدا",+961 7 723 111,info@hammoudhospital.com,http://hammoudhospital.com/,osm,2026-05-02T13:35:48.107767Z
-الجامعة الأمريكية للعلوم والتكنولوجيا,university,,+9617754777,info@aust.edu.lb,https://www.aust.edu.lb,osm,2026-05-02T13:35:48.107767Z
-مدرسة رفيق الحريري الثانوية,school,,+9617723551;+9617723986,rhhs@rhhs.edu.lb,https://rhhs.edu.lb,osm,2026-05-02T13:35:48.107767Z
-جامعة الجنان,university,ابو سمرا,+9616447906,info@jinan.edu.lb,https://www.jinan.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-مستشفى الحريري الحكومي,hospital,,+9611830000,,http://www.bguh.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-مستشفى بيت شباب,hospital,Beit Chabab,+961 4 983 393,info@centrehospbc.com,http://www.centrehospbc.com/,osm,2026-05-02T13:35:48.107767Z
-الجامعة بيروت العربية,university,Debbiyeh,+9611300110,bau@bau.edu.lb,http://www.bau.edu.lb,osm,2026-05-02T13:35:48.107767Z
-مركز بلفو الطبي,hospital,,+961 1 682 666,,http://www.bmchcs.com,osm,2026-05-02T13:35:48.107767Z
-Hospital Haykel,hospital,,+961 6 411 111,info@hopitalhaykel.com,http://www.hopitalhaykel.com,osm,2026-05-02T13:35:48.107767Z
-Dunes,mall,,+961 1 785 310,,https://dunes.com.lb/,osm,2026-05-02T13:35:48.107767Z
-مستشفى علاء الدين,hospital,,+9617443200,,https://hospitalalaeddine.com/,osm,2026-05-02T13:35:48.107767Z
-المركز الطبي للجامعة اللبنانية الأميركية - مستشفى سان جون,hospital,,+9619640140,info@laumcsjh.com,https://www.laumcsjh.com/,osm,2026-05-02T13:35:48.107767Z
-Abou Jaoudeh Hospital,hospital,,+9614718000;+9614716000,admin@hopitalaboujaoude.com,https://www.hopitalaboujaoude.com,osm,2026-05-02T13:35:48.107767Z
-مستشفى البقاع,hospital,,+9618543151,bekaahosp@gmail.com,http://www.bekaahospital.com/,osm,2026-05-02T13:35:48.107767Z
-مستشفى سني,hospital,,+961 6 205 875;+961 6 205 879,info@islamichospital.org,https://www.islamichospital.org,osm,2026-05-02T13:35:48.107767Z
-Universal Hospital,hospital,,+9618210560,info@universalhospital.net,https://universalhospital.net/,osm,2026-05-02T13:35:48.107767Z
-المقاصد,hospital,,+961 1 636 000,,http://makassedhospital.org/,osm,2026-05-02T13:35:48.107767Z
-مدرسة مار يوسف,school,,+9614925005,support@sjs.edu.lb,https://sjs.edu.lb,osm,2026-05-02T13:35:48.107767Z
-Arnaoon Village,events_venue,,+961 6 642 111,arnaoon@arnaoonvillage.com,http://www.arnaoonvillage.com,osm,2026-05-02T13:35:48.107767Z
-مستشفة خوري,hospital,,+9618807000,,https://www.khouryhospital.com/Contact.htm,osm,2026-05-02T13:35:48.107767Z
-الجامعة الأنطونية,university,بعبدا,+9615927000,,https://ua.edu.lb/fr/home,osm,2026-05-02T13:35:48.107767Z
-Issam Fares Library Learning Center,library,,+961 6931958,,https://www.balamand.edu.lb/Library/Main/Pages/default.aspx,osm,2026-05-02T13:35:48.107767Z
-طوطال,fuel,,+961 7 727 959,,https://totalenergies.com.lb/en,osm,2026-05-02T13:35:48.107767Z
-اكادميات التواصل و القيادة,educational_institution,,+961 7 728 746;+961 7 733 119,,https://hariri-foundation.org/programs/ola-outreach-leadership-academy/,osm,2026-05-02T13:35:48.107767Z
-شركة التكنولوجيا المفتوحة,it,,+961 7 739 950,mb@opentech.me,https://www.opentech.me,osm,2026-05-02T13:35:48.107767Z
-جمعية رعاية اليتيم,social_facility,,+961 7 722 788;+961 7 720 788,info@maytamsaida.net,https://maytamsaida.net,osm,2026-05-02T13:35:48.107767Z
-Warde,fabric,,+961 7 751 177,saida@warde.com,https://warde.com/,osm,2026-05-02T13:35:48.107767Z
-مستشفى جامعة نوتردام,hospital,,+961 9 644 644,info@nduhospital.com,http://www.nduhospital.com/,osm,2026-05-02T13:35:48.107767Z
-Order of Friars Minor,organization,"Roma, Via di S. Maria Mediatrice, 25",+39-06-684-919,mailto:comgen@ofm.org,http://www.ofm.org/,wikidata,2026-05-02T13:36:03.043690Z
-Sursock Museum,art museum,"Greek Orthodox Archbishopric Street, Achrafieh 2071 5509, Beirut",+961 1202001,mailto:info@sursock.museum,https://sursock.museum/,wikidata,2026-05-02T13:36:03.043690Z
-Dar El-Ilm Lilmalayin,publishing house,شارع مار إلياس، مبنى فرنسبنك، الطابق الثاني، بيروت,+961 1 306 666,mailto:malayin@malayin.com,http://malayin.com/,wikidata,2026-05-02T13:36:03.043690Z
-Arabic Language International Council,metaorganization,,+961-1-364-611,,https://alarabiahcouncil.org/,wikidata,2026-05-02T13:36:03.043690Z
-كاري بلان,household_linen,شارع عبد الوهاب الانكليزي,,,http://carreblanc.whiteandmore.com.lb,osm,2026-05-02T13:35:48.107767Z
-ليل نهار,restaurant,Charles Malik,,,http://leilnhar.com/,osm,2026-05-02T13:35:48.107767Z
-يسايان,jewelry,,,,http://www.yessayan.com/,osm,2026-05-02T13:35:48.107767Z
-IPT,fuel,,,,https://www.iptgroup.com.lb,osm,2026-05-02T13:35:48.107767Z
-دلاعة,hospital,"شارع دلاعة, صيدا",,,http://www.dallaahospital.com,osm,2026-05-02T13:35:48.107767Z
-طيران الشرق الآوسط,travel_agency,,,,https://www.mea.com.lb/french/home,osm,2026-05-02T13:35:48.107767Z
-جمعية متخرجي الجامعة الأميركية في بيروت,association,Beyrouth,,,http://www.waaaub.org/,osm,2026-05-02T13:35:48.107767Z
-كبابجي,fast_food,,,,https://www.kababji.com/lb,osm,2026-05-02T13:35:48.107767Z
-Byblos bank,business,,,,https://www.byblosbank.com,osm|wikidata,2026-05-02T13:36:03.043690Z
-Medco,fuel,,,,https://www.medco.com.lb,osm,2026-05-02T13:35:48.107767Z
-Latte Art,cafe,"شارع بليس, الحمراء",,,https://www.facebook.com/LatteArtLebanon/,osm,2026-05-02T13:35:48.107767Z
-ساكيه,restaurant,,,,http://www.sakebeirut.com/,osm,2026-05-02T13:35:48.107767Z
-ستاربكس,cafe,,,,https://starbucks.com,osm,2026-05-02T13:35:48.107767Z
-آلت سيتي,cafe,شارع الحمرا,,,http://www.altcity.me,osm,2026-05-02T13:35:48.107767Z
-محمصة الرفاعي ش.م.ل.,roastery,Corniche Mazraa,,,https://www.alrifai.com/,osm,2026-05-02T13:35:48.107767Z
-مرينوس,restaurant,,,,http://www.marinusrestaurant.com/,osm,2026-05-02T13:35:48.107767Z
-كرو,restaurant,شارع المقدسي,,,http://www.crulb.com/,osm,2026-05-02T13:35:48.107767Z
-القرية البيئية,hostel,,,,https://www.ecoecovillage.com/,osm,2026-05-02T13:35:48.107767Z
-أمباسي هوتيل,hotel,شارع المقدسي,,,https://embassyhotellebanon.com/,osm,2026-05-02T13:35:48.107767Z
-CompuSHOP,hifi,"Rue Principale de Maalaka, Zahlé",,,http://www.compushop.me,osm,2026-05-02T13:35:48.107767Z
-أبو خليل,supermarket,,,,http://www.boukhalil.com,osm,2026-05-02T13:35:48.107767Z
-فود 101,restaurant,,,,http://food101faculty.com/,osm,2026-05-02T13:35:48.107767Z
-مدكو,fuel,,,,https://www.medco.com.lb,osm,2026-05-02T13:35:48.107767Z
-Radio Beirut,pub,,,,https://www.radiobeirut.net/,osm,2026-05-02T13:35:48.107767Z
-M&W ZGHEIB SARL,gift,YESOUH EL MALAK AREA,,,http://www.mwzgheib.com,osm,2026-05-02T13:35:48.107767Z
-دي آش إل,post_office,"Rue de Damas, Beyrouth",,,http://www.dhl.com.lb,osm,2026-05-02T13:35:48.107767Z
-SGBL,bank,,,,http://www.sgbl.com.lb,osm,2026-05-02T13:35:48.107767Z
-هستل بيروت,hostel,"شارع 56, الجعيتاوي",,,http://hostelbeirut.com,osm,2026-05-02T13:35:48.107767Z
-ودن بيكري,bakery,Hazmieh,,,https://www.woodenbakery.com/,osm,2026-05-02T13:35:48.107767Z
-Hawa Chicken,deli,Hazmieh,,,http://www.hawachickenlb.com/en/Home,osm,2026-05-02T13:35:48.107767Z
-BLOM Bank,bank,,,,https://www.blombank.com/,osm,2026-05-02T13:35:48.107767Z
-BLC bank,business,,,,http://www.blcbank.com/,osm|wikidata,2026-05-02T13:36:03.043690Z
-بنك بيروت,bank,,,,https://www.bankofbeirut.com/,osm,2026-05-02T13:35:48.107767Z
-Bankmed,business,,,,http://www.bankmed.com.lb/,osm|wikidata,2026-05-02T13:36:03.043690Z
-بنك سوسيتيه جنرال في لبنان,bank,,,,http://www.sgbl.com.lb,osm,2026-05-02T13:35:48.107767Z
-سوسيتيه جنرال,bank,,,,http://www.sgbl.com.lb,osm,2026-05-02T13:35:48.107767Z
-سفارة الفلبين,diplomatic,Baabda,,,https://beirutpe.dfa.gov.ph/,osm,2026-05-02T13:35:48.107767Z
-وردية,fuel,,,,https://www.wardieh.com/,osm,2026-05-02T13:35:48.107767Z
-Coral,fuel,,,,https://www.coraloil.com/,osm,2026-05-02T13:35:48.107767Z
-برغر كنج,fast_food,,,,https://www.bklebanon.com/,osm,2026-05-02T13:35:48.107767Z
-Credit Libanais,business,,,,http://www.creditlibanais.com/,osm|wikidata,2026-05-02T13:36:03.043690Z
-Antoine iD,books,,,,https://antoineonline.com/,osm,2026-05-02T13:35:48.107767Z
-شجرة الزيتون,restaurant,"ساحة سوديكو, بيروت",,,http://the-olivetree.co,osm,2026-05-02T13:35:48.107767Z
-كريباواي,fast_food,,,,https://crepaway.com,osm,2026-05-02T13:35:48.107767Z
-Malak Al Tawouk,fast_food,,,,https://www.malakaltawouk.com/,osm,2026-05-02T13:35:48.107767Z
-Healthy Basket,supermarket,"شارع الكويت, Beyrouth",,,http://www.healthybasket.org,osm,2026-05-02T13:35:48.107767Z
-Le Charcutier Aoun,supermarket,,,,https://www.lecharcutier.com/en/branches/details/14/Sin-el-Fil,osm,2026-05-02T13:35:48.107767Z
-La Boulangère Bio,bakery,"شارع مار متر, Beyrouth",,,https://www.facebook.com/LaBoulangereBio,osm,2026-05-02T13:35:48.107767Z
-Bioland,supermarket,"شارع أثينا, Beyrouth",,,http://bioland-lb.com/store.php?store_id=1,osm,2026-05-02T13:35:48.107767Z
-Al-Marej Organic Food Store,supermarket,"شارع عبد الوهاب الانكليزي, بيروت",,,https://almarejorganicfood.wordpress.com/,osm,2026-05-02T13:35:48.107767Z
-طاولة,restaurant,"شارع أرمينيا, بيروث",,,https://www.soukeltayeb.com/tawlet,osm,2026-05-02T13:35:48.107767Z
-Abed Tahan,electronics,,,,https://www.abed-tahan.com/,osm,2026-05-02T13:35:48.107767Z
-خوري هوم,electronics,,,,https://www.khouryhome.com/,osm,2026-05-02T13:35:48.107767Z
-هيبرماركت بو خليل,supermarket,,,,http://www.boukhalil.com/,osm,2026-05-02T13:35:48.107767Z
-Brummana High School,university,,,,https://bhs.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-Le Royal,hotel,ضبيه,,,http://www.leroyalbeirut.com,osm,2026-05-02T13:35:48.107767Z
-SGBL,bank,ضبية‎‎,,,http://www.sgbl.com.lb,osm,2026-05-02T13:35:48.107767Z
-Crepaway,fast_food,,,,https://crepaway.com,osm,2026-05-02T13:35:48.107767Z
-al deraset,library,"abdel nour, الرويس",,info@deraset.com,https://deraset.com/,osm,2026-05-02T13:35:48.107767Z
-Exclusive Electronics - Jad Kamal Sawah,electronics,طلعة شاليه سويس / المحكمة,,info@exclusivelb.com,http://www.exclusivelb.com,osm,2026-05-02T13:35:48.107767Z
-Tiger House,hostel,,,,https://www.booking.com/hotel/lb/tiger-house.de.html,osm,2026-05-02T13:35:48.107767Z
-L'Escroc,restaurant,Antelias,,,http://lescroc.me,osm,2026-05-02T13:35:48.107767Z
-In Progress I.T.,computer,Rue de la municipalité,,inproit@gmail.com,http://www.inprogressit.com,osm,2026-05-02T13:35:48.107767Z
-كنيسة القدّيس جاورجيوس الأرثوذكسيّة,place_of_worship,شارع البلديّة,,,http://orthomina.com,osm,2026-05-02T13:35:48.107767Z
-Bartartine,restaurant,,,,https://bar-tartine.com/,osm,2026-05-02T13:35:48.107767Z
-top Limo wedding cars,car_rental,,,,http://www.toplimpweddings.com,osm,2026-05-02T13:35:48.107767Z
-Cargo,information,,,marwankary1711@gmail.com,http://cargomarwan.simdif.com,osm,2026-05-02T13:35:48.107767Z
-منزل وائل خداج,courthouse,,,alnojoom.wk@gmail.com,http://www.studionojoom.com,osm,2026-05-02T13:35:48.107767Z
-Antoine,books,,,,https://www.antoineonline.com,osm,2026-05-02T13:35:48.107767Z
-محمية أرز الشوف الكبيرة,attraction,,,,http://www.shoufcedar.org,osm,2026-05-02T13:35:48.107767Z
-فضة بازار,jewelry,,,,http://www.silverpazar.com,osm,2026-05-02T13:35:48.107767Z
-"منتجع ""جبلنا""",chalet,alMorghan Kobayat,,info@karams.org,http://www.karams.org,osm,2026-05-02T13:35:48.107767Z
-عيادة بروسمايل,clinic,,,wkattar@yahoo.com,https://www.prosmilelebanon.com/,osm,2026-05-02T13:35:48.107767Z
-Beirut,national capital,,,,http://www.beirut.gov.lb/,osm|wikidata,2026-05-02T13:36:03.043690Z
-معهد غوته,educational_institution,"شارع نهر ابراهيم, بيروت",,,https://www.goethe.de/libanon,osm,2026-05-02T13:35:48.107767Z
-السفارة البريطانية,diplomatic,بيروت,,,https://www.gov.uk/world/organisations/british-embassy-beirut,osm,2026-05-02T13:35:48.107767Z
-Classic Burger,restaurant,,,,https://cbj.me/,osm,2026-05-02T13:35:48.107767Z
-اسبنيز,supermarket,,,,https://spinneys.com/,osm,2026-05-02T13:35:48.107767Z
-SGBL,bank,طريق انطلياس بكفيا,,,http://www.sgbl.com.lb,osm,2026-05-02T13:35:48.107767Z
-سمكس,ngo,"شارع بدارو, بيروت",,,https://smex.org/,osm,2026-05-02T13:35:48.107767Z
-لامبا لابز – بيروت هاكر سبيس,coworking,"شارع المكحول, الحمراء",,contact@lambalabs.com,http://lambalabs.com,osm,2026-05-02T13:35:48.107767Z
-The Office Beirut,bar,"شارع غورو, Beyrouth",,info@theofficebeirut.com,https://www.theofficebeirut.com,osm,2026-05-02T13:35:48.107767Z
-رِواق بيروت,bar,"شارع أسد رستم, Beyrouth",,,https://www.facebook.com/RiwaqBeirut/,osm,2026-05-02T13:35:48.107767Z
-مليتا,museum,,,,http://www.mleeta.com/,osm,2026-05-02T13:35:48.107767Z
-السفارة الألمانية,diplomatic,"Rue Dekwaneh, Sinn el Fil",,,https://beirut.diplo.de/,osm,2026-05-02T13:35:48.107767Z
-باتشيغ,restaurant,أنطلياس,,info@batchig.com,http://batchig.com,osm,2026-05-02T13:35:48.107767Z
-O Monot Boutique Hotel,hotel,شارع مونو,,,http://www.omonot.com,osm,2026-05-02T13:35:48.107767Z
-LibanPost,post_office,شارع فوزي قاوقجي,,,https://www.libanpost.com/,osm,2026-05-02T13:35:48.107767Z
-Phoenicia,fuel,,,,https://www.medco.com.lb,osm,2026-05-02T13:35:48.107767Z
-Classic Burger Joint,fast_food,,,,https://cbj.me/,osm,2026-05-02T13:35:48.107767Z
-Bashir Services,mobile_phone,"شارع ألفرد نوبل, الحمراء",,gamesms@ymail.com,http://facebook.com/bashirservices,osm,2026-05-02T13:35:48.107767Z
-Studio Flash Color,photo,"1576, طلعة نيو روضة",,studioflashcolor@gmail.com,http://studioflashcolor.com,osm,2026-05-02T13:35:48.107767Z
-طيران الإمارات,travel_agency,بيروت,,,https://www.emirates.com/lb/french/,osm,2026-05-02T13:35:48.107767Z
-كلاسيك برغر كفرديبان,fast_food,,,,https://cbj.me/,osm,2026-05-02T13:35:48.107767Z
-مترو المدينة,theatre,بيروت,,,https://metromadina.com/,osm,2026-05-02T13:35:48.107767Z
-سوبر جوس,beverages,,,fadel.joseph@yahoo.com,http://SuperJus-lb.com,osm,2026-05-02T13:35:48.107767Z
-مؤسسة كهرباء لبنان,government,,,,http://www.edl.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-تندر بار,restaurant,,,,https://tenderbar-co.com/,osm,2026-05-02T13:35:48.107767Z
-ليبان بوست - بكفيا,post_office,,,,https://www.libanpost.com,osm,2026-05-02T13:35:48.107767Z
-ملك الطاووق,fast_food,,,,https://www.malakaltawouk.com/,osm,2026-05-02T13:35:48.107767Z
-Malak Al Tawouk Head Office,fast_food,,,,https://www.malakaltawouk.com/,osm,2026-05-02T13:35:48.107767Z
-ملاك الطاووق,fast_food,,,,https://www.malakaltawouk.com/,osm,2026-05-02T13:35:48.107767Z
-ملاك الطاووق ستي مول,fast_food,,,,https://www.malakaltawouk.com/,osm,2026-05-02T13:35:48.107767Z
-حسن قصير,school,,,,http://www.amaleducation.com/en/college-6/schools-about/item/297-martyr-hasan-kassir-high-school,osm,2026-05-02T13:35:48.107767Z
-Macrotronics,computer,,,,https://macrotronics.net/,osm,2026-05-02T13:35:48.107767Z
-ب 018,nightclub,,,,http://www.b018.com,osm,2026-05-02T13:35:48.107767Z
-white,nightclub,,,,http://www.whitebeirut.com,osm,2026-05-02T13:35:48.107767Z
-بنك سوسيتي جينيرال,bank,,,,http://www.sgbl.com.lb,osm,2026-05-02T13:35:48.107767Z
-Zaatar w Zeit,restaurant chain,,,,https://www.zaatarwzeit.net/,osm|wikidata,2026-05-02T13:36:03.043690Z
-Notre Dame de la paix,place_of_worship,,,,http://www.pndpkfarhbab.com/,osm,2026-05-02T13:35:48.107767Z
-سفارة جمهورية العراق,diplomatic,"Farid Trad Street, بيروت",,brtemb@mofa.gov.iq,https://www.mofa.gov.iq/beirut/,osm,2026-05-02T13:35:48.107767Z
-Bois de Roses,events_venue,,,info@boisderoses.com,http://www.boisderoses.com,osm,2026-05-02T13:35:48.107767Z
-بيت مسك,apartment,,,,https://beitmisk.com/,osm,2026-05-02T13:35:48.107767Z
-بورغندي,restaurant,"752, شارع غورو, بيروت",,,https://burgundybeirut.com/,osm,2026-05-02T13:35:48.107767Z
-Eco 101,mall,,,,http://www.eco101mall.me/,osm,2026-05-02T13:35:48.107767Z
-كودي,educational_institution,,,,https://codi.tech/,osm,2026-05-02T13:35:48.107767Z
-دماسك روز دار ضيافة لبناني,guest_house,"36, Shawya street",,booking@damaskroselebaneseguesthouse.com,http://www.damaskroselebaneseguesthouse.com,osm,2026-05-02T13:35:48.107767Z
-الفيلا,events_venue,,,,http://www.thevillavenue.com/,osm,2026-05-02T13:35:48.107767Z
-Saidon Hostel,hostel,bqousts,,,http://www.saidonhostel.com,osm,2026-05-02T13:35:48.107767Z
-QUAD Digital Media,advertising_agency,"Bechara El Khoury, Tripoli",,,https://www.quad-bh.com/,osm,2026-05-02T13:35:48.107767Z
-Couqley,restaurant,,,,http://cougley.com,osm,2026-05-02T13:35:48.107767Z
-Skyfall Club,restaurant,,,,http://skyfallclub.com/,osm,2026-05-02T13:35:48.107767Z
-بنك الاعتماد اللبناني,bank,Fouad Shehab,,,https://www.creditlibanais.com.lb,osm,2026-05-02T13:35:48.107767Z
-مكتبة الفا,library,Debbiyeh Highway,,,http://www.elvaprint.com,osm,2026-05-02T13:35:48.107767Z
-Arab Image Foundation,library,"337, شارع غورو, Beyrouth",,hello@arabimagefoundation.org,http://www.arabimagefoundation.org,osm,2026-05-02T13:35:48.107767Z
-Fat Monk,bar,,,info@fatmonk.co,http://fatmonk.co,osm,2026-05-02T13:35:48.107767Z
-Auberge Hadath El Jebbeh,guest_house,,,,http://www.hadatheljebbeh.com,osm,2026-05-02T13:35:48.107767Z
-Old Town Guest House,apartment,Rue 105,,info@oldtownguesthouses.com,https://oldtownguesthouses.com/,osm,2026-05-02T13:35:48.107767Z
-The Concept,furniture,"Sultan Ibrahim, Bir Hassan",,,https://theconcept-lb.com/,osm,2026-05-02T13:35:48.107767Z
-Les Colombes,camp_site,عمشيت,,,https://campinglescolombes.com,osm,2026-05-02T13:35:48.107767Z
-Rami Sayegh Photography,photographer,"Route Principale de Qoubbeyaa, Qoubbeyaa",,info@ramisayegh.com,https://www.ramisayegh.com/,osm,2026-05-02T13:35:48.107767Z
-يونيون,restaurant,Madrid Street/Rue 56,,,https://www.uniuneatery.com/,osm,2026-05-02T13:35:48.107767Z
-الحدث طلعه السان تيريذ,apartment,سان تيريز,,kharsa11@gmail.com,http://www.truelinegroup.net,osm,2026-05-02T13:35:48.107767Z
-محمد الخرسه,apartment,شارع 4,,kharsa11@outlook.com,http://www.truelinegroup.net,osm,2026-05-02T13:35:48.107767Z
-Crepaway,restaurant,ريفون,,,https://crepaway.com,osm,2026-05-02T13:35:48.107767Z
-مدكو,fuel,حلبا,,,https://www.medco.com.lb,osm,2026-05-02T13:35:48.107767Z
-جامعة الشرق الأوسط,university,"شارع فردوس, متن",,,https://meu.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-Fiber Resto,restaurant,شارع الصيداني,,,http://www.fiberresto.com,osm,2026-05-02T13:35:48.107767Z
-Plat Du Sour,restaurant,,,,http://www.platdusour.com,osm,2026-05-02T13:35:48.107767Z
-Byblos,archaeological site,,,,http://www.jbail-byblos.gov.lb/,osm|wikidata,2026-05-02T13:36:03.043690Z
-Pâtisserie Noura,bakery,شارع إميل لحود,,,http://noura.com.lb/,osm,2026-05-02T13:35:48.107767Z
-Jammal,restaurant,,,,http://jammalrestaurant.com/,osm,2026-05-02T13:35:48.107767Z
-Groupe AJ,company,,,info@ajtradinggroup.com,http://ajtradinggroup.com/,osm,2026-05-02T13:35:48.107767Z
-صنوبر بلدي,convenience,طريق صيدا - جزين,,,https://pinenuts.vip,osm,2026-05-02T13:35:48.107767Z
-تعاونية صيادي الأسماك فدعوس,association,"طريق البحر فدعوس, فدعوس",,,https://www.facebook.com/people/Coop%C3%A9rative-Des-P%C3%AAcheurs-Fadous/100008857025850/,osm,2026-05-02T13:35:48.107767Z
-East Village,restaurant,"شارع بدارو, بيروت",,,https://eastvillagecuisine.com/,osm,2026-05-02T13:35:48.107767Z
-Grab'n Go,supermarket,,,,https://grabngolebanon.com,osm,2026-05-02T13:35:48.107767Z
-Château Rose,florist,"Régie, Ghazieh",,chateau.rose.ghazieh@gmail.com,https://chateau-rose.business.site/,osm,2026-05-02T13:35:48.107767Z
-Collège des Sœurs des Saints-Cœurs Aïn Najm,school,,,,https://ainnajm.sscc.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-Trop Cool Cafe,cafe,"idea, Beyrouth",,,https://nope.com/,osm,2026-05-02T13:35:48.107767Z
-lycee la Fontaine,school,"شارع عبد الغني عريسي, برج أبي حيدر",,,https://www.facebook.com/Lyc%C3%A9e-La-Fontaine-110012923769516/,osm,2026-05-02T13:35:48.107767Z
-ياسين مشوي,restaurant,"طريق الإمام الخميني, بيروت",,,https://broasted-yassine.com.lb,osm,2026-05-02T13:35:48.107767Z
-Patchi,business,,,,http://www.patchi.com,osm|wikidata,2026-05-02T13:36:03.043690Z
-فلب بلاين,clothes,,,,https://www.plein.com,osm,2026-05-02T13:35:48.107767Z
-Banque du Liban,central bank,,,,http://www.bdl.gov.lb/,osm|wikidata,2026-05-02T13:36:03.043690Z
-Kina Handcrafted Bar,bar,,,,https://www.instagram.com/kinahandcraftedbar/,osm,2026-05-02T13:35:48.107767Z
-Bar du Port,bar,Seaside Road,,,https://barduportbeirut.com,osm,2026-05-02T13:35:48.107767Z
-Sea Sweet Patisserie,pastry,Beyrouth,,,https://www.seasweet.com,osm,2026-05-02T13:35:48.107767Z
-Hamdan Surveying,surveyor,"Route Principale de Qoubbeyaa, Qoubbeyaa",,,https://hamdandesign.com,osm,2026-05-02T13:35:48.107767Z
-Ni Caffe,restaurant,,,,http://ni-cafe.com,osm,2026-05-02T13:35:48.107767Z
-Fattouh crypto,mobile_phone,,,,https://www.facebook.com/cryptofattouh,osm,2026-05-02T13:35:48.107767Z
-Tawlet Mar Mikhael,restaurant,,,,https://www.soukeltayeb.com/tawlet/1/tawlet-mar-mikhael,osm,2026-05-02T13:35:48.107767Z
-Multiverse,toys,شارع إميل أده,,,https://multiverselb.com/,osm,2026-05-02T13:35:48.107767Z
-بول ستوديو,photographer,"1, شارع الأندلس",,info@paul-studio.com,http://www.paul-studio.com,osm,2026-05-02T13:35:48.107767Z
-Dar Zefta,guest_house,"الزهراني - النبطية أوتوستراد, Nabatieh",,info@darzefta.com,https://www.darzefta.com,osm,2026-05-02T13:35:48.107767Z
-Bitcoin in Lebanon,bureau_de_change,,,,https://www.bitcoininlebanon.com/,osm,2026-05-02T13:35:48.107767Z
-Groupe W fzllc,consulting,"Rue Haouch El Oumara, Zahlé",,,https://www.groupwfzllc.com,osm,2026-05-02T13:35:48.107767Z
-Al Jadeed,television station,,,,http://www.aljadeed.tv,osm|wikidata,2026-05-02T13:36:03.043690Z
-بيت الكتائب,political_party,,,,https://www.kataeb.org/,osm,2026-05-02T13:35:48.107767Z
-وزارة السياحة اللبنانية,government,,,,http://mot.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-Tom & Mutz,restaurant,,,,https://www.tomandmutz.com/,osm,2026-05-02T13:35:48.107767Z
-Choueh Law Firm,lawyer,,,contact@chouehlawfirm.com,https://chouehlawfirm.com,osm,2026-05-02T13:35:48.107767Z
-Environment Protection Committee (EPC),ngo,"Farah Antoun, Al Mina, Tripoli الميناء، طرابلس",,,https://epcleb.com/,osm,2026-05-02T13:35:48.107767Z
-Rkein Motors,car,,,,https://www.rkeinmotors.com/,osm,2026-05-02T13:35:48.107767Z
-مركز قشمت للشطرنج,hobby,,,,https://keshmat.org,osm,2026-05-02T13:35:48.107767Z
-Odette's Taqueria,restaurant,"333, Rue Selm de Bustros",,,https://otaqueria.com,osm,2026-05-02T13:35:48.107767Z
-Al Fundok Hotel,hotel,Masser El Chouf,,,http://alfundok.com/,osm,2026-05-02T13:35:48.107767Z
-PRO X Riding Club,rental,,,,https://proxridingclub.com/,osm,2026-05-02T13:35:48.107767Z
-Living Room Beirut,cafe,شارع ابراهيم باشا,,,https://livingroombeirut.com/,osm,2026-05-02T13:35:48.107767Z
-La Casa Antigua,guest_house,,,,https://www.airbnb.fr/rooms/31164624?check_in=2024-07-22&check_out=2024-07-27&guests=1&adults=1&s=67&unique_share_id=f29569e5-08b4-484d-a563-2c4cd3d02240,osm,2026-05-02T13:35:48.107767Z
-Fuaki,health_food,شارع 14,,fuaki.info@gmail.com,https://fuaki.com/,osm,2026-05-02T13:35:48.107767Z
-Lebanese Swiss Bank,business,,,,http://www.lebaneseswissbank.com/,osm|wikidata,2026-05-02T13:36:03.043690Z
-Via Mina,hotel,,,,https://www.viamina.com,osm,2026-05-02T13:35:48.107767Z
-Lebanese Red Cross,National Red Cross and Red Crescent society,,,,http://www.redcross.org.lb/,osm|wikidata,2026-05-02T13:36:03.043690Z
-Solidarités International,ngo,,,,https://www.solidarites.org/en/,osm,2026-05-02T13:35:48.107767Z
-مؤسسة غانم,electrical,شارع نعوم لبكي,,,http://ghanemtrading.com,osm,2026-05-02T13:35:48.107767Z
-السنيور,restaurant,شارع 12,,,http://www.alsaniour.com/,osm,2026-05-02T13:35:48.107767Z
-حمامات الرومان,attraction,,,,http://www.beirutheritagetrail.com,osm,2026-05-02T13:35:48.107767Z
-أوجيرو خلدة,telecommunication,طريق البحر,,,http://ogero.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-Tasty Bees,beverages,أتستراد البحر,,,https://www.shop.tastybees.com/scanmenu/,osm,2026-05-02T13:35:48.107767Z
-Malik's Choueifat,stationery,أتستراد البحر,,,https://maliks.com/,osm,2026-05-02T13:35:48.107767Z
-أحمد العبدالله,restaurant,أتستراد البحر,,,https://ahmadalabdalla.com/,osm,2026-05-02T13:35:48.107767Z
-Sushi Star,restaurant,,,,https://sushistar.co/,osm,2026-05-02T13:35:48.107767Z
-Baytna,restaurant,,,,https://baytna.info,osm,2026-05-02T13:35:48.107767Z
-Brew,cafe,"شارع مدام كوري, قريطم",,,https://www.sirantowers.com/coffe_community,osm,2026-05-02T13:35:48.107767Z
-مؤسسة سلوى روضة شقير,museum,,,info@salouaraoudachoucair.com,https://salouaraoudachoucair.com/,osm,2026-05-02T13:35:48.107767Z
-Em Sherif Deli,fast_food,شارع رزق الله,,,https://emsherif.com/,osm,2026-05-02T13:35:48.107767Z
-أجهزة الكمبيوتر ومكوناتها,computer,,,,https://pcandparts.com/,osm,2026-05-02T13:35:48.107767Z
-Guita bed&bloom,guest_house,,,,http://www.guita.co/,osm,2026-05-02T13:35:48.107767Z
-بيوتي,hotel,+9613310200,,,https://www.bouyouti.com/,osm,2026-05-02T13:35:48.107767Z
-Nool Coffeeshop,cafe,"+9613086652, طريق بدنايل العام",,,https://www.noolcoffee.com/,osm,2026-05-02T13:35:48.107767Z
-HelouMed,pharmacy,"+96181272817, شارع 503 ت",,,https://heloumed.com/,osm,2026-05-02T13:35:48.107767Z
-Whish Money,money_transfer,"+9615807669, طريق صيدا القديمة",,,http://whish.money,osm,2026-05-02T13:35:48.107767Z
-Boombox Beirut,studio,,,,https://www.boombox-studios.com/,osm,2026-05-02T13:35:48.107767Z
-Sororité Candles,candles,"Baladieh Road, Choueifat",,support@sororitecandles.com,https://sororitecandles.com/,osm,2026-05-02T13:35:48.107767Z
-BYD Lebanon,car,"+9613188002, أتستراد البحر",,,https://www.byd.com/en-lb,osm,2026-05-02T13:35:48.107767Z
-محطة الحلبي بالقبة - مدكو,fuel,"+96176645565, الينار ١",,,https://www.medco.com.lb/,osm,2026-05-02T13:35:48.107767Z
-كتدي فليكس,cafe,"شارع فينيقيا, عين المريسة",,,https://candy-flakes.com/,osm,2026-05-02T13:35:48.107767Z
-برزخ,cafe,شارع القاهرة,,,https://brzkh.org/,osm,2026-05-02T13:35:48.107767Z
-3D Scapers,copyshop,"Baladieh Road, Choueifat",,support@3dscapers.com,https://3dscapers.com/,osm,2026-05-02T13:35:48.107767Z
-ELECTRO COMPUTER,electronics_repair,"123, شارع غيلان, برح حمود",,,https://l.facebook.com/l.php?u=https%3A%2F%2Felectro-computer.wixsite.com%2Fwebsite-1%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExNWh6eFlqT1o5emJ1eDJnVXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR7uwBAqEB-Su_lIXsb4k92Gc1sqiKB1cpK613K-H_KvyMQvaK1H0r_nR4LHoA_aem_nT_7c,osm,2026-05-02T13:35:48.107767Z
-Bassam Ghrawi Confectionery Kfarchima,confectionery,,,,https://ghrawi.com/,osm,2026-05-02T13:35:48.107767Z
-AKI The Lounge,bar,"Pink Center, Main Street, Kaslik 1899",,,https://www.akithelounge.com/,osm,2026-05-02T13:35:48.107767Z
-Birex Solutions,consulting,"Abi Samra, Tripoli",,,https://birexsolutions.com,osm,2026-05-02T13:35:48.107767Z
-دار العجزة الاسلامية,hospital,,,,https://www.dar-ajaza-islamia.org.lb/,osm,2026-05-02T13:35:48.107767Z
-الكلية العالية لادارة الاعمال,university,"289, شارع كليمنصو, بيروت",,,https://www.esa.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-مجلس النواب,government,"ساحة النجمة, Beyrouth",,,https://www.lp.gov.lb,osm,2026-05-02T13:35:48.107767Z
-الجامعة الأمريكية في بيروت,university,Beyrouth,,,http://www.aub.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-المتحف الوطني,museum,,,,http://www.beirutnationalmuseum.com/,osm,2026-05-02T13:35:48.107767Z
-Anjar,attraction,زحلة,,,"https://en.m.wikipedia.org/wiki/Anjar,_Lebanon",osm,2026-05-02T13:35:48.107767Z
-الليسه الكبرى الفرنسي اللبناني,school,,,,http://www.glfl.edu.lb,osm,2026-05-02T13:35:48.107767Z
-وزارة المالية,government,بيروت,,,https://www.finance.gov.lb/,osm,2026-05-02T13:35:48.107767Z
-سبينس,supermarket,,,,https://www.spinneys.com/,osm,2026-05-02T13:35:48.107767Z
-موبيل توب,furniture,,,,https://www.mobilitop.com/,osm,2026-05-02T13:35:48.107767Z
-الجامعة اللبنانية الأمريكية,university,بيروت,,,https://www.lau.edu.lb/locations/beirut.php,osm,2026-05-02T13:35:48.107767Z
-سيتي سنتر مول,mall,,,,https://www.citycentremallbeirut.com/,osm,2026-05-02T13:35:48.107767Z
-Global Outlets,clothes,,,,http://www.glowbaloutlets.com,osm,2026-05-02T13:35:48.107767Z
-الجامعة الأمريكية للعلوم والتكنولوجيا,university,"شارع ألفريد نقاش, Achrafiyé",,,https://www.aust.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-جامعة الكفاءات,university,"Route Principale Aïn Saadé, Aïn Saadé",,,http://www.aku.edu.lb,osm,2026-05-02T13:35:48.107767Z
-مخابز كيروز,bakery,,,,http://keyrouzbakery.com/,osm,2026-05-02T13:35:48.107767Z
-مدرسة مار يوسف عينطورة,school,,,,http://www.college-antoura.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-ثانوية القلب الاقدس,school,,,,https://www.sioufi.sscc.edu.lb,osm,2026-05-02T13:35:48.107767Z
-دون غاسيا بارك,theme_park,,,,http://dongassiapark.com/,osm,2026-05-02T13:35:48.107767Z
-مستشفى المشرق,hospital,سن الفيل,,,http://www.cliniquedulevant.com,osm,2026-05-02T13:35:48.107767Z
-مركز بيروت للأبحاث والإبتكار,research,"شارع الأب شانتور, Beyrouth",,,https://bric.lebcsr.org/,osm,2026-05-02T13:35:48.107767Z
-Animal City,zoo,,,,https://www.animalcitylebanon.com,osm,2026-05-02T13:35:48.107767Z
-"Armenian Genocide Orphans' ""Aram Bezikian"" Museum",museum,"Armenian Street, Byblos",,,https://www.facebook.com/agomuseum/,osm,2026-05-02T13:35:48.107767Z
-الجامعة اللبنانية كلية الهندسة روميه,university,,,,http://www.ulfg.ul.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-مدرسة يسوع ومريم,school,,,,https://www.jmrab.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-IFRC MENA Regional Office,ngo,,,,https://media.ifrc.org/ifrc/where-we-work/middle-east-and-north-africa/,osm,2026-05-02T13:35:48.107767Z
-السفارة الإسبانية الحدث,diplomatic,الحدث,,,http://www.exteriores.gob.es/Embajadas/BEIRUT,osm,2026-05-02T13:35:48.107767Z
-دير مار يوحنا - دير القلعة,place_of_worship,,,,http://www.deiralkalaa.com/website/,osm,2026-05-02T13:35:48.107767Z
-رعيّة مار الياس المارونيّة,place_of_worship,شارع فخر الدين,,,http://saint-elias.com/,osm,2026-05-02T13:35:48.107767Z
-وايت هوس سويتس,hotel,,,,http://www.whitehouse-lb.com/,osm,2026-05-02T13:35:48.107767Z
-الجامعة الإسلامية في لبنان,university,,,,http://www.iul.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-المديرية العامة للأمن العام اللبناني,government,بيروت,,,http://www.general-security.gov.lb,osm,2026-05-02T13:35:48.107767Z
-بيت بيروت,museum,بيروت,,,http://www.beitbeirut.org,osm,2026-05-02T13:35:48.107767Z
-لباي دور,bakery,,,,http://www.labeilledor.com,osm,2026-05-02T13:35:48.107767Z
-ليسيه فردان,school,,,,http://www.lycee-verdun.edu.lb,osm,2026-05-02T13:35:48.107767Z
-Radisson Blu Martinez,hotel,,,,https://www.radissonblu.com/en/hotel-beirut,osm,2026-05-02T13:35:48.107767Z
-مسجد الداعوق,place_of_worship,شارع بليس,,info@aldaouk.org,http://www.aldaouk.org,osm,2026-05-02T13:35:48.107767Z
-المدرسة الإنجيلية الفرنسية,school,"شارع مدام كوري, قريطم",,,https://www.cpf.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-أنتوورك,coworking,Beyrouth,,,https://www.antwork.com,osm,2026-05-02T13:35:48.107767Z
-أنتوورك,coworking,,,,https://www.antwork.com,osm,2026-05-02T13:35:48.107767Z
-آرت أن اسبيرز,gallery,,,,http://www.artonspears.com/,osm,2026-05-02T13:35:48.107767Z
-أومامي,wine,خربة قنفار,,info@umamiwinelebanon.com,http://umamiwinelebanon.com/,osm,2026-05-02T13:35:48.107767Z
-Nabu,museum,,,,https://www.nabumuseum.com/about,osm,2026-05-02T13:35:48.107767Z
-Crepaway,restaurant,"501, شارع 2",,,https://crepaway.com,osm,2026-05-02T13:35:48.107767Z
-Zita Fidar,guest_house,"87, Rue 104",,info@zita-fidar.com,https://zitafidar.com/,osm,2026-05-02T13:35:48.107767Z
-كلية اللاهوت للشرق الأدنى,college,بيروت,,,https://www.theonest.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-The World of Science for Private Tutoring,prep_school,"Haret Saida, Jebaa public street, Saida",,,https://www.facebook.com/WSPTC,osm,2026-05-02T13:35:48.107767Z
-مستشفى فقيه,hospital,,,,http://www.drnabilfakih.com/,osm,2026-05-02T13:35:48.107767Z
-Borderless,ngo,,,info@borderlessngo.org,https://www.borderlessngo.org/,osm,2026-05-02T13:35:48.107767Z
-Boulevard Mall Saida,mall,,,,https://www.facebook.com/boulevardmallsaida/,osm,2026-05-02T13:35:48.107767Z
-Lebanese University,public university,,,,https://www.ul.edu.lb,osm|wikidata,2026-05-02T13:36:03.043690Z
-سِكّة صيدا,community_centre,,,hello@sikkasaida.org,https://sikkasaida.org,osm,2026-05-02T13:35:48.107767Z
-فندق ومنتجع كمبينسكي سمرلاند بيروت,hotel,,,,https://www.kempinski.com/en/beirut/kempinski-summerland-hotel-resort/,osm,2026-05-02T13:35:48.107767Z
-shawarma w bas,restaurant,"123, رأس النبع",,,http://shawarmawbas.com,osm,2026-05-02T13:35:48.107767Z
-Rayak Hospital,hospital,,,,http://rayakhospital.com/,osm,2026-05-02T13:35:48.107767Z
-Dhour Shweir Public Secondary School,school,,,,https://dspss.com,osm,2026-05-02T13:35:48.107767Z
-زحلة ديجيتال دستركت,government,"Rue Haouch El Oumara, Zahlé",,,https://www.zahledigitaldistrict.com,osm,2026-05-02T13:35:48.107767Z
-Bayt Nawal Guest house,guest_house,,,khoury.peter@hotmail.com,https://www.instagram.com/baytnawal/,osm,2026-05-02T13:35:48.107767Z
-USJ Campus des Sciences Humaines,university,,,,https://www.usj.edu.lb/universite/institutions.php?getinst=68,osm,2026-05-02T13:35:48.107767Z
-Beyt El Midan,guest_house,Ehden,,info@beytelmidan.com,https://www.beytelmidan.com/,osm,2026-05-02T13:35:48.107767Z
-الجامعة العالمية - فرع الدوحة,university,,,,https://gu.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-Les Filles De Papa Guest House,guest_house,"5441, دوق",,reservations@lesfillesdepapa.com,https://lesfillesdepapa.com,osm,2026-05-02T13:35:48.107767Z
-Miss Pinky,clothes,,,,https://api.whatsapp.com/message/GHPFRTXBCR6BP1?autoload=1&app_absent=0,osm,2026-05-02T13:35:48.107767Z
-ثانوية المقاصد الإسلامية,school,,,,https://mak-secondary.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-مدرسة عائشة أم المؤمنين المجانية,school,,,,https://mak-aisha.edu.lb/,osm,2026-05-02T13:35:48.107767Z
-الجامعة اللبنانية - كلية التكنولوجيا,university,,,,http://ft.ul.edu.lb,osm,2026-05-02T13:35:48.107767Z
-أوجيرو,telecommunication,صيدا,,,https://www.ogero.gov.lb/ar/,osm,2026-05-02T13:35:48.107767Z
-Al Moasat Association,social_facility,Al Moasat Street,,,https://www.almoasat.org/ar,osm,2026-05-02T13:35:48.107767Z
-سراي نسيب باشا,events_venue,"شراع القصور, برامية",,info@saraynassibbasha.com,http://www.saraynassibbasha.com/,osm,2026-05-02T13:35:48.107767Z
-مجمع قوى الأمن - تلة مار الياس,police,,,,https://isf.gov.lb/ar/,osm,2026-05-02T13:35:48.107767Z
-National Evangelical Institue For Boys & Girls,school,,,,https://neigb.edu.lb,osm,2026-05-02T13:35:48.107767Z
-Tyre,ancient city,,,,http://www.tyremunicipality.com/,wikidata,2026-05-02T13:36:03.043690Z
-Progressive Socialist Party,political party,,,,http://www.psp.org.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Bint Jbeil,village/town/city in Lebanon,,,,http://www.bintjbeil.com/index.en.html,wikidata,2026-05-02T13:36:03.043690Z
-United Nations Interim Force in Lebanon,UN peacekeeping mission,,,,http://unifil.unmissions.org/,wikidata,2026-05-02T13:36:03.043690Z
-Tripoli,city,,,,http://tripoli-lebanon.org/,wikidata,2026-05-02T13:36:03.043690Z
-Al Ansar FC,association football club,,,,https://www.alansarclub.com/,wikidata,2026-05-02T13:36:03.043690Z
-Naqoura,village/town/city in Lebanon,,,,http://www.alnaqoura.com,wikidata,2026-05-02T13:36:03.043690Z
-National Liberal Party,political party,,,,http://www.ahrar.org.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Riyak,municipality of Lebanon,,,,https://www.rayaq-lebanon.com/en/index.php,wikidata,2026-05-02T13:36:03.043690Z
-Amioun,town,,,,http://www.amioun.org/Web/Main/main0.htm,wikidata,2026-05-02T13:36:03.043690Z
-Nabatieh,big city,,,,http://www.nabatieh.gov.lb/index.php,wikidata,2026-05-02T13:36:03.043690Z
-Jounieh,big city,,,,http://www.jounieh.gov.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Hezbollah,armed organization,,,,https://www.moqawama.org.lb,wikidata,2026-05-02T13:36:03.043690Z
-.lb,country code top-level domain,,,,http://www.aub.edu.lb/lbdr/,wikidata,2026-05-02T13:36:03.043690Z
-Murr Television,television station,,,mailto:mtvod@mtv.com.lb,https://www.mtv.com.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Anjar,municipality of Lebanon,,,,http://www.mousaleranjar.com,wikidata,2026-05-02T13:36:03.043690Z
-Near East School of Theology,seminary,,,,http://www.theonest.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Orient-Institut Beirut,institute,,,,http://www.orient-institut.org,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Basketball League,sports league,,,,https://lebanon.basketball/division-leagues/,wikidata,2026-05-02T13:36:03.043690Z
-OTV,television station,,,mailto:live@otv.com.lb,https://otv.com.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Télé Lumière,television station,,,,https://noursat.tv/,wikidata,2026-05-02T13:36:03.043690Z
-Beirut–Rafic Hariri International Airport,international airport,,,,http://www.beirutairport.gov.lb,wikidata,2026-05-02T13:36:03.043690Z
-Cilicia Museum,museum,,,,https://www.armenianorthodoxchurch.org/en/museums/cilicia-museum,wikidata,2026-05-02T13:36:03.043690Z
-Holy See of Cilicia,episcopal see,,,,https://www.armenianorthodoxchurch.org/,wikidata,2026-05-02T13:36:03.043690Z
-Suroyo TV,television station,,,,http://www.suroyotv.com,wikidata,2026-05-02T13:36:03.043690Z
-Association Najdeh,international non-governmental organization,,,,https://association-najdeh.org/,wikidata,2026-05-02T13:36:03.043690Z
-Syrian Social Nationalist Party,armed organization,,,,http://www.alqawmi.info,wikidata,2026-05-02T13:36:03.043690Z
-Anglican Diocese of Jerusalem,Anglican diocese,,,,http://www.j-diocese.org/,wikidata,2026-05-02T13:36:03.043690Z
-Guardians of the Cedars,political party,,,,http://www.gotc.org,wikidata,2026-05-02T13:36:03.043690Z
-Nejmeh SC,association football club,,,,https://nejmehsc.com/,wikidata,2026-05-02T13:36:03.043690Z
-Beirut Marathon,marathon,,,,https://www.beirutmarathon.org/,wikidata,2026-05-02T13:36:03.043690Z
-Mariamite Maronite Order,Catholic order,,,,http://www.omm.org.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Olympic Committee,National Olympic Committee,,,,https://www.lebolymp.org,wikidata,2026-05-02T13:36:03.043690Z
-Middle East Airlines - Air Liban,business,"Beirut International Airport, Beirut, Lebanon",,,https://www.mea.com.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Bkerke,human settlement,,,,http://www.bkerke.org.lb,wikidata,2026-05-02T13:36:03.043690Z
-Bourj Hammoud,village/town/city in Lebanon,,,,http://www.bourjhammoud.gov.lb,wikidata,2026-05-02T13:36:03.043690Z
-Al Mabarra FC,association football club,,,,http://www.al-mabarra.com/,wikidata,2026-05-02T13:36:03.043690Z
-An-Nahar,daily newspaper,,,,http://annahar.com,wikidata,2026-05-02T13:36:03.043690Z
-Al-Manar,television station,,,,http://www.almanar.com.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Al-Ahbash,Islamic denomination,,,,https://aicp.org,wikidata,2026-05-02T13:36:03.043690Z
-Al-Nour,radio station,,,,https://www.alnour.com.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Lebanon men's national football team,men's national association football team,,,,https://the-lfa.com.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Armenian Catholic Patriarchate of Cilicia,Eastern Catholic patriarchate,,,,https://armeniancatholic.org,wikidata,2026-05-02T13:36:03.043690Z
-Amal Movement,political party,,,,http://amal-movement.com/,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese American University,private university,,,,https://www.lau.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Haigazian University,private university,,,,http://www.haigazian.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-American University of Beirut,private university,,,,https://www.aub.edu.lb,wikidata,2026-05-02T13:36:03.043690Z
-Kataeb Party,political party,,,,https://lebanesekataeb.com/home/,wikidata,2026-05-02T13:36:03.043690Z
-Maronite Catholic Archeparchy of Beirut,Catholic Archieparchy,,,,http://www.archmb.org.lb,wikidata,2026-05-02T13:36:03.043690Z
-Camille Chamoun Sports City Stadium,multi-purpose sports venue,,,,https://camillechamounsportscity.com,wikidata,2026-05-02T13:36:03.043690Z
-International Center for Agricultural Research in the Dry Areas,research institute,,,,http://www.icarda.org,wikidata,2026-05-02T13:36:03.043690Z
-Ehden,village/town/city in Lebanon,,,,http://www.zgharta.gov.lb/municipality/,wikidata,2026-05-02T13:36:03.043690Z
-Marjayoun District,district of Lebanon,,,,http://www.baladiyatmarjeyoun.com/main.html,wikidata,2026-05-02T13:36:03.043690Z
-Tebnine,village/town/city in Lebanon,,,,http://www.tibneen.com/english.htm,wikidata,2026-05-02T13:36:03.043690Z
-Jebchit,village/town/city in Lebanon,,,,http://www.jebchit.com,wikidata,2026-05-02T13:36:03.043690Z
-Bsous,municipality of Lebanon,,,,http://www.bsous.com,wikidata,2026-05-02T13:36:03.043690Z
-cinema of Lebanon,cinema by country or region,,,,https://lbn.voxcinemas.com/,wikidata,2026-05-02T13:36:03.043690Z
-Port of Beirut,quarter,,,,http://www.portdebeyrouth.com/,wikidata,2026-05-02T13:36:03.043690Z
-CS Sagesse,multisports club,,,,http://www.clubsagesse.com,wikidata,2026-05-02T13:36:03.043690Z
-Collège Notre-Dame de Jamhour,AEFE accredited school,,,,http://www.ndj.edu.lb,wikidata,2026-05-02T13:36:03.043690Z
-Dar Al-Handasah,business,,,,http://www.dargroup.com/,wikidata,2026-05-02T13:36:03.043690Z
-Ebba,village/town/city in Lebanon,,,,http://www.ebba-lb.com/ar/index.php,wikidata,2026-05-02T13:36:03.043690Z
-Hamazkayin,non-governmental organization,,,,https://www.hamazkayin.com/,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Film Festival,film festival,,,,https://www.lebanesefilmfestival.org/,wikidata,2026-05-02T13:36:03.043690Z
-Beirut International Film Festival,film festival,,,,http://www.beirutfilmfestival.org/,wikidata,2026-05-02T13:36:03.043690Z
-Melkite Catholic Archeparchy of Zahleh and Furzol,Catholic Archieparchy,,,,http://www.catholiczahle.org,wikidata,2026-05-02T13:36:03.043690Z
-Temple of Eshmun,archaeological site,,,,http://www.eshmoun.com,wikidata,2026-05-02T13:36:03.043690Z
-Parliament of Lebanon,unicameral legislature,,,,https://www.lp.gov.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Congregation of Maronite Lebanese Missionaries,Catholic order,,,,http://www.lebanesemissionaries.org/,wikidata,2026-05-02T13:36:03.043690Z
-Saint Joseph University of Beirut,pontifical university,,,,https://usj.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Med Airways,airline,,,,http://www.medairways.com/,wikidata,2026-05-02T13:36:03.043690Z
-Free Patriotic Movement,political party,,,,http://www.tayyar.org,wikidata,2026-05-02T13:36:03.043690Z
-Tadamon Sour SC,association football club,,,,http://www.tadamon-sour.com/,wikidata,2026-05-02T13:36:03.043690Z
-Almaza,beer brand,,,,https://www.almaza.com.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Future Television,television station,,,,http://futuretvnetwork.com/,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Football Association,association football federation,,,,https://the-lfa.com.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Notre Dame University – Louaize,private university,,,,http://www.ndu.edu.lb,wikidata,2026-05-02T13:36:03.043690Z
-Helem,LGBTQ+ rights organization,,,,http://www.helem.net/,wikidata,2026-05-02T13:36:03.043690Z
-Antonine University,private university,,,,http://www.upa.edu.lb,wikidata,2026-05-02T13:36:03.043690Z
-Byblos Castle,museum,,,,http://www.lgic.org/en/photos2_byblos.php,wikidata,2026-05-02T13:36:03.043690Z
-Islamic Group,political party,,,,http://www.al-jamaa.org,wikidata,2026-05-02T13:36:03.043690Z
-Al-Mourabitoun,political party,,,,http://www.almourabitoun.com/,wikidata,2026-05-02T13:36:03.043690Z
-Green Party of Lebanon,green party,,,,http://www.greenpartylebanon.org,wikidata,2026-05-02T13:36:03.043690Z
-Lebanon men's national basketball team,men's national basketball team,,,,https://lebanon.basketball/,wikidata,2026-05-02T13:36:03.043690Z
-Balamand Monastery,monastery,,,,http://www.balamandmonastery.org.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Tigers Militia,armed organization,,,,https://noumour.tripod.com/,wikidata,2026-05-02T13:36:03.043690Z
-L'Orient-Le Jour,daily newspaper,,,,https://www.lorientlejour.com/,wikidata,2026-05-02T13:36:03.043690Z
-Custodian of the Holy Land,Franciscan province (O.F.M.),,,,http://www.custodia.org/,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Broadcasting Corporation International,television station,,,,https://www.lbcgroup.tv/,wikidata,2026-05-02T13:36:03.043690Z
-Lebanon women's national football team,women's national association football team,,,,http://the-lfa.com,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Democratic Party,political party,,,,http://www.ldparty.org/,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Front,political coalition,,,,http://www.lebanesefront.com/default.asp,wikidata,2026-05-02T13:36:03.043690Z
-Miniyeh,village/town/city in Lebanon,,,,http://www.mymenieh.com/,wikidata,2026-05-02T13:36:03.043690Z
-Marada Movement,political party,,,,http://elmarada.org/,wikidata,2026-05-02T13:36:03.043690Z
-Homenetmen Beirut,association football club,,,,http://www.homenetmenlebanon.org,wikidata,2026-05-02T13:36:03.043690Z
-Homenmen Beirut,association football club,,,,http://www.homenmen.org/,wikidata,2026-05-02T13:36:03.043690Z
-Armenian Catholic Archeparchy of Beirut,Catholic Metropolitan Archieparchy,,,,http://www.armeniancatholic.org,wikidata,2026-05-02T13:36:03.043690Z
-Nahr al-Bared,Palestinian refugee camp,,,,http://www.nahrelbared.net/,wikidata,2026-05-02T13:36:03.043690Z
-ISO 3166-2:LB,data set of a specific country,,,,https://www.iso.org/obp/ui/#iso:code:3166:LB,wikidata,2026-05-02T13:36:03.043690Z
-Sin el Fil,human settlement,,,,http://sinelfil.gov.lb,wikidata,2026-05-02T13:36:03.043690Z
-Majdal Anjar,municipality of Lebanon,,,,http://www.majdalanjar.com/,wikidata,2026-05-02T13:36:03.043690Z
-Cornet Chahwan,village/town/city in Lebanon,,,,http://www.cornetchahwan.com/,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Armed Forces,armed forces,,,,https://www.lebarmy.gov.lb,wikidata,2026-05-02T13:36:03.043690Z
-"Maronite Catholic Eparchy of Joubbé, Sarba and Jounieh",Eastern Catholic eparchy,,,,http://www.diocesejounieh.org.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Château Ksara,vineyard,,,,http://www.ksara.com.lb,wikidata,2026-05-02T13:36:03.043690Z
-Château Musar,winery,,,,http://www.chateaumusar.com.lb,wikidata,2026-05-02T13:36:03.043690Z
-Constitutional Council (Lebanon),constitutional court,,,,http://www.conseilconstitutionnelliban.com/,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Forces,political party,,,,http://www.lebanese-forces.com,wikidata,2026-05-02T13:36:03.043690Z
-West Asian Games,recurring sporting event,,,,http://www.westasiangames.com/,wikidata,2026-05-02T13:36:03.043690Z
-Damour,human settlement,,,,http://www.damour-lb.com/,wikidata,2026-05-02T13:36:03.043690Z
-Armenian Democratic Liberal Party,political party,,,,https://ramgavar.am,wikidata,2026-05-02T13:36:03.043690Z
-Democratic Renewal,political party,,,,http://www.tajaddod.org/,wikidata,2026-05-02T13:36:03.043690Z
-Democratic Left Movement,political party,,,,http://www.alyassar.org/,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Premier League,association football league,,,,https://the-lfa.com.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Holy Spirit University of Kaslik,private university,,,,http://www.usek.edu.lb,wikidata,2026-05-02T13:36:03.043690Z
-Safa SC,association football club,,,,https://safasc.com/,wikidata,2026-05-02T13:36:03.043690Z
-University of Balamand,private not-for-profit educational institution,,,,http://www.balamand.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Energy Lebanon,radio station,,,,https://www.nrjlebanon.com/,wikidata,2026-05-02T13:36:03.043690Z
-Maronite Catholic Eparchy of Batrun,Eastern Catholic eparchy,,,,http://www.diocesebatroun.org/,wikidata,2026-05-02T13:36:03.043690Z
-Chaldean Catholic Eparchy of Beirut,Eastern Catholic eparchy,,,,http://chaldeansoflebanon.org/,wikidata,2026-05-02T13:36:03.043690Z
-Maronite Catholic Eparchy of Byblos,Eastern Catholic eparchy,,,,http://www.jbeileparchy.org/,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Communist Party,political party,,,,http://www.lcparty.org/,wikidata,2026-05-02T13:36:03.043690Z
-United Nations Economic and Social Commission for Western Asia,organization established by the United Nations,,,,https://www.unescwa.org/,wikidata,2026-05-02T13:36:03.043690Z
-Maronite Catholic Archeparchy of Antelias,Catholic Archieparchy,,,,http://www.anteliasdiocese.com,wikidata,2026-05-02T13:36:03.043690Z
-Melkite Catholic Archeparchy of Sidon,Catholic Archieparchy,,,,http://www.melkitesaida.com,wikidata,2026-05-02T13:36:03.043690Z
-Maronite Catholic Archeparchy of Tripoli,Catholic Archieparchy,,,,http://www.maronitediocesetripoli.org,wikidata,2026-05-02T13:36:03.043690Z
-Melkite Catholic Archeparchy of Tyre,Catholic Metropolitan Archieparchy,,,,https://melkite.org/,wikidata,2026-05-02T13:36:03.043690Z
-Rotana Khalijiah,television station,,,,http://www.rotana.net,wikidata,2026-05-02T13:36:03.043690Z
-Robert Mouawad Private Museum,museum,,,,http://www.rmpm.info/,wikidata,2026-05-02T13:36:03.043690Z
-Rotana Hotels,business,,,,https://www.rotana.com/,wikidata,2026-05-02T13:36:03.043690Z
-Sagesse High School,secondary school,,,,http://www.sagessehs.edu.lb,wikidata,2026-05-02T13:36:03.043690Z
-Saint George Hospital University Medical Center,private hospital,,,,http://www.stgeorgehospital.org,wikidata,2026-05-02T13:36:03.043690Z
-Salam Zgharta,association football club,,,,http://www.salamzgharta.com/,wikidata,2026-05-02T13:36:03.043690Z
-Syrian Social Nationalist Party in Lebanon,political party,,,,http://www.alqawmi.info,wikidata,2026-05-02T13:36:03.043690Z
-Ibad Al-Rahman Association,nonprofit organization,,,,https://www.ibad.org.lb/,wikidata,2026-05-02T13:36:03.043690Z
-جمعية العزم والسعادة الاجتماعية,trade association,,,,https://azmsaade.org/,wikidata,2026-05-02T13:36:03.043690Z
-Al-Makassed Philanthropic Islamic Association of Beirut,educational institution,,,,https://www.makassed.org/,wikidata,2026-05-02T13:36:03.043690Z
-Free Shia Movement,political party,,,,http://www.chi3a.org/,wikidata,2026-05-02T13:36:03.043690Z
-عمشيت,human settlement,,,,http://www.aamchit.com/,wikidata,2026-05-02T13:36:03.043690Z
-Middle East Council of Churches,nonprofit organization,,,,http://mecc.org,wikidata,2026-05-02T13:36:03.043690Z
-Beirut Arab University,private university,,,,https://www.bau.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Université La Sagesse,private university,,,,http://wwww.uls.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Ain Ebel,village/town/city in Lebanon,,,,http://ain-ebel.org,wikidata,2026-05-02T13:36:03.043690Z
-Ain el-Rihaneh,village/town/city in Lebanon,,,,http://www.ainelrihane.com/,wikidata,2026-05-02T13:36:03.043690Z
-Ainab,municipality of Lebanon,,,,http://www.ainabmunicipality.gov.lb/ainab/index.htm,wikidata,2026-05-02T13:36:03.043690Z
-Al-Hadaf,periodical,,,,http://hadfnews.ps/,wikidata,2026-05-02T13:36:03.043690Z
-"French Embassy, Beirut",embassy,,,,http://ambafrance-lb.org/,wikidata,2026-05-02T13:36:03.043690Z
-Tannourine Cedar Forest Nature Reserve,nature reserve,,,,http://arztannourine.org,wikidata,2026-05-02T13:36:03.043690Z
-Bdadoun,municipality of Lebanon,,,,http://www.localiban.org/article4101.html,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese National Library,national library,,,,http://bnl.gov.lb/English/index.html,wikidata,2026-05-02T13:36:03.043690Z
-صوت بيروت,internet radio,,,,https://www.sawtbeirut.com,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese National Bloc,political party,,,,http://nationalbloc.org/,wikidata,2026-05-02T13:36:03.043690Z
-Dahyeh,suburb,,,,https://www.dahyemunicipality.com/,wikidata,2026-05-02T13:36:03.043690Z
-National Museum of Beirut,national museum,,,,https://web.archive.org/web/20191017200458/http://www.beirutnationalmuseum.com/index.htm,wikidata,2026-05-02T13:36:03.043690Z
-Institute for Palestine Studies,publishing house,,,,http://www.palestine-studies.org/,wikidata,2026-05-02T13:36:03.043690Z
-Internal Security Forces,police,,,,http://isf.gov.lb/fr,wikidata,2026-05-02T13:36:03.043690Z
-Phoenicia InterContinental Hotel,hotel,,,mailto:phoenicia@phoenicia-ic.com,http://phoeniciabeirut.com/,wikidata,2026-05-02T13:36:03.043690Z
-Port of Tripoli,port,,,,http://www.portdetripoli.com/,wikidata,2026-05-02T13:36:03.043690Z
-Radio Amateurs of Lebanon,nonprofit organization,,,,http://www.ral.org.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Rafik Hariri University Hospital,public hospital,,,,http://www.bguh.gov.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Dar Alfarabi,publishing house,,,,http://dar-alfarabi.com/,wikidata,2026-05-02T13:36:03.043690Z
-Dar El-Machreq Publishers,publishing house,,,mailto:communication@darelmachreq.com,https://www.darelmachreq.com/,wikidata,2026-05-02T13:36:03.043690Z
-NRJ,radio station,,,,http://www.nrjlebanon.com/,wikidata,2026-05-02T13:36:03.043690Z
-Radio One,radio station,,,,http://www.radioone.fm/,wikidata,2026-05-02T13:36:03.043690Z
-Hôtel-Dieu de France,private hospital,,,,http://www.hdf.usj.edu.lb/en/,wikidata,2026-05-02T13:36:03.043690Z
-I-ME-WE,submarine communications cable,,,,http://www.imewecable.com/,wikidata,2026-05-02T13:36:03.043690Z
-المعهد العالي للعلوم التطبيقية والاقتصادية,higher education institution,,,,https://www.cnam-liban.fr,wikidata,2026-05-02T13:36:03.043690Z
-Institut français du Liban,cultural center,,,,http://institutfrancais-liban.com/,wikidata,2026-05-02T13:36:03.043690Z
-Lycée Abdel Kader,school,,,,http://www.lak.edu.lb,wikidata,2026-05-02T13:36:03.043690Z
-lycée Nahr Ibrahim,lycée,,,,http://www.lflni-liban.net,wikidata,2026-05-02T13:36:03.043690Z
-Lycée Franco-Libanais Verdun,lycée,,,,http://www.lycee-verdun.edu.lb,wikidata,2026-05-02T13:36:03.043690Z
-Akl Sheikhdom of the Druze Unitarian Community in Lebanon,position,,,,http://mouwahidoundruze.gov.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Batroun,human settlement,,,,http://www.batroun.com/,wikidata,2026-05-02T13:36:03.043690Z
-People's Movement,political party,,,,http://www.shaabonline.org/Official,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Heritage Museum,museum,,,,http://www.lebaneseheritagemuseum.org,wikidata,2026-05-02T13:36:03.043690Z
-Najjadeh Party,political party,,,,http://www.najjadeh.org,wikidata,2026-05-02T13:36:03.043690Z
-Lee Observatory,astronomical observatory,,,,http://www.aub.edu.lb/tour/nojava/b12.html,wikidata,2026-05-02T13:36:03.043690Z
-"Embassy of Russia, Beiruth",embassy,"Mar-Elias street, El-Tina",,,https://lebanon.mid.ru,wikidata,2026-05-02T13:36:03.043690Z
-list of World Heritage Sites in Lebanon,Wikimedia list article,,,,http://whc.unesco.org/en/statesparties/lb,wikidata,2026-05-02T13:36:03.043690Z
-AL-Salam Hospital,private hospital,,,,https://hopitaldelapaix.com/,wikidata,2026-05-02T13:36:03.043690Z
-Hoops Club,basketball team,,,,http://www.hoopsclub.info,wikidata,2026-05-02T13:36:03.043690Z
-Independence Movement,political party,,,,http://www.alharaka.org/ar/,wikidata,2026-05-02T13:36:03.043690Z
-Al-Muqtataf,periodical,,,,https://www.infradplus.com/,wikidata,2026-05-02T13:36:03.043690Z
-Kaferkahel,human settlement,,,,http://www.facebook.com/group.php?gid=17630587822,wikidata,2026-05-02T13:36:03.043690Z
-Kafr Dunin,village/town/city in Lebanon,,,,http://www.kfardounine.org/,wikidata,2026-05-02T13:36:03.043690Z
-Kaftoun,human settlement,,,,http://www.kaftoun.com/,wikidata,2026-05-02T13:36:03.043690Z
-Arab Scientific Publishers,publishing house,,,,http://www.asp.com.lb/,wikidata,2026-05-02T13:36:03.043690Z
-media of Lebanon,media of country or region,,,,https://www.pressorderlebanon.com/,wikidata,2026-05-02T13:36:03.043690Z
-Al-Maktabah Al-ʿAṣriyyah,publishing house,,,,http://www.alassrya.com/,wikidata,2026-05-02T13:36:03.043690Z
-The Arab Organization for Translation,nonprofit organization,,,,http://www.aot-arab.org,wikidata,2026-05-02T13:36:03.043690Z
-Ahliah school,school,,,,http://www.ahliahschool.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Al-Kafaàt University,private university,,,,http://www.aku.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Al-Qalamoun,human settlement,,,,https://www.qalamoun.org,wikidata,2026-05-02T13:36:03.043690Z
-Al Joumhouria,newspaper,,,,http://www.aljoumhouria.com/,wikidata,2026-05-02T13:36:03.043690Z
-Al Mayadeen,specialty channel,,,,https://english.almayadeen.net/,wikidata,2026-05-02T13:36:03.043690Z
-Forward Music,record label,,,,http://www.forwardmusic.net,wikidata,2026-05-02T13:36:03.043690Z
-Future News,specialty channel,,,,http://www.future-news.tv/,wikidata,2026-05-02T13:36:03.043690Z
-Ghazieh,village/town/city in Lebanon,,,,http://www.ghaziehcity.com,wikidata,2026-05-02T13:36:03.043690Z
-Gibran Museum,biographical museum,,,,http://www.gibrankhalilgibran.org,wikidata,2026-05-02T13:36:03.043690Z
-Global University,private university,,,,http://www.gu.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Globe Jet,airline,,,,http://www.globejetairlines.com/,wikidata,2026-05-02T13:36:03.043690Z
-Grand Lycée Franco-Libanais,lyceum,,,,http://www.glfl.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-"Embassy of Sweden, Beirut",embassy,avenue des Français,,,https://www.swedenabroad.se/sv/utlandsmyndigheter/libanon--beirut/,wikidata,2026-05-02T13:36:03.043690Z
-KidzMondo,business,,,,http://www.kidzmondo.com,wikidata,2026-05-02T13:36:03.043690Z
-RaëdAbillama Architects,business,,,,http://www.raarchitects.com,wikidata,2026-05-02T13:36:03.043690Z
-Yeghishe Manoukian College,college,,,,http://www.ymc.me/,wikidata,2026-05-02T13:36:03.043690Z
-Children's Cancer Center of Lebanon,organization,,,,http://www.cccl.org.lb,wikidata,2026-05-02T13:36:03.043690Z
-Tourist Landmark of the Resistance,military museum,,,,https://www.mleeta.com/,wikidata,2026-05-02T13:36:03.043690Z
-Virgin Radio Lebanon,radio station,,,,http://www.virginradiolb.com,wikidata,2026-05-02T13:36:03.043690Z
-"International College, Beirut",school,,,,http://www.ic.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Greek Orthodox Archdiocese of Beirut,metropolis,,,,http://www.quartos.org.lb,wikidata,2026-05-02T13:36:03.043690Z
-Sagesse SC,basketball team,,,,http://www.sagesseclub.com/,wikidata,2026-05-02T13:36:03.043690Z
-University Medical Center-Rizk Hospital,private hospital,,,,http://www.umcrh.com/,wikidata,2026-05-02T13:36:03.043690Z
-Amel Association International,non-governmental organization,,,,https://amel.org/,wikidata,2026-05-02T13:36:03.043690Z
-St. John of Damascus Institute of Theology,higher center for theological studies,,,,http://theology.balamand.edu.lb/,wikidata,2026-05-02T13:36:03.043690Z
-بنك الاعتماد الوطني,business,,,,http://www.bcnlb.com/,wikidata,2026-05-02T13:36:03.043690Z
-MEAB bank,business,,,,http://www.meabank.com/,wikidata,2026-05-02T13:36:03.043690Z
-بنك الصناعة والعمل,business,,,,http://www.bitbank.com.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Intercontinental Bank of Lebanon (IBL),business,,,,http://www.ibl.com.lb/,wikidata,2026-05-02T13:36:03.043690Z
-"Embassy of Norway, Beirut",embassy,"Omar Dauk Street, Mina el Hosn",,,https://www.norway.no/en/lebanon,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Academic Library Consortium,library consortium,,,,http://lalc.lau.edu.lb,wikidata,2026-05-02T13:36:03.043690Z
-Lebanese Volleyball Federation,sports governing body,,,,http://www.lebvolley.com/,wikidata,2026-05-02T13:36:03.043690Z
-Empire Sodeco,movie theater,"Sodeco Square, Achrafieh, Beirut",,,http://www.circuit-empire.com.lb,wikidata,2026-05-02T13:36:03.043690Z
-SKeyes Center for Media and Cultural Freedom,nonprofit organization,,,,http://www.skeyesmedia.org/ar/Home,wikidata,2026-05-02T13:36:03.043690Z
-The Lebanese Cinema Movie Guide Awards,award,,,,http://www.lbmovieguide/,wikidata,2026-05-02T13:36:03.043690Z
-Phoenicia University,private university,,,,http://www.pu.edu.lb,wikidata,2026-05-02T13:36:03.043690Z
-Ararad,newspaper,,,,https://araraddaily.com,wikidata,2026-05-02T13:36:03.043690Z
-Bourse De Beyrouth - Beirut Stock Exchange,stock exchange,,,,https://www.bse.com.lb,wikidata,2026-05-02T13:36:03.043690Z
-Deir Al-Ahmar,human settlement,,,,http://www.deirelahmar.com/,wikidata,2026-05-02T13:36:03.043690Z
-Office of the Minister of State for Administrative Reform,government agency,,,,http://www.omsar.gov.lb/,wikidata,2026-05-02T13:36:03.043690Z
-Aliqtisadi,magazine,,,,http://aliqtisadi.com,wikidata,2026-05-02T13:36:03.043690Z
-مجلة المستقبل العربي,magazine,,,,http://www.caus.org.lb/Home/electronic_magazine_list.php?CategoryID=36,wikidata,2026-05-02T13:36:03.043690Z
+Sursock Museum,art museum,"Greek Orthodox Archbishopric Street, Achrafieh 2071 5509, Beirut",+961 1202001,mailto:info@sursock.museum,https://sursock.museum/,wikidata,2026-05-02T14:06:40.199952Z
+Order of Friars Minor,organization,"Roma, Via di S. Maria Mediatrice, 25",+39-06-684-919,mailto:comgen@ofm.org,http://www.ofm.org/,wikidata,2026-05-02T14:06:40.199952Z
+Archaeological Museum of the American University of Beirut,museum,,+961 1 759665,mailto:museum@aub.edu.lb,https://www.aub.edu.lb/museum_archeo/Pages/default.aspx,wikidata,2026-05-02T14:06:40.199952Z
+Museum of Lebanese Prehistory,museum,"Rue de l'Université Saint-Joseph, Quartier Monnot, Achrafieh, Beyrouth",+961 1 4218602,mailto:mpl@usj.edu.lb,http://www.usj.edu.lb/mpl/,wikidata,2026-05-02T14:06:40.199952Z
+"Embassy of Ukraine, Baabda",embassy,"Mount Lebanon, Casa Baabda, Baabda, Antoine el Rayes Str., P.O. Box 40268, Lebanon",+961-5-921-975,mailto:emb_lb@mfa.gov.ua,https://lebanon.mfa.gov.ua/,wikidata,2026-05-02T14:06:40.199952Z
+Dar El-Ilm Lilmalayin,publishing house,شارع مار إلياس، مبنى فرنسبنك، الطابق الثاني، بيروت,+961 1 306 666,mailto:malayin@malayin.com,http://malayin.com/,wikidata,2026-05-02T14:06:40.199952Z
+Rosary Sisters Hospital,hospital,,+9611440800,info@hopitalrosaire.org,http://www.hopitalrosaire.org/,osm,2026-05-02T14:06:40.197781Z
+لبانون تاكسي,taxi,Beyrouth,+9611340719,,https://lebanontaxi.com/,osm,2026-05-02T14:06:40.197781Z
+ستاربكس,cafe,,+9611744305,,https://www.starbucks.com/,osm,2026-05-02T14:06:40.197781Z
+عبدالرحمان الحلاب,bakery,Tripoli,+9616444445,,https://www.hallab.com.lb/,osm,2026-05-02T14:06:40.197781Z
+أوتيل ماربل تاور,hotel,شارع نعمة يافت,+9611354586,info@marbletowerhotel.com,http://www.marbletowerhotel.com,osm,2026-05-02T14:06:40.197781Z
+مستشفى النيني,hospital,,+9616431400,,https://www.hopitalnini.com,osm,2026-05-02T14:06:40.197781Z
+أفران شمسين,bakery,طريق البحر السريع,+9615800658,,http://www.chamsine.net,osm,2026-05-02T14:06:40.197781Z
+Saydet Zgharta Hospital,hospital,زغرتا,+9616660575,,http://www.ehdenz.com,osm,2026-05-02T14:06:40.197781Z
+CompuWave,computers & CCTV,Int. Mainstreet,+9618340432,,http://www.compuwaveLB.com,osm,2026-05-02T14:06:40.197781Z
+مطعم أبو نعيم,restaurant,"12, شارع عمر بن عبد العزيز, بيروت",+9611750480,,https://www.facebook.com/AbuNaimHamra,osm,2026-05-02T14:06:40.197781Z
+ستاربكس,cafe,,+961 1 757 154,,https://locations.starbucks.com.lb/directory/mount-lebanon/zalka-road-zalka,osm,2026-05-02T14:06:40.197781Z
+سي اسويت,confectionery,Rue de Damas,+9611292444,,http://www.lebanon.com/seasweet/,osm,2026-05-02T14:06:40.197781Z
+Copas,restaurant,"برمانا, Broumana",+961 4 963 999,,http://www.copas.asia/,osm,2026-05-02T14:06:40.197781Z
+مستشفى شتورا,hospital,شتورا,+9618544022,,http://www.chtourahospital.com,osm,2026-05-02T14:06:40.197781Z
+EKT Katrangi,electronics,"شارع خليل مطران, Beyrouth",+961 1 820 020,,https://www.katranji.com,osm,2026-05-02T14:06:40.197781Z
+Softkube s.a.r.l.,company,"Slaf Street, Beyrouth",+9611494676,,https://softkube.com/,osm,2026-05-02T14:06:40.197781Z
+Sanita,company,,+9619477001,info@sanitalb.com,http://www.sanitalb.com,osm,2026-05-02T14:06:40.197781Z
+Khodr Jewelry,jewelry,شارع أمين منيمنة,+9611343539,info@khodrjewelry.com,https://www.khodrjewelry.com/,osm,2026-05-02T14:06:40.197781Z
+Centre de Design Farra,furniture,"155, طريق برمانا الرئيسية, Metn",+961 1 687 000,,http://www.farra.com,osm,2026-05-02T14:06:40.197781Z
+فندق نابليون,hotel,"شارع نعمة يافت, بيروت",+9611340013,,https://www.napoleonbeirut.com/,osm,2026-05-02T14:06:40.197781Z
+A New Earth Organic Store,supermarket,شارع زهرة الإحسان,+961 1 219 920,,https://www.anewearth.net/,osm,2026-05-02T14:06:40.197781Z
+تي إس سي بلوس,supermarket,"Al Sayyad Round About, Baabda",+961 5 955 200,,https://www.sultan-center.com/Default.aspx?pageId=525,osm,2026-05-02T14:06:40.197781Z
+Grand Hills,hotel,"Charkieh Main Road, Broumana",+961 4 868 888,reservations.grandhills@luxurycollection.com,https://www.marriott.com/hotels/travel/beylc-grand-hills-a-luxury-collection-hotel-and-spa-broumana/,osm,2026-05-02T14:06:40.197781Z
+The Peninsula,restaurant,,+961 4 540 240,info@thepeninsula.com.lb,https://www.thepeninsula.com.lb/,osm,2026-05-02T14:06:40.197781Z
+متحف الحياة البرية والبحرية,museum,,+961 9 222 054,,http://lmwm.org,osm,2026-05-02T14:06:40.197781Z
+بابل,restaurant,,+9614546546,,https://www.babelrestaurant.com/,osm,2026-05-02T14:06:40.197781Z
+صالح ديكو,furniture,"شارع ألفريد نقاش, بيروت",+961 1 398 449,info@salehdeo.com,https://salehdeco.com/,osm,2026-05-02T14:06:40.197781Z
+مستشفى سيدة المعونات جبيل,hospital,,+961 9 940 400,info@chu-nds.org,http://chu-nds.org/,osm,2026-05-02T14:06:40.197781Z
+Université Libano-Française,university,"Boulevard Béchara el Khoury, Tripoli",+961 6 425 608;+961 6 425 609,info@ulf.edu.lb,http://ulf.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+غرفة غرفة التجارة و الصناعة و الزراعة في طرابلس و لبنان الشمالي,administrative,"Bechara El Khoury, Tripoli",+9616425600,,https://cciat.org.lb/,osm,2026-05-02T14:06:40.197781Z
+ستوريوم صليبا,supermarket,,+9614922934,info@storiomsaliba.com,http://www.storiom.com.lb,osm,2026-05-02T14:06:40.197781Z
+مستشفى مظلوم,hospital,"شارع أشرف كبارة, طرابلس",+9616410025,info@newmazloum.com,http://newmazloum.com,osm,2026-05-02T14:06:40.197781Z
+السفارة التركية,diplomatic,,+961 4 528 061;+961 4 528 062;+961 4 528 063,ambassade.beyrouth@mfa.gov.tr,https://beyrut-be.mfa.gov.tr,osm,2026-05-02T14:06:40.197781Z
+دي آش إل,post_office,"شارع الأمير بشير, بيروت",+9611629700,,http://dhl.com.lb,osm,2026-05-02T14:06:40.197781Z
+SSCC Bikfaya,school,,+961 4 980 510,,http://www.bikfaya.sscc.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+Akiki Freres,beverages,Antelias - Akiki Freres Street,+9614444227,,https://www.akikifreres.com/,osm,2026-05-02T14:06:40.197781Z
+Hilton Beirut Habtoor Grand,hotel,"Charles De Gaulle Street, Beyrouth",+961 1 500 666,BeirutHabtoorGrand.Information@hilton.com,https://www.hilton.com/en/hotels/beyhghi-hilton-beirut-habtoor-grand,osm,2026-05-02T14:06:40.197781Z
+مجموعة البضن,clothes,طريق البحر,+9616600558,info@bodongroup.com,http://www.bodongroup.com,osm,2026-05-02T14:06:40.197781Z
+Media Square,photo,جل الديب,+9614719919,info@mediasquare.tv,https://www.mediasquare.tv/,osm,2026-05-02T14:06:40.197781Z
+مطعم برج,restaurant,,+9611453777,info@bridgerest.net,http://www.bridgerest.net,osm,2026-05-02T14:06:40.197781Z
+M.K Trading,pharmacy,أتستراد البحر,+9611876037,michoco50@hotmail.com,http://www.chocoreyo.com,osm,2026-05-02T14:06:40.197781Z
+الإغاثة الأولية الدولية,community_centre,طريق البحر,+9617733253,lib.hob.sai@pu-ami.org,http://www.premier-urgence.org,osm,2026-05-02T14:06:40.197781Z
+Zen Spa,cosmetics,Ksara round point,+9618507906,info@zenspalebanon.com,http://www.zenspalebanon.com,osm,2026-05-02T14:06:40.197781Z
+Chezena,beauty,ksara round point,+961 8 507 860,info@chezena.com,http://www.chezena.com,osm,2026-05-02T14:06:40.197781Z
+مستشفى سرحال,hospital,,+9614405050,h.serhal@sodetel.net.lb,http://www.hopitaldrsserhal.com/,osm,2026-05-02T14:06:40.197781Z
+السفارة الصينية,diplomatic,72 Rue Nicolas Ibrahim Sursock,+9611856133,,http://lb.china-embassy.org,osm,2026-05-02T14:06:40.197781Z
+شركة دريلرز,hardware,الثقافة,+9616425054,,http://www.drillerz.com,osm,2026-05-02T14:06:40.197781Z
+مطعم كرم,restaurant,"طريق كفرنون القطلبة, القبيات",+9616350227,info@karams.org,http://www.karams.org,osm,2026-05-02T14:06:40.197781Z
+KBC Workwear,tailor,,+9619219811,info@kbcworkwear.com,http://www.kbcworkwear.com,osm,2026-05-02T14:06:40.197781Z
+Amideast,government,"Beirut Central District, Bazerkan Building, First floor, Nijmeh Square, Next to the Parliament Beiru",+9611989901,,http://amideast.com.lb,osm,2026-05-02T14:06:40.197781Z
+مركز فرح العطاء كفيفان,community_centre,Kafifane Road,+9616721114,kfifane@offrejoie.org,https://www.offrejoie.org/,osm,2026-05-02T14:06:40.197781Z
+White City,convenience,Abi El-Lameh Street,+9611886880,,http://whitecity.com,osm,2026-05-02T14:06:40.197781Z
+منزل أبي راشد,guest_house,Dahr El-Arbeh,+9616720323,mhabeeabirached@gmail.com,https://www.couchsurfing.com/people/mhabe-camil-abirached,osm,2026-05-02T14:06:40.197781Z
+أندريه مارشا,jewelry,"55, Selim Abdel Adi",+9611337077,,https://www.andremarcha.com,osm,2026-05-02T14:06:40.197781Z
+سي سويت,convenience,"1 طريق, سن الفيل",+9611512225,info@seasweet.com,https://www.seasweet.com/,osm,2026-05-02T14:06:40.197781Z
+إميليو,confectionery,شارع 72,+9615460158,,http://www.emilioshop.com,osm,2026-05-02T14:06:40.197781Z
+السفارة الاسترالية,diplomatic,,+9611960600,,https://lebanon.embassy.gov.au/,osm,2026-05-02T14:06:40.197781Z
+السفارة البرازلية,diplomatic,شارع الجيش,+961 1 982 161,,http://beirute.itamaraty.gov.br,osm,2026-05-02T14:06:40.197781Z
+Primutech s.a.r.l.,electronics,Akram Radwan str.,+9615811013,,http://wwe.primutech.com,osm,2026-05-02T14:06:40.197781Z
+فتدق ديو روي,hotel,,+961 1 798 801,,http://www.duroyhotel.com,osm,2026-05-02T14:06:40.197781Z
+Bay Rock,restaurant,شارع فرسان الهيكل,+961 1 796 700,,https://bayrockcafe.com/,osm,2026-05-02T14:06:40.197781Z
+السفارة الملكية النرويجية,diplomatic,بيروت,+9611763200,,https://www.norway.no/en/lebanon,osm,2026-05-02T14:06:40.197781Z
+Mosaic,ngo,,+9611395445,mosaic@mosaic-mena.org,https://www.mosaicmena.org,osm,2026-05-02T14:06:40.197781Z
+Jean-Claude,restaurant,"Achrafieh Debbas, بيروت",+9611333532,info@breakfast-barn.com,https://www.breakfast-barn.com/,osm,2026-05-02T14:06:40.197781Z
+Kampaï,restaurant,شارع رفيق سلوم,+961 1 999 093,,http://www.kampai.co,osm,2026-05-02T14:06:40.197781Z
+بنت الهدى,religion,"بئر العبد, حارة حريك",+9611270285,,http://www.bintelhuda.com,osm,2026-05-02T14:06:40.197781Z
+بنت الهدى,religion,,+961 7 760 388,info@bintelhuda.com,http://www.bintelhuda.com,osm,2026-05-02T14:06:40.197781Z
+شركة برودانت,dentist,,+9614717332,,https://prodent-me.com/,osm,2026-05-02T14:06:40.197781Z
+Roland El Murr,driving_school,,+9611326200,,https://www.facebook.com/pages/Roland-El-Murr-Driving-School,osm,2026-05-02T14:06:40.197781Z
+Librairie Freiha,stationery,"شارع ساسين, الاشرفية",+9611324204,info@frayhamedia.com,http://www.frayhamedia.com,osm,2026-05-02T14:06:40.197781Z
+فرن الوفاء,bakery,طريق صيدا القديمة,+961 1 383 675,,http://alwafaabakery.com/,osm,2026-05-02T14:06:40.197781Z
+Socrate Restaurant,restaurant,"شارع 64, بيروت",+961 1 846646,,https://www.socrate.com,osm,2026-05-02T14:06:40.197781Z
+Crepaway,restaurant,Hamra Street,+961 1 289 389,,http://www.crepaway.com/,osm,2026-05-02T14:06:40.197781Z
+Carrefour,supermarket,,+961 1 296 300,,https://www.carrefourlebanon.com/,osm,2026-05-02T14:06:40.197781Z
+Mr. Brown,restaurant,جادة إلياس سركيس,+9611745545,,https://mrbrowndiner.com/,osm,2026-05-02T14:06:40.197781Z
+السفارة الدنماركية,diplomatic,بيروت,+9611991001,,https://libanon.um.dk,osm,2026-05-02T14:06:40.197781Z
+المدرسة الأنطوانيّة - جمهور,school,,+961 5 453 233,info@antonines-hazmieh.edu.lb,https://www.antonines-hazmieh.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+سفارة بنغلاديش,diplomatic,"Safara Al Kuwaiti Street, بئر حسن",+9611842586,beirutmission@gmail.com,https://bangladeshembassybeirut.org/,osm,2026-05-02T14:06:40.197781Z
+كمبيوتر أيكو,computer,طريق ميرنا الشالوحي,+9611488106,,http://www.computerecho.com,osm,2026-05-02T14:06:40.197781Z
+Toy House,toys,"أتستراد البحر, عاليه",+961 5 558 124,toyhouse-lb@hotmail.com,http://www.toyhouse-lb.com,osm,2026-05-02T14:06:40.197781Z
+سفارة اليونان بيروت,diplomatic,"شارع 21, بيروت",+961 4 521 700,gremb.bei@mfa.gr,https://www.mfa.gr/missionsabroad/en/lebanon.html,osm,2026-05-02T14:06:40.197781Z
+عيادة بيروت للعيون دكتور الكسندر عاصي,clinic,جادة سامي الصلح,+9611399299,,http://www.beiruteyeclinic.com/,osm,2026-05-02T14:06:40.197781Z
+Basic Outlet,variety_store,,+961 5 953 140,,https://basicoutletstores.com/,osm,2026-05-02T14:06:40.197781Z
+The Capital Insurance,insurance,Mar Maroun Street,+9611486686,capital@capital-cir.com,http://www.capital-cir.com,osm,2026-05-02T14:06:40.197781Z
+سفارة الهند,diplomatic,,+9611735922,,https://www.indianembassybeirut.gov.in,osm,2026-05-02T14:06:40.197781Z
+الصفارية,hotel,,+9619921066,info@hotelloriot.com,http://www.hotelloriot.com,osm,2026-05-02T14:06:40.197781Z
+Tartina Di Mare,restaurant,,+9619912292,,http://www.tartinadimare.com,osm,2026-05-02T14:06:40.197781Z
+Wooden Bakery,bakery,,+9614984121,,http://www.woodenbakery.com/,osm,2026-05-02T14:06:40.197781Z
+Malak Al Tawouk,fast_food,,+9619228005,,http://www.malakaltawouk.com/,osm,2026-05-02T14:06:40.197781Z
+السوق الحرة بيروت,mall,,+961 1 629 520,,http://www.beirutdutyfree.com/,osm,2026-05-02T14:06:40.197781Z
+بنك البحر المتوسط,bank,,+961 1 629 360,,https://www.bankmed.com.lb/,osm,2026-05-02T14:06:40.197781Z
+Cnam University Bikfaya,university,,+9614981321,,http://www.cnam-liban.fr/,osm,2026-05-02T14:06:40.197781Z
+المعهد الفرنسي,educational_institution,صيدا,+9617720192;+9617729592,saida@if-liban.com,https://institutfrancais-liban.com/,osm,2026-05-02T14:06:40.197781Z
+بيتزا هت,restaurant,,+961 4 928 581,,https://www.pizzahut-lb.com/,osm,2026-05-02T14:06:40.197781Z
+Domino's,fast_food,,+961 4 924 222,,https://www.dominos.com.lb/ar/,osm,2026-05-02T14:06:40.197781Z
+Sleep Comfort Grand Magasin,department_store,Rue El Khodr,+9611444444,,https://sleepcomfort.com/,osm,2026-05-02T14:06:40.197781Z
+Porky's,butcher,,+961 9 933 323,info@porkyslebanon.com,http://www.porkyslebanon.com/,osm,2026-05-02T14:06:40.197781Z
+Azrak,ice_cream,"70, Azrak",+9614821118,Riri@azrak.biz,http://azrak.biz,osm,2026-05-02T14:06:40.197781Z
+سورجل فرن الشباك,ice_cream,طريق الشام,+9611290902,,https://www.zomato.com/beirut/surgel-furn-el-chebbak-baabda-district,osm,2026-05-02T14:06:40.197781Z
+تصوير,photo,,+9611202996,,http://www.taswir.com/,osm,2026-05-02T14:06:40.197781Z
+Club de Campagne Ehden,hotel,,+961 6 560 651,info@ehdencountryclubhotel.com,http://www.ehdencountryclubhotel.com,osm,2026-05-02T14:06:40.197781Z
+مدرسة القديسة ريتا,school,الضبية,+961 4 544 125,,http://ecolesainterita.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+سفارة أرمينيا,diplomatic,,+961 4 418 860,,https://lebanon.mfa.am/ar,osm,2026-05-02T14:06:40.197781Z
+Randa Tabbah Jewelry,jewelry,شارع مريم جحشان,+961 1 215 288,info@randatabbah.com,https://www.randatabbah.com/,osm,2026-05-02T14:06:40.197781Z
+Randa Tabbah Jewelry,jewelry,شارع المخلصية,+9611975030,info@randatabbah.com,https://www.randatabbah.com/,osm,2026-05-02T14:06:40.197781Z
+بقجة,furniture,,+961 1 975976,info@bokja.com,http://www.bokja.com,osm,2026-05-02T14:06:40.197781Z
+Creative Space Beirut,educational_institution,,+9611201088,info@creativespacebeirut.com,https://www.creativespacebeirut.com/,osm,2026-05-02T14:06:40.197781Z
+مستشفى الساحل العام,hospital,Dergham street,+961 1 858 333,info@sahelhospital.com.lb,https://www.sahelhospital.com/ar,osm,2026-05-02T14:06:40.197781Z
+ورشة المعارف,ngo,,+961 1 397 454,,https://alwarsha.org/,osm,2026-05-02T14:06:40.197781Z
+مستشفى بخعازي,hospital,شارع عمر بن عبد العزيز,+9611742140,,http://www.bmg.com.lb,osm,2026-05-02T14:06:40.197781Z
+خوري كلينرز,laundry,,+961 1 689 629,,https://www.khourycleaners.com/,osm,2026-05-02T14:06:40.197781Z
+Rosa-Luxemburg-Stiftung,ngo,,+9611380893,,https://www.rosalux-lb.org/,osm,2026-05-02T14:06:40.197781Z
+دار النمر,gallery,,+9611367013,info@darelnimer.org,https://darelnimer.org/,osm,2026-05-02T14:06:40.197781Z
+CTS travel & Tourism,travel_agency,,+9611354333,,https://www.cts.com.lb/,osm,2026-05-02T14:06:40.197781Z
+Worldwide Travel & Tourism,travel_agency,,+9611366505,,http://worldwideTravel-lb.com,osm,2026-05-02T14:06:40.197781Z
+"Newtown Specialty Coffee Roasters,، Mina 1300",cafe,"1300, شارع رياض الصلح, Tripoli",+9616225002,,http://newtown.wheeeze.site/,osm,2026-05-02T14:06:40.197781Z
+فريحة ميديا,advertising_agency,"شارع ألفريد نقاش, بيروت",+961 1 201 740,info@frayhamedia.com,http://www.frayhamedia.com,osm,2026-05-02T14:06:40.197781Z
+Moussa Castle,museum,,+9615500106,,https://www.moussacastle.com/,osm,2026-05-02T14:06:40.197781Z
+السفارة السعوديّة,diplomatic,,+961 1 762 722,,https://embassies.mofa.gov.sa/sites/Lebanon,osm,2026-05-02T14:06:40.197781Z
+المورد الثقافي,ngo,,+9611360415,,https://mawred.org/,osm,2026-05-02T14:06:40.197781Z
+سفارة بلجيكا,diplomatic,"شارع الأمير بشير, بيروت",+9611976001,beirut@diplobel.fed.be,https://lebanon.diplomatie.belgium.be/,osm,2026-05-02T14:06:40.197781Z
+بي هايڤ,coworking,"شارع المهتما غاندي, بيروت",+9611355351,,http://www.thebhive.io/,osm,2026-05-02T14:06:40.197781Z
+سوزوكي دراجات نارية,company,Rue Fouad Chéhab,+9611496565,,https://suzukimotorcycleslebanon.com/,osm,2026-05-02T14:06:40.197781Z
+محمصة الرفاعي,convenience,Fouad Shehab Street,+9611495779,,https://store.alrifai.com,osm,2026-05-02T14:06:40.197781Z
+بنك بيروت,bank,"شارع فؤاد شهاب, سن الفيل",+961 5 955 262,,https://www.bankofbeirut.com,osm,2026-05-02T14:06:40.197781Z
+Byblos Bank,bank,Fouad Shehab Street,+9611485241,,http://www.byblosbank.com.lb,osm,2026-05-02T14:06:40.197781Z
+جورج نصر,department_store,"62, شارع 111, الدكوانة",+9611482462,,http://www.georgesnassr.com,osm,2026-05-02T14:06:40.197781Z
+Securité Assurance,insurance,Fouad Shehab Street,+9611517100,,https://www.securiteassurance.com/,osm,2026-05-02T14:06:40.197781Z
+جمعية توحيد شباب لبنان,company,Debbiyeh highway,+9617985210,,https://unitelebanonyouth.org,osm,2026-05-02T14:06:40.197781Z
+معمل التغذية,company,Debbiyeh Highway,+9615808808,,http://www.altaghziah.com/,osm,2026-05-02T14:06:40.197781Z
+بوظة بشير,ice_cream,"1 طريق, سنّ الفيل",+9611497110,,https://www.bachir.com,osm,2026-05-02T14:06:40.197781Z
+حركة مناهضة العنصريّة,ngo,,+9611788025,,https://armlebanon.org/,osm,2026-05-02T14:06:40.197781Z
+رفيق بواب,company,Debbiyeh,+9611340999,,http://raficbawabco.com,osm,2026-05-02T14:06:40.197781Z
+مركز الدامور الطبي,clinic,الدامور,+9615603603,,http://damour-mc.com,osm,2026-05-02T14:06:40.197781Z
+مؤسّسة الدراسات الفلسطينيّة,ngo,Beyrouth,+961 1 868 387,,https://www.palestine-studies.org/ar,osm,2026-05-02T14:06:40.197781Z
+Margherita,restaurant,,+961 9 830 816,,https://www.pizzeriamargherita.com/,osm,2026-05-02T14:06:40.197781Z
+المحطة الوقود إنترغاز,fuel,"طريق أنطلياس بكفيا, الرابية",+9614406493,,https://intergas-sal.business.site/,osm,2026-05-02T14:06:40.197781Z
+Microcity Computer Shop,computer,,+9611835478,,https://gomicrocity.com,osm,2026-05-02T14:06:40.197781Z
+Dprime Solutions,advertising_agency,"Mirna Chalouhi Highway, بوشرية",+9611255420,info@dprime-solutions.com,https://dprime-solutions.com/,osm,2026-05-02T14:06:40.197781Z
+ampm,convenience,"Achrafieh-Charles Malek Avenue, Beyrouth",+961 1 320 140,,https://www.facebook.com/pg/ampmmarketbeirut/posts/,osm,2026-05-02T14:06:40.197781Z
+Ambassade de Suisse,diplomatic,"Avenue Fouad Chéhab, Beyrouth",+9611324129,,https://www.eda.admin.ch/beirut,osm,2026-05-02T14:06:40.197781Z
+وزارة الاقتصاد والتجارة,government,"شارع الأمير بشير, بيروت",+9611982360,,https://economy.gov.lb,osm,2026-05-02T14:06:40.197781Z
+وزارة المهجّرين,government,"شارع عمر الداعوق, بيروت",+961 1 366 373,,http://www.ministryofdisplaced.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+وزارة البيئة,government,"مبنى اللعازارية, بيروت",+961 1 976 555,,http://www.moe.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+وزارة العمل,government,"بناية البراج، أوتوستراد الشياح, المشرفية",+961 1 556 803,,https://www.labor.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+وزارة الصناعة,government,,+961 1 427006,,http://www.industry.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+وزارة الإعلام,government,بيروت,+961 1 746 032,,http://www.ministryinfo.gov.lb,osm,2026-05-02T14:06:40.197781Z
+وزارة الثقافة,government,"شارع مدام كوري بناية حطب, الصنوبرة",+961 1 744 250,,http://culture.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+وزارة الزراعة,government,,+961 1 849 618,,http://www.agriculture.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+وزارة الشباب والرياضة,government,,+9611426658,,http://www.minijes.gov.lb,osm,2026-05-02T14:06:40.197781Z
+Le Lycee National,school,,+9615805500,,http://le-lycee-national.edu.lb,osm,2026-05-02T14:06:40.197781Z
+Cube 3DP,computer,,+9614535745,,https://cube3dp.com,osm,2026-05-02T14:06:40.197781Z
+أطباء بلا حدود,ngo,"شارع الحمرا, Beyrouth",+961 1 737 090,,https://www.msf.org/,osm,2026-05-02T14:06:40.197781Z
+السفارة الإماراتية فى بيروت,diplomatic,مار إلياس,+961 1 857 000,beirut@mofa.gov.ae,https://www.mofaic.gov.ae/missions/UAE-Missions-Abroad/UAE-Missions-Abroad-Details?countryId=4e740472-693c-4fec-88f8-c895fcdbf33b,osm,2026-05-02T14:06:40.197781Z
+Hajj Medical Center - Dr. Marcel Hajj MD,doctors,"Green Zone A building 71, النقاش",+9614520065,,https://linktr.ee/hajj.medical.center,osm,2026-05-02T14:06:40.197781Z
+جمعية الأمل والعطاء الخيرية,clinic,برجا,+9617921080,amalataa@outlook.com,https://www.amalataa.org/,osm,2026-05-02T14:06:40.197781Z
+بلدية دير الأحمر,townhall,,+9618320144,,http://www.deirelahmar.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+Municipality of Zgharta - Ehden,townhall,"Tripoli - Zgharta Rd, Zgharta",+9616660248;+9616660249,letters@zgharta.gov.lb,http://www.zgharta.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+Mairie d'Hadat,townhall,"Boulevard Camille Chamoun, Hadat",+961 5 466 923;+961 5 462 612;+961 5 466 417,,https://www.hadat.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+Municipality of Anjar,townhall,Chemin de la Municipalité,+9618800252;+9618820222,zahle-maallaka@idm.net.lb,http://zahle.gov.lb,osm,2026-05-02T14:06:40.197781Z
+Rouhana Jewelry,jewelry,طريق انطلياس بكفيّا,+961 4 927 055,info@rouhanajewellery.com,https://www.rouhana.co/,osm,2026-05-02T14:06:40.197781Z
+PrintCut,copyshop,,+9611281199,sales@printcut.net,https://printcut.net,osm,2026-05-02T14:06:40.197781Z
+بعثة الاتحاد الأوروبي,diplomatic,"شارع 62, بيروت",+961 1 956 900,delegation-lebanon@eeas.europa.eu,https://eeas.europa.eu/delegations/lebanon,osm,2026-05-02T14:06:40.197781Z
+Kassab Hospital,hospital,,+9617723900;+9617723700,info@kassabhospital.com,https://kassabhospital.com,osm,2026-05-02T14:06:40.197781Z
+Batrouniyat,restaurant,Dawra Street,+9616744510,info@batrouniyat.org,http://www.batrouniyat.org,osm,2026-05-02T14:06:40.197781Z
+Stars Tech,telecommunication,"شارع خليل مطران, Beyrouth",+961 1 820 003,support1@starstech-sys.com,https://www.starstech-sys.com/,osm,2026-05-02T14:06:40.197781Z
+Techpunto IT Solutions,computer,"شارع أمين منيمنة, بيروت",+9611743396,info@techpunto.com,http://www.techpunto.com,osm,2026-05-02T14:06:40.197781Z
+عيادة الدكتور بو حبيب,clinic,شارع 12,+961 4 416 979,neurologist@inbox.com,http://www.bouhabib.narod.ru/,osm,2026-05-02T14:06:40.197781Z
+The Parisian Hotel,hotel,,+9611361999,info@theparisianhotel.com,https://www.theparisianhotel.com,osm,2026-05-02T14:06:40.197781Z
+السفارة اليابانية,diplomatic,,+9611989751,,https://www.lb.emb-japan.go.jp,osm,2026-05-02T14:06:40.197781Z
+سفارة فنلندا,diplomatic,"جادة شارل مالك, بيروت",+961 1 218 860,,https://finlandabroad.fi/web/lbn,osm,2026-05-02T14:06:40.197781Z
+سفارة سلوفاكيا,diplomatic,"464, شارع كليمنصو, القنطاري",+961 1 367 422,emb.beirut@mzv.sk,https://www.mzv.sk/web/bejrut,osm,2026-05-02T14:06:40.197781Z
+Le Montagnou,restaurant,,+961 9 341 441,,http://www.montagnou.com/,osm,2026-05-02T14:06:40.197781Z
+Librairie Antoine Hamra,books,,+9611341470,,https://www.antoineonline.com/,osm,2026-05-02T14:06:40.197781Z
+Ka3kaya,restaurant,,+961 1 354 555,,https://www.ka3kaya.com/,osm,2026-05-02T14:06:40.197781Z
+سفارة بلغاريا,diplomatic,,+961 5 452 883,,https://www.mfa.bg/embassies/lebanon,osm,2026-05-02T14:06:40.197781Z
+Chateau Muzar,wine,,+961 9 925 127,,https://www.chateaumusar.com/,osm,2026-05-02T14:06:40.197781Z
+سفارة الأرجنتين,diplomatic,"161, شارع سرسق, بيروت",+961 1 210 803,,https://elbno.cancilleria.gob.ar,osm,2026-05-02T14:06:40.197781Z
+Loris,restaurant,شارع باستور,+9611567568,,https://www.loris.restaurant/,osm,2026-05-02T14:06:40.197781Z
+Empire Entertainment,company,"طريق الشام, بيروت",+9611616600,,https://www.empiremena.com/,osm,2026-05-02T14:06:40.197781Z
+IRAP,educational_institution,,+961 4 925 025,,http://iraplb.org/,osm,2026-05-02T14:06:40.197781Z
+Patisserie Main Sucrée,pastry,"شارع 52, ذوق الخراب",+961 4 541 060,,https://patisserie-main-sucree.business.site/,osm,2026-05-02T14:06:40.197781Z
+Hotel Le Noble,hotel,,+961 4 542 750,,https://hotellenoble.com/,osm,2026-05-02T14:06:40.197781Z
+Wunderman Thompson,company,"47, شارع البطريرك حويك, بيروت",+9611973030,,https://www.wundermanthompson.com/,osm,2026-05-02T14:06:40.197781Z
+UMAM D&R,ngo,شارع حارة حريك,+961 1 553 604,info@umam-dr.org,https://umam-dr.org/,osm,2026-05-02T14:06:40.197781Z
+Garage Riad El Hayek,car_repair,"Aboujaoude industrial center, Naher El Mot",+9611890661,,https://garageriadhayek.wordpress.com/,osm,2026-05-02T14:06:40.197781Z
+Das Küche,restaurant,,+961 1 442 887,,https://daskuche.me/,osm,2026-05-02T14:06:40.197781Z
+Delight,restaurant,Qalaa,+9615530577,,https://pizzadelight-hammana.business.site/?utm_source=gmb&utm_medium=referral,osm,2026-05-02T14:06:40.197781Z
+Institut Français - المركز الفرنسي,educational_institution,حي البياض,+961 7 764 398,,https://institutfrancais-liban.com,osm,2026-05-02T14:06:40.197781Z
+EcoConsulting,company,شارع جورج حداد,+9611971266,info@ecoconsulting.net,http://ecoconsulting.net,osm,2026-05-02T14:06:40.197781Z
+Globecast Near & Middle East,company,,+9611395111,,https://www.globecast.com/,osm,2026-05-02T14:06:40.197781Z
+Siège social SIDC,community_centre,Street 5,+9611482428,,https://sidc-lebanon.org/,osm,2026-05-02T14:06:40.197781Z
+Colortek Paints & Wallpapers,interior_decoration,شارع حنكاش الجديد,+9611242812,,https://www.colortek.eu/,osm,2026-05-02T14:06:40.197781Z
+Nextcare,insurance,,+961 1 504 000,lebanon@nextcarehealth.com,https://www.nextcarehealth.com,osm,2026-05-02T14:06:40.197781Z
+Frunch Eatery - Mar Mikhael,fast_food,شارع أرمينيا,+9611403303,,http://frunch-eatery.com,osm,2026-05-02T14:06:40.197781Z
+Keys'n Chords Music Academy,musical_instrument,شارع تامر ملاط,+961 1 795 914,,https://keysncords.com,osm,2026-05-02T14:06:40.197781Z
+Brush Art Paints,doityourself,شارع دار الفتوى,+961 1 706 773,,https://www.brushart.co/,osm,2026-05-02T14:06:40.197781Z
+IECD Beirut,ngo,شارع 506,+9611556338,,https://www.iecd.org/,osm,2026-05-02T14:06:40.197781Z
+بوتيك متحف الصابون في صيدا,gift,,+961 3 88 76 88,,https://sidonia.shop/,osm,2026-05-02T14:06:40.197781Z
+توتال بشامون,fuel,Rue Maktabet El Bachir,+9615813850,,https://totalenergies.com.lb/en,osm,2026-05-02T14:06:40.197781Z
+FS Office Supplies,electronics,,+961 5 950 180,,https://www.fsofficesupplies.net/,osm,2026-05-02T14:06:40.197781Z
+ATLAI,gift,,+961 5 951 172,,https://www.altailebanon.com/,osm,2026-05-02T14:06:40.197781Z
+الحويك,doityourself,Rue Ste. Mere Teresa,+9611880271,info@howayek.con,https://howayek.com,osm,2026-05-02T14:06:40.197781Z
+The HealthQuarters,clinic,شارع محمد بيضون,+961 1 425 182,,http://www.thehealthquarters.co/,osm,2026-05-02T14:06:40.197781Z
+بلدية بعلبك,townhall,ساحة السراي,+9618370214,,https://baalbeck-municipality.org/,osm,2026-05-02T14:06:40.197781Z
+Deek'Matic,restaurant,"Main road, Qornet Chehwen",+961 4 922 161,,https://menu.omegasoftware.ca/deekmatic,osm,2026-05-02T14:06:40.197781Z
+إم تي إس سي,metal_construction,جادة كميل شمعون,+9611452399,,https://www.mtsclb.com/ar/Home,osm,2026-05-02T14:06:40.197781Z
+Antranik Baljian and Sons (ABS Metals),metal_construction,شارع 81,+9611242605,,https://www.absmetals.com/en/Home,osm,2026-05-02T14:06:40.197781Z
+ديوان ماركت,supermarket,طريق صيدا القديمة,+961 5 810 850,,http://www.diwanhypermarket.com,osm,2026-05-02T14:06:40.197781Z
+مؤسسة حسن الجمل التجارية,appliance,شارع برج أبي حيدر,+9611307022,,https://aljamaltrading.com,osm,2026-05-02T14:06:40.197781Z
+Terabyte Computers Msaytbeh,computer,شارع بشير جنبلاط,+9611640501,,https://terabyte.computer/,osm,2026-05-02T14:06:40.197781Z
+Château Qanafar Boutique,wine,Amine Gemayel street,+961 1 398 782,contactus@chateauqanafar.com,https://www.chateauqanafar.com/,osm,2026-05-02T14:06:40.197781Z
+Baba Bahaa,toys,,+9615601535,,http://bababahaaonline.com,osm,2026-05-02T14:06:40.197781Z
+Kado Ghamlouch,toys,ميشال زكور,+961 1 547 447,,http://kadoghamloush.com,osm,2026-05-02T14:06:40.197781Z
+Beit Toureef,hotel,,+961 1 443 495,,https://beittoureef.com/,osm,2026-05-02T14:06:40.197781Z
+Zero&One,company,"1499, شارع ناصيف اليازجي",+9611669694,innovate@zeroandone.me,https://zeroandone.me,osm,2026-05-02T14:06:40.197781Z
+مجموعة البيال,community_centre,"أتستراد إميل لحود, Forn el Chebbak",+961 1 995 555,leb@biel-group.com,http://www.biel-group.com,osm,2026-05-02T14:06:40.197781Z
+وزارة الداخلية والبدلديّات,government,,+9611754200,,http://interior.gov.lb,osm,2026-05-02T14:06:40.197781Z
+أ ب ث الأشرفية,mall,,+961 1 212 888,,http://www.abc.com.lb/,osm,2026-05-02T14:06:40.197781Z
+سيتي مول,mall,أتستراد البحر,+961 1 905 555,,https://citymall.com.lb/,osm,2026-05-02T14:06:40.197781Z
+Intercontinental Mzaar Hotel,hotel,,+961 9 340 100,,https://www.ihg.com/intercontinental/hotels/gb/en/mzaar/mzrha/hoteldetail,osm,2026-05-02T14:06:40.197781Z
+مدرسة الإخوة المريميين الشانفيل,college,ديك المحدي,+961 4 913 327,,https://www.champville.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+الرسول الأعظم,hospital,,+9611458555;+9611456455;+9611456456,info@alrassoul.org,http://alrassoul.org/ar/,osm,2026-05-02T14:06:40.197781Z
+أ ب سي الضبية‎‎,mall,الضبية‎‎,+961 4 416 000,,http://www.abc.com.lb/,osm,2026-05-02T14:06:40.197781Z
+لو مول,mall,ضبية,+961 4 408 111,,https://www.lemall.com.lb/,osm,2026-05-02T14:06:40.197781Z
+هوم سنتر,furniture,سن الفيل,+961 5 956 448,,http://www.homecentrestores.com/,osm,2026-05-02T14:06:40.197781Z
+Hilton Beirut Metropolitan Palace,hotel,"Dimitri El Hayek, بيروت",+961 1 496 666,BeirutMetropolitanpalace.Information@hilton.com,https://www.hilton.com/en/hotels/beymphi-hilton-beirut-metropolitan-palace/,osm,2026-05-02T14:06:40.197781Z
+مستشفى يونيفيل,hospital,الناقورة,+9611925000,,https://unifil.unmissions.org/,osm,2026-05-02T14:06:40.197781Z
+سفارة فرنسا,diplomatic,"طريق الشام, Beyrouth",+961 1 420 000,,https://lb.ambafrance.org/,osm,2026-05-02T14:06:40.197781Z
+Four Points by Sheraton Le Verdun,hotel,"Verdun, Boulevard Saeb Salam, Beyrouth",+961 1 803 804,verdun.reservations@fourpointshotels.com,https://www.marriott.com/hotels/travel/beyfp-four-points-le-verdun/,osm,2026-05-02T14:06:40.197781Z
+فندق فور سيزنس,hotel,بيروت,+961 1 761 000,,https://www.fourseasons.com/beirut,osm,2026-05-02T14:06:40.197781Z
+مستشفى الروم,hospital,"Achrafieh, Beyrouth",+961 1 441 000,,https://www.stgeorgehospital.org/,osm,2026-05-02T14:06:40.197781Z
+الأكاديمية اللبنانية للفنون الجميلة,university,"شارع 23, سن الفيل",+9611480056,,https://alba.edu.lb,osm,2026-05-02T14:06:40.197781Z
+Hôpital Tal Chiha,hospital,,+9618823055,nicolas.khoury@telchiha.com,https://www.telchiha.com/,osm,2026-05-02T14:06:40.197781Z
+مستشفى سان لويس جونية,hospital,,+9619933334,,http://www.stherese.com/hop3.aspx,osm,2026-05-02T14:06:40.197781Z
+Jounieh Municipality,townhall,,+961 9 913 000,,http://www.jounieh.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+Monastery Saint Maron,monastery,Aannaya,+961 9 760 130,info@saintcharbel-annaya.com,https://saintcharbel.com/,osm,2026-05-02T14:06:40.197781Z
+STAL,company,,+9614400400,info@stal-me.com,http://www.stal-me.com,osm,2026-05-02T14:06:40.197781Z
+مستشفى جبل لبنان,hospital,شارع ميشال غاريوس,+961 5 957 000,mlh@mlh.com.lb,http://www.mlh.com.lb/,osm,2026-05-02T14:06:40.197781Z
+Collège des Frères Mont La Salle,school,"Route Principale Aïn Saadé, Aïn Saadé",+961 1 870 025,direction@montlasalle.edu.lb,http://www.montlasalle.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+مستشفى الحايك,hospital,"575, Street 9-04, Sin El Fil",+961 1 481 333,info@hopitalhayek.com,http://hayekhospital.com,osm,2026-05-02T14:06:40.197781Z
+وزارة التربية والتعليم العالي,government,,+961 1 772 000,,https://www.mehe.gov.lb/ar,osm,2026-05-02T14:06:40.197781Z
+Advanced Eye Care,clinic,Antelias-Naccache old road,+961 4 444 541,drwarrak@eyecare-lb.com,http://www.eyecare-lb.com,osm,2026-05-02T14:06:40.197781Z
+سفارة إيطاليا,diplomatic,"طريق القصر الرئاسي, بعبدا",+9615954955,,https://ambbeirut.esteri.it,osm,2026-05-02T14:06:40.197781Z
+السفارة الأميركية,diplomatic,بيروت,+961 4 543 600,,https://lb.usembassy.gov/,osm,2026-05-02T14:06:40.197781Z
+Portemilio Hotel,hotel,,+961 9 933 300,,https://www.portemilio.com/,osm,2026-05-02T14:06:40.197781Z
+The Rooms,hotel,,+961 9 914 514,info@theroomslb.com,https://theroomslb.com,osm,2026-05-02T14:06:40.197781Z
+سفارة إندونيسيا,diplomatic,,+961 5 924 682,,https://kemlu.go.id/beirut,osm,2026-05-02T14:06:40.197781Z
+الفلمنكي,cafe,"شارع شاتيلا, بيروت",+9611323456,,http://www.alfalamanki.com,osm,2026-05-02T14:06:40.197781Z
+The Grand Meshmosh Hotel,hostel,"درج مار نقولا, بيروت",+9611563465,thegrandmeshmosh@gmail.com,https://www.thegrandmeshmosh.com,osm,2026-05-02T14:06:40.197781Z
+هيلتون بيروت وسط المدينة,hotel,Rue Émir Majid Arslan,+961 1 951 111,beyhi_info@hilton.com,https://ar.hilton.com/ar_ar/hotels/hilton-beirut-downtown/,osm,2026-05-02T14:06:40.197781Z
+Colonel Beer Microbrewery,pub,,+9616743543,,https://colonelbeer.com/,osm,2026-05-02T14:06:40.197781Z
+مانشن,community_centre,,+9611379755,,https://mansionblatt.org,osm,2026-05-02T14:06:40.197781Z
+الجامعة الحديثة للإدارة والعلوم,university,,+961 1 371 884;+961 1 371 885;+961 1 371 886,,https://www.mubs.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+فندق الخيال الكبير,hotel,رياق‎‎,+961 8 900 901,info@alkhayalgrandhotel.com,https://alkhayalgrandhotel.com/,osm,2026-05-02T14:06:40.197781Z
+بلدية الغبيري,townhall,,+9611858630,,http://www.ghobeiry.gov.lb,osm,2026-05-02T14:06:40.197781Z
+مستشفى سانت تريز الحدث,hospital,"طريق 20, الحدث",+9615466780,,http://www.stherese.com/hop1.aspx,osm,2026-05-02T14:06:40.197781Z
+مدينة الواجهة البحرية - قاعة المدينة,townhall,,+961 4 444 145,,https://waterfrontcity.com/,osm,2026-05-02T14:06:40.197781Z
+بلدية قرنة شهوان – عين عار – بيت الككو – الحبوس,townhall,,+9614925013;+9614925604,info@chab.gov.lb,http://www.chab.gov.lb,osm,2026-05-02T14:06:40.197781Z
+Deek Duke,restaurant,شارع الحمرا,+961 1 344 744,,https://deekduke.com/,osm,2026-05-02T14:06:40.197781Z
+Aintoura Municipality,townhall,Aintoura,+9619232424,info@antoura.gov.lb,http://www.antoura.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+كلية مونتانا الدولية,school,,+9614914006,,http://montana.cpf.edu.lb/fr,osm,2026-05-02T14:06:40.197781Z
+مستشفى بيروت العام,hospital,,+961 1 850 213,,http://beirutgeneralhospital.com/,osm,2026-05-02T14:06:40.197781Z
+Choc en bouche,pastry,"choc en bouche Building, main street",96178813444,,https://chocenbouche.com,osm,2026-05-02T14:06:40.197781Z
+مركز كليمنصو الطبي,hospital,شارع 60,+9611372888,,https://www.cmc.com.lb/,osm,2026-05-02T14:06:40.197781Z
+Locanda,restaurant,,+961 9 944 333,,http://www.locandaalagranda.com/,osm,2026-05-02T14:06:40.197781Z
+سفارة جمهورية التشيك,diplomatic,"17, شارع 52, بعبدا",+961 5 929 010,beirut@embassy.mzv.cz,https://www.mzv.cz/beirut,osm,2026-05-02T14:06:40.197781Z
+four tables,restaurant,"شارع المحكمة العسكرية, رأس النبع",+961 1 614 066,,https://www.zomato.com/beirut/four-tables-ras-el-nabeh-beirut-district,osm,2026-05-02T14:06:40.197781Z
+مستشفى القلب المقدس,hospital,,+9615453500,,https://www.hsc-lb.com/,osm,2026-05-02T14:06:40.197781Z
+طراد,hospital,شارع جبران خليل جبران,+9611369494;+9611369495,info@tradhospital.com,https://www.tradhospital.com/,osm,2026-05-02T14:06:40.197781Z
+Lycée Alphonse De Lamartine Kfar Qahel,school,Kfar Qahel,+9616417082,,http://www.lycee-tripoli.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+مستشفى الزهراء,hospital,,+961 1 851 040,info@zhumc.org.lb,https://zhumc.org.lb/,osm,2026-05-02T14:06:40.197781Z
+نزل الفنار,hotel,صور,+961 7 741 111,,http://www.alfanarresort.com,osm,2026-05-02T14:06:40.197781Z
+وزارة الصحة,government,,+9611830300,,https://www.moph.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+وزارة شؤون الاجتماعية,government,,+9611611260,,https://www.socialaffairs.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+فندق ومنتجع كورال بيتش,hotel,,+9611859000,,https://www.coralbeachbeirut.com/,osm,2026-05-02T14:06:40.197781Z
+كلية استارز,school,,+961 07 769 772,z.info@scs.edu.lb,https://scs.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+جامعة الروح القدس الكسليك,university,,+961 9 600 000,,https://www.usek.edu.lb,osm,2026-05-02T14:06:40.197781Z
+لانكستر إيدن بي,hotel,,+9611838000,,https://lancasteredenbay.com,osm,2026-05-02T14:06:40.197781Z
+السفارة الرومانية,diplomatic,"طريق القصر الرئاسي, بعبدا",+961 5 924 848,,https://beirut.mae.ro,osm,2026-05-02T14:06:40.197781Z
+سبوت,mall,,+9615800719,,http://thespot.com.lb,osm,2026-05-02T14:06:40.197781Z
+Sands Hotes,hotel,Byblos,+9619546085,info@sandshotel.com,https://hotel-sands.com,osm,2026-05-02T14:06:40.197781Z
+Tiny But Mighty,restaurant,,+961 4 444 864,,http://tiny-mighty.com/,osm,2026-05-02T14:06:40.197781Z
+Adma Blue Screen,hotel,"4, Adma Yellow Zone Street, Adma",+961 9 856 500,frboueri@hotmail.com,https://admabluescreen.com/,osm,2026-05-02T14:06:40.197781Z
+Collège des Sœurs des Saints-Cœurs,school,,+9619920764,kfarhbab@sscc.edu.lb,https://www.kfarhbab.sscc.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+مركز كسروان الإستشفائي,hospital,,+961 9 857 300,info@kmc.com.lb,http://kmc.com.lb,osm,2026-05-02T14:06:40.197781Z
+Al Iman Hospital,hospital,,+9615557038;+9615557039;+9615557040,info@imanhospital.org,http://www.imanhospital.com,osm,2026-05-02T14:06:40.197781Z
+رزق,hospital,,+9611200800,info@laumcrh.com,https://www.laumcrh.com/,osm,2026-05-02T14:06:40.197781Z
+Akkar Rahal Hospital,hospital,,+9616690000,info@hopitalrahal.com,https://hopitalrahal.com/,osm,2026-05-02T14:06:40.197781Z
+Rahma Medical Center,hospital,,+9616448222,info@rahmahospital.org,http://www.rahmahospital.org/,osm,2026-05-02T14:06:40.197781Z
+Salah Ghandour Hospital,hospital,Route Rmeich-Bent Jbaïl,+961 7 450 100,,http://www.hayaa.org,osm,2026-05-02T14:06:40.197781Z
+Lycee Des Arts,school,,+961 1 543 910,,https://lyceedesarts.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+Al Koura Hospital,hospital,,+9616930981,info@hopital-alkoura.com.lb,http://www.hopital-alkoura.com.lb,osm,2026-05-02T14:06:40.197781Z
+مستشفى دار الأمل الجامعي,hospital,,+9618340620;+9618340621;+9618340622;+9618340623;+9618340624;+9618340626,info@dar-alamal.com,https://www.dar-alamal.com/,osm,2026-05-02T14:06:40.197781Z
+مستشفى الصليب للأمراض العقلية والنفسية,hospital,,+9614710224,,http://www.hopitalpsychiatriquedelacroix.org.lb/,osm,2026-05-02T14:06:40.197781Z
+ثانوية الإيمان,school,,+961 7 724 987;+961 7 729 585,,https://ihs.edu.lb,osm,2026-05-02T14:06:40.197781Z
+El Boutique Hotel,hotel,,+961 7 740 960,info@elbtqhotel.com,https://www.elbtqhotel.com/,osm,2026-05-02T14:06:40.197781Z
+LWIS Universal School of Lebanon,school,,+961 6 930 964;+961 6 930 965;+961 6 930 966,info@lwis-usl.edu.lb,http://www.lwis-usl.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+أصكرز مول,mall,,+961 7 732999,,https://www.lemall.com.lb/,osm,2026-05-02T14:06:40.197781Z
+Roadster,restaurant,جل الديب,+9614711 861,,https://www.roadsterdiner.com/,osm,2026-05-02T14:06:40.197781Z
+سفارة المكسيك,diplomatic,,+9614927356,,https://embamex.sre.gob.mx/libano,osm,2026-05-02T14:06:40.197781Z
+مستشفى حمود,hospital,"Dr. Ghassan Hammoud Street, صيدا",+961 7 723 111,info@hammoudhospital.com,http://hammoudhospital.com/,osm,2026-05-02T14:06:40.197781Z
+الجامعة الأمريكية للعلوم والتكنولوجيا,university,,+9617754777,info@aust.edu.lb,https://www.aust.edu.lb,osm,2026-05-02T14:06:40.197781Z
+مدرسة رفيق الحريري الثانوية,school,,+9617723551;+9617723986,rhhs@rhhs.edu.lb,https://rhhs.edu.lb,osm,2026-05-02T14:06:40.197781Z
+جامعة الجنان,university,ابو سمرا,+9616447906,info@jinan.edu.lb,https://www.jinan.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+مستشفى الحريري الحكومي,hospital,,+9611830000,,http://www.bguh.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+مستشفى بيت شباب,hospital,Beit Chabab,+961 4 983 393,info@centrehospbc.com,http://www.centrehospbc.com/,osm,2026-05-02T14:06:40.197781Z
+الجامعة بيروت العربية,university,Debbiyeh,+9611300110,bau@bau.edu.lb,http://www.bau.edu.lb,osm,2026-05-02T14:06:40.197781Z
+مركز بلفو الطبي,hospital,,+961 1 682 666,,http://www.bmchcs.com,osm,2026-05-02T14:06:40.197781Z
+Hospital Haykel,hospital,,+961 6 411 111,info@hopitalhaykel.com,http://www.hopitalhaykel.com,osm,2026-05-02T14:06:40.197781Z
+Dunes,mall,,+961 1 785 310,,https://dunes.com.lb/,osm,2026-05-02T14:06:40.197781Z
+مستشفى علاء الدين,hospital,,+9617443200,,https://hospitalalaeddine.com/,osm,2026-05-02T14:06:40.197781Z
+المركز الطبي للجامعة اللبنانية الأميركية - مستشفى سان جون,hospital,,+9619640140,info@laumcsjh.com,https://www.laumcsjh.com/,osm,2026-05-02T14:06:40.197781Z
+Abou Jaoudeh Hospital,hospital,,+9614718000;+9614716000,admin@hopitalaboujaoude.com,https://www.hopitalaboujaoude.com,osm,2026-05-02T14:06:40.197781Z
+مستشفى البقاع,hospital,,+9618543151,bekaahosp@gmail.com,http://www.bekaahospital.com/,osm,2026-05-02T14:06:40.197781Z
+مستشفى سني,hospital,,+961 6 205 875;+961 6 205 879,info@islamichospital.org,https://www.islamichospital.org,osm,2026-05-02T14:06:40.197781Z
+Universal Hospital,hospital,,+9618210560,info@universalhospital.net,https://universalhospital.net/,osm,2026-05-02T14:06:40.197781Z
+المقاصد,hospital,,+961 1 636 000,,http://makassedhospital.org/,osm,2026-05-02T14:06:40.197781Z
+مدرسة مار يوسف,school,,+9614925005,support@sjs.edu.lb,https://sjs.edu.lb,osm,2026-05-02T14:06:40.197781Z
+Arnaoon Village,events_venue,,+961 6 642 111,arnaoon@arnaoonvillage.com,http://www.arnaoonvillage.com,osm,2026-05-02T14:06:40.197781Z
+مستشفة خوري,hospital,,+9618807000,,https://www.khouryhospital.com/Contact.htm,osm,2026-05-02T14:06:40.197781Z
+الجامعة الأنطونية,university,بعبدا,+9615927000,,https://ua.edu.lb/fr/home,osm,2026-05-02T14:06:40.197781Z
+Issam Fares Library Learning Center,library,,+961 6931958,,https://www.balamand.edu.lb/Library/Main/Pages/default.aspx,osm,2026-05-02T14:06:40.197781Z
+طوطال,fuel,,+961 7 727 959,,https://totalenergies.com.lb/en,osm,2026-05-02T14:06:40.197781Z
+اكادميات التواصل و القيادة,educational_institution,,+961 7 728 746;+961 7 733 119,,https://hariri-foundation.org/programs/ola-outreach-leadership-academy/,osm,2026-05-02T14:06:40.197781Z
+شركة التكنولوجيا المفتوحة,it,,+961 7 739 950,mb@opentech.me,https://www.opentech.me,osm,2026-05-02T14:06:40.197781Z
+جمعية رعاية اليتيم,social_facility,,+961 7 722 788;+961 7 720 788,info@maytamsaida.net,https://maytamsaida.net,osm,2026-05-02T14:06:40.197781Z
+Warde,fabric,,+961 7 751 177,saida@warde.com,https://warde.com/,osm,2026-05-02T14:06:40.197781Z
+مستشفى جامعة نوتردام,hospital,,+961 9 644 644,info@nduhospital.com,http://www.nduhospital.com/,osm,2026-05-02T14:06:40.197781Z
+Al Mabarra FC,association football club,,,,http://www.al-mabarra.com/,wikidata,2026-05-02T14:06:40.199952Z
+An-Nahar,daily newspaper,,,,http://annahar.com,wikidata,2026-05-02T14:06:40.199952Z
+Al-Manar,television station,,,,http://www.almanar.com.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Al-Ahbash,Islamic denomination,,,,https://aicp.org,wikidata,2026-05-02T14:06:40.199952Z
+Al-Nour,radio station,,,,https://www.alnour.com.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanon men's national football team,men's national association football team,,,,https://the-lfa.com.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Armenian Catholic Patriarchate of Cilicia,Eastern Catholic patriarchate,,,,https://armeniancatholic.org,wikidata,2026-05-02T14:06:40.199952Z
+Amal Movement,political party,,,,http://amal-movement.com/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese American University,private university,,,,https://www.lau.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Haigazian University,private university,,,,http://www.haigazian.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+American University of Beirut,private university,,,,https://www.aub.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+Kataeb Party,political party,,,,https://lebanesekataeb.com/home/,wikidata,2026-05-02T14:06:40.199952Z
+Maronite Catholic Archeparchy of Beirut,Catholic Archieparchy,,,,http://www.archmb.org.lb,wikidata,2026-05-02T14:06:40.199952Z
+Camille Chamoun Sports City Stadium,multi-purpose sports venue,,,,https://camillechamounsportscity.com,wikidata,2026-05-02T14:06:40.199952Z
+International Center for Agricultural Research in the Dry Areas,research institute,,,,http://www.icarda.org,wikidata,2026-05-02T14:06:40.199952Z
+Ehden,village/town/city in Lebanon,,,,http://www.zgharta.gov.lb/municipality/,wikidata,2026-05-02T14:06:40.199952Z
+Tyre,village/town/city in Lebanon,,,,http://www.tyremunicipality.com/,wikidata,2026-05-02T14:06:40.199952Z
+Progressive Socialist Party,political party,,,,http://www.psp.org.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Bint Jbeil,village/town/city in Lebanon,,,,http://www.bintjbeil.com/index.en.html,wikidata,2026-05-02T14:06:40.199952Z
+United Nations Interim Force in Lebanon,UN peacekeeping mission,,,,http://unifil.unmissions.org/,wikidata,2026-05-02T14:06:40.199952Z
+Tripoli,city,,,,http://tripoli-lebanon.org/,wikidata,2026-05-02T14:06:40.199952Z
+Al Ansar FC,association football club,,,,https://www.alansarclub.com/,wikidata,2026-05-02T14:06:40.199952Z
+Byblos,archaeological site,,,,http://www.jbail-byblos.gov.lb/,osm|wikidata,2026-05-02T14:06:40.199952Z
+Syrian Social Nationalist Party,armed organization,,,,http://www.alqawmi.info,wikidata,2026-05-02T14:06:40.199952Z
+OTV,television station,,,mailto:live@otv.com.lb,https://otv.com.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Télé Lumière,television station,,,,https://noursat.tv/,wikidata,2026-05-02T14:06:40.199952Z
+Marjayoun District,district of Lebanon,,,,http://www.baladiyatmarjeyoun.com/main.html,wikidata,2026-05-02T14:06:40.199952Z
+Tebnine,village/town/city in Lebanon,,,,http://www.tibneen.com/english.htm,wikidata,2026-05-02T14:06:40.199952Z
+Free Shia Movement,political party,,,,http://www.chi3a.org/,wikidata,2026-05-02T14:06:40.199952Z
+عمشيت,human settlement,,,,http://www.aamchit.com/,wikidata,2026-05-02T14:06:40.199952Z
+Middle East Council of Churches,nonprofit organization,,,,http://mecc.org,wikidata,2026-05-02T14:06:40.199952Z
+Beirut Arab University,private university,,,,https://www.bau.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Université La Sagesse,private university,,,,http://wwww.uls.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Ain Ebel,village/town/city in Lebanon,,,,http://ain-ebel.org,wikidata,2026-05-02T14:06:40.199952Z
+Ain el-Rihaneh,village/town/city in Lebanon,,,,http://www.ainelrihane.com/,wikidata,2026-05-02T14:06:40.199952Z
+Ainab,municipality of Lebanon,,,,http://www.ainabmunicipality.gov.lb/ainab/index.htm,wikidata,2026-05-02T14:06:40.199952Z
+Al-Hadaf,periodical,,,,http://hadfnews.ps/,wikidata,2026-05-02T14:06:40.199952Z
+"French Embassy, Beirut",embassy,,,,http://ambafrance-lb.org/,wikidata,2026-05-02T14:06:40.199952Z
+Tannourine Cedar Forest Nature Reserve,nature reserve,,,,http://arztannourine.org,wikidata,2026-05-02T14:06:40.199952Z
+Bdadoun,municipality of Lebanon,,,,http://www.localiban.org/article4101.html,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese National Library,national library,,,,http://bnl.gov.lb/English/index.html,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese National Bloc,political party,,,,http://nationalbloc.org/,wikidata,2026-05-02T14:06:40.199952Z
+Jinan University Lebanon,university,,,,http://www.jinan.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Anglican Diocese of Jerusalem,Anglican diocese,,,,http://www.j-diocese.org/,wikidata,2026-05-02T14:06:40.199952Z
+Guardians of the Cedars,political party,,,,http://www.gotc.org,wikidata,2026-05-02T14:06:40.199952Z
+Nejmeh SC,association football club,,,,https://nejmehsc.com/,wikidata,2026-05-02T14:06:40.199952Z
+Beirut Marathon,marathon,,,,https://www.beirutmarathon.org/,wikidata,2026-05-02T14:06:40.199952Z
+Mariamite Maronite Order,Catholic order,,,,http://www.omm.org.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Olympic Committee,National Olympic Committee,,,,https://www.lebolymp.org,wikidata,2026-05-02T14:06:40.199952Z
+Middle East Airlines - Air Liban,business,"Beirut International Airport, Beirut, Lebanon",,,https://www.mea.com.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Bkerke,human settlement,,,,http://www.bkerke.org.lb,wikidata,2026-05-02T14:06:40.199952Z
+Bourj Hammoud,village/town/city in Lebanon,,,,http://www.bourjhammoud.gov.lb,wikidata,2026-05-02T14:06:40.199952Z
+Homenmen Beirut,association football club,,,,http://www.homenmen.org/,wikidata,2026-05-02T14:06:40.199952Z
+Armenian Catholic Archeparchy of Beirut,Catholic Metropolitan Archieparchy,,,,http://www.armeniancatholic.org,wikidata,2026-05-02T14:06:40.199952Z
+Nahr al-Bared,Palestinian refugee camp,,,,http://www.nahrelbared.net/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese University,public university,,,,https://www.ul.edu.lb,osm|wikidata,2026-05-02T14:06:40.199952Z
+ISO 3166-2:LB,data set of a specific country,,,,https://www.iso.org/obp/ui/#iso:code:3166:LB,wikidata,2026-05-02T14:06:40.199952Z
+Sin el Fil,human settlement,,,,http://sinelfil.gov.lb,wikidata,2026-05-02T14:06:40.199952Z
+Majdal Anjar,municipality of Lebanon,,,,http://www.majdalanjar.com/,wikidata,2026-05-02T14:06:40.199952Z
+Cornet Chahwan,village/town/city in Lebanon,,,,http://www.cornetchahwan.com/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Armed Forces,armed forces,,,,https://www.lebarmy.gov.lb,wikidata,2026-05-02T14:06:40.199952Z
+"Maronite Catholic Eparchy of Joubbé, Sarba and Jounieh",Eastern Catholic eparchy,,,,http://www.diocesejounieh.org.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Antonine University,private university,,,,http://www.upa.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+Byblos Castle,museum,,,,http://www.lgic.org/en/photos2_byblos.php,wikidata,2026-05-02T14:06:40.199952Z
+Islamic Group,political party,,,,http://www.al-jamaa.org,wikidata,2026-05-02T14:06:40.199952Z
+Al-Mourabitoun,political party,,,,http://www.almourabitoun.com/,wikidata,2026-05-02T14:06:40.199952Z
+Green Party of Lebanon,green party,,,,http://www.greenpartylebanon.org,wikidata,2026-05-02T14:06:40.199952Z
+Lebanon men's national basketball team,men's national basketball team,,,,https://lebanon.basketball/,wikidata,2026-05-02T14:06:40.199952Z
+Balamand Monastery,monastery,,,,http://www.balamandmonastery.org.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Banque du Liban,central bank,,,,http://www.bdl.gov.lb/,osm|wikidata,2026-05-02T14:06:40.199952Z
+Tigers Militia,armed organization,,,,https://noumour.tripod.com/,wikidata,2026-05-02T14:06:40.199952Z
+L'Orient-Le Jour,daily newspaper,,,,https://www.lorientlejour.com/,wikidata,2026-05-02T14:06:40.199952Z
+Custodian of the Holy Land,Franciscan province (O.F.M.),,,,http://www.custodia.org/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Broadcasting Corporation International,television station,,,,https://www.lbcgroup.tv/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanon women's national football team,women's national association football team,,,,http://the-lfa.com,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Democratic Party,political party,,,,http://www.ldparty.org/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Front,political coalition,,,,http://www.lebanesefront.com/default.asp,wikidata,2026-05-02T14:06:40.199952Z
+Miniyeh,village/town/city in Lebanon,,,,http://www.mymenieh.com/,wikidata,2026-05-02T14:06:40.199952Z
+Marada Movement,political party,,,,http://elmarada.org/,wikidata,2026-05-02T14:06:40.199952Z
+Near East School of Theology,private university,,,,http://www.theonest.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Orient-Institut Beirut,institute,,,,http://www.orient-institut.org,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Basketball League,sports league,,,,https://lebanon.basketball/division-leagues/,wikidata,2026-05-02T14:06:40.199952Z
+Ibad Al-Rahman Association,nonprofit organization,,,,https://www.ibad.org.lb/,wikidata,2026-05-02T14:06:40.199952Z
+جمعية العزم والسعادة الاجتماعية,trade association,,,,https://azmsaade.org/,wikidata,2026-05-02T14:06:40.199952Z
+Al-Makassed Philanthropic Islamic Association of Beirut,educational institution,,,,https://www.makassed.org/,wikidata,2026-05-02T14:06:40.199952Z
+Dahyeh,suburb,,,,https://www.dahyemunicipality.com/,wikidata,2026-05-02T14:06:40.199952Z
+National Museum of Beirut,national museum,,,,https://web.archive.org/web/20191017200458/http://www.beirutnationalmuseum.com/index.htm,wikidata,2026-05-02T14:06:40.199952Z
+Institute for Palestine Studies,publishing house,,,,http://www.palestine-studies.org/,wikidata,2026-05-02T14:06:40.199952Z
+Internal Security Forces,police,,,,http://isf.gov.lb/fr,wikidata,2026-05-02T14:06:40.199952Z
+Jebchit,village/town/city in Lebanon,,,,http://www.jebchit.com,wikidata,2026-05-02T14:06:40.199952Z
+Bsous,municipality of Lebanon,,,,http://www.bsous.com,wikidata,2026-05-02T14:06:40.199952Z
+cinema of Lebanon,cinema by country or region,,,,https://lbn.voxcinemas.com/,wikidata,2026-05-02T14:06:40.199952Z
+Port of Beirut,quarter,,,,http://www.portdebeyrouth.com/,wikidata,2026-05-02T14:06:40.199952Z
+CS Sagesse,multisports club,,,,http://www.clubsagesse.com,wikidata,2026-05-02T14:06:40.199952Z
+Collège Notre-Dame de Jamhour,AEFE accredited school,,,,http://www.ndj.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+Dar Al-Handasah,business,,,,http://www.dargroup.com/,wikidata,2026-05-02T14:06:40.199952Z
+Aliqtisadi,magazine,,,,http://aliqtisadi.com,wikidata,2026-05-02T14:06:40.199952Z
+مجلة المستقبل العربي,magazine,,,,http://www.caus.org.lb/Home/electronic_magazine_list.php?CategoryID=36,wikidata,2026-05-02T14:06:40.199952Z
+Centre for Arab Unity Studies,publishing house,,,,http://www.caus.org.lb,wikidata,2026-05-02T14:06:40.199952Z
+Ebba,village/town/city in Lebanon,,,,http://www.ebba-lb.com/ar/index.php,wikidata,2026-05-02T14:06:40.199952Z
+Hamazkayin,non-governmental organization,,,,https://www.hamazkayin.com/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Film Festival,film festival,,,,https://www.lebanesefilmfestival.org/,wikidata,2026-05-02T14:06:40.199952Z
+Beirut International Film Festival,film festival,,,,http://www.beirutfilmfestival.org/,wikidata,2026-05-02T14:06:40.199952Z
+Patchi,business,,,,http://www.patchi.com,osm|wikidata,2026-05-02T14:06:40.199952Z
+Phoenicia InterContinental Hotel,hotel,,,mailto:phoenicia@phoenicia-ic.com,http://phoeniciabeirut.com/,wikidata,2026-05-02T14:06:40.199952Z
+Port of Tripoli,port,,,,http://www.portdetripoli.com/,wikidata,2026-05-02T14:06:40.199952Z
+Radio Amateurs of Lebanon,nonprofit organization,,,,http://www.ral.org.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Rafik Hariri University Hospital,public hospital,,,,http://www.bguh.gov.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Beirut,national capital,,,,http://www.beirut.gov.lb/,osm|wikidata,2026-05-02T14:06:40.199952Z
+Riyak,municipality of Lebanon,,,,https://www.rayaq-lebanon.com/en/index.php,wikidata,2026-05-02T14:06:40.199952Z
+Amioun,town,,,,http://www.amioun.org/Web/Main/main0.htm,wikidata,2026-05-02T14:06:40.199952Z
+Nabatieh,big city,,,,http://www.nabatieh.gov.lb/index.php,wikidata,2026-05-02T14:06:40.199952Z
+Jounieh,big city,,,,http://www.jounieh.gov.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Hezbollah,armed organization,,,,https://www.moqawama.org.lb,wikidata,2026-05-02T14:06:40.199952Z
+.lb,country code top-level domain,,,,http://www.aub.edu.lb/lbdr/,wikidata,2026-05-02T14:06:40.199952Z
+Murr Television,television station,,,mailto:mtvod@mtv.com.lb,https://www.mtv.com.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Anjar,municipality of Lebanon,,,,http://www.mousaleranjar.com,wikidata,2026-05-02T14:06:40.199952Z
+Château Ksara,vineyard,,,,http://www.ksara.com.lb,wikidata,2026-05-02T14:06:40.199952Z
+Château Musar,winery,,,,http://www.chateaumusar.com.lb,wikidata,2026-05-02T14:06:40.199952Z
+Constitutional Council (Lebanon),constitutional court,,,,http://www.conseilconstitutionnelliban.com/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Forces,political party,,,,http://www.lebanese-forces.com,wikidata,2026-05-02T14:06:40.199952Z
+West Asian Games,recurring sporting event,,,,http://www.westasiangames.com/,wikidata,2026-05-02T14:06:40.199952Z
+Damour,human settlement,,,,http://www.damour-lb.com/,wikidata,2026-05-02T14:06:40.199952Z
+Armenian Democratic Liberal Party,political party,,,,https://ramgavar.am,wikidata,2026-05-02T14:06:40.199952Z
+Democratic Renewal,political party,,,,http://www.tajaddod.org/,wikidata,2026-05-02T14:06:40.199952Z
+Democratic Left Movement,political party,,,,http://www.alyassar.org/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Premier League,association football league,,,,https://the-lfa.com.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Holy Spirit University of Kaslik,private university,,,,http://www.usek.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+Safa SC,association football club,,,,https://safasc.com/,wikidata,2026-05-02T14:06:40.199952Z
+University of Balamand,private not-for-profit educational institution,,,,http://www.balamand.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Energy Lebanon,radio station,,,,https://www.nrjlebanon.com/,wikidata,2026-05-02T14:06:40.199952Z
+Maronite Catholic Eparchy of Batrun,Eastern Catholic eparchy,,,,http://www.diocesebatroun.org/,wikidata,2026-05-02T14:06:40.199952Z
+Chaldean Catholic Eparchy of Beirut,Eastern Catholic eparchy,,,,http://chaldeansoflebanon.org/,wikidata,2026-05-02T14:06:40.199952Z
+Maronite Catholic Eparchy of Byblos,Eastern Catholic eparchy,,,,http://www.jbeileparchy.org/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Communist Party,political party,,,,http://www.lcparty.org/,wikidata,2026-05-02T14:06:40.199952Z
+United Nations Economic and Social Commission for Western Asia,organization established by the United Nations,,,,https://www.unescwa.org/,wikidata,2026-05-02T14:06:40.199952Z
+Maronite Catholic Archeparchy of Antelias,Catholic Archieparchy,,,,http://www.anteliasdiocese.com,wikidata,2026-05-02T14:06:40.199952Z
+Melkite Catholic Archeparchy of Sidon,Catholic Archieparchy,,,,http://www.melkitesaida.com,wikidata,2026-05-02T14:06:40.199952Z
+Maronite Catholic Archeparchy of Tripoli,Catholic Archieparchy,,,,http://www.maronitediocesetripoli.org,wikidata,2026-05-02T14:06:40.199952Z
+Melkite Catholic Archeparchy of Tyre,Catholic Metropolitan Archieparchy,,,,https://melkite.org/,wikidata,2026-05-02T14:06:40.199952Z
+Melkite Catholic Archeparchy of Zahleh and Furzol,Catholic Archieparchy,,,,http://www.catholiczahle.org,wikidata,2026-05-02T14:06:40.199952Z
+Temple of Eshmun,archaeological site,,,,http://www.eshmoun.com,wikidata,2026-05-02T14:06:40.199952Z
+Parliament of Lebanon,unicameral legislature,,,,https://www.lp.gov.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Congregation of Maronite Lebanese Missionaries,Catholic order,,,,http://www.lebanesemissionaries.org/,wikidata,2026-05-02T14:06:40.199952Z
+Saint Joseph University of Beirut,pontifical university,,,,https://usj.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Med Airways,airline,,,,http://www.medairways.com/,wikidata,2026-05-02T14:06:40.199952Z
+Free Patriotic Movement,political party,,,,http://www.tayyar.org,wikidata,2026-05-02T14:06:40.199952Z
+Tadamon Sour SC,association football club,,,,http://www.tadamon-sour.com/,wikidata,2026-05-02T14:06:40.199952Z
+Almaza,beer brand,,,,https://www.almaza.com.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Future Television,television station,,,,http://futuretvnetwork.com/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Football Association,association football federation,,,,https://the-lfa.com.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Notre Dame University – Louaize,private university,,,,http://www.ndu.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+Helem,LGBTQ+ rights organization,,,,http://www.helem.net/,wikidata,2026-05-02T14:06:40.199952Z
+Robert Mouawad Private Museum,museum,,,,http://www.rmpm.info/,wikidata,2026-05-02T14:06:40.199952Z
+Rotana Hotels,business,,,,https://www.rotana.com/,wikidata,2026-05-02T14:06:40.199952Z
+Sagesse High School,secondary school,,,,http://www.sagessehs.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+Saint George Hospital University Medical Center,private hospital,,,,http://www.stgeorgehospital.org,wikidata,2026-05-02T14:06:40.199952Z
+Salam Zgharta,association football club,,,,http://www.salamzgharta.com/,wikidata,2026-05-02T14:06:40.199952Z
+Syrian Social Nationalist Party in Lebanon,political party,,,,http://www.alqawmi.info,wikidata,2026-05-02T14:06:40.199952Z
+Asnoun,village/town/city in Lebanon,,,,http://asnounvillage.com/,wikidata,2026-05-02T14:06:40.199952Z
+Aztag,newspaper,,,,http://www.aztagdaily.com,wikidata,2026-05-02T14:06:40.199952Z
+Backstage Production,business,,,,http://www.backstageproduction.me,wikidata,2026-05-02T14:06:40.199952Z
+Bank Audi,business,,,,http://www.bankaudigroup.com,osm|wikidata,2026-05-02T14:06:40.199952Z
+Beau Rivage,geographical feature,,,,http://beaurivage-beirut.com/,wikidata,2026-05-02T14:06:40.199952Z
+Beirut Baptist School,school,,,,http://www.bbs.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Beirut Art Center,art museum,,,,http://beirutartcenter.org/,wikidata,2026-05-02T14:06:40.199952Z
+Tadamon Zouk,basketball team,,,,http://www.tadamonclub.org,wikidata,2026-05-02T14:06:40.199952Z
+Take Back Parliament - Lebanon إسترجعوا البرلمان,political party,,,,http://www.vote2013.org/,wikidata,2026-05-02T14:06:40.199952Z
+The National Evangelical School in Nabatieh – NESN,school,,,,http://www.nesn.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+The School of Ecclesiastic Music,music school,,,,http://www.semlebanon.org,wikidata,2026-05-02T14:06:40.199952Z
+Al-Maktabah Al-ʿAṣriyyah,publishing house,,,,http://www.alassrya.com/,wikidata,2026-05-02T14:06:40.199952Z
+The Arab Organization for Translation,nonprofit organization,,,,http://www.aot-arab.org,wikidata,2026-05-02T14:06:40.199952Z
+Hôtel-Dieu de France,private hospital,,,,http://www.hdf.usj.edu.lb/en/,wikidata,2026-05-02T14:06:40.199952Z
+I-ME-WE,submarine communications cable,,,,http://www.imewecable.com/,wikidata,2026-05-02T14:06:40.199952Z
+المعهد العالي للعلوم التطبيقية والاقتصادية,higher education institution,,,,https://www.cnam-liban.fr,wikidata,2026-05-02T14:06:40.199952Z
+Institut français du Liban,cultural center,,,,http://institutfrancais-liban.com/,wikidata,2026-05-02T14:06:40.199952Z
+Lycée Abdel Kader,school,,,,http://www.lak.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+lycée Nahr Ibrahim,lycée,,,,http://www.lflni-liban.net,wikidata,2026-05-02T14:06:40.199952Z
+Lycée Franco-Libanais Verdun,lycée,,,,http://www.lycee-verdun.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+Akl Sheikhdom of the Druze Unitarian Community in Lebanon,position,,,,http://mouwahidoundruze.gov.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Batroun,human settlement,,,,http://www.batroun.com/,wikidata,2026-05-02T14:06:40.199952Z
+People's Movement,political party,,,,http://www.shaabonline.org/Official,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Heritage Museum,museum,,,,http://www.lebaneseheritagemuseum.org,wikidata,2026-05-02T14:06:40.199952Z
+Château Ka,,,,,http://www.chateauka.com,wikidata,2026-05-02T14:06:40.199952Z
+Maronite Catholic Patriarchate of Antiochus,Eastern Catholic patriarchate,,,,http://bkerki.org/,wikidata,2026-05-02T14:06:40.199952Z
+Najjadeh Party,political party,,,,http://www.najjadeh.org,wikidata,2026-05-02T14:06:40.199952Z
+Al Jadeed,television station,,,,http://www.aljadeed.tv,osm|wikidata,2026-05-02T14:06:40.199952Z
+Al Mayadeen,specialty channel,,,,https://espanol.almayadeen.net/,wikidata,2026-05-02T14:06:40.199952Z
+Al Mouttahed Tripoli,basketball team,,,,http://www.almouttahed.com/,wikidata,2026-05-02T14:06:40.199952Z
+Al-Qubayyāt,village/town/city in Lebanon,,,,http://www.kobayat.org/,wikidata,2026-05-02T14:06:40.199952Z
+Alfa,business,,,,https://www.alfa.com.lb/,osm|wikidata,2026-05-02T14:06:40.199952Z
+Amchit Club,multisports club,,,,http://www.amchitclub.info,wikidata,2026-05-02T14:06:40.199952Z
+Ameen Rihani Museum,museum,,,,http://www.ameenrihani.org/,wikidata,2026-05-02T14:06:40.199952Z
+American Community School at Beirut,school,,,,http://www.acs.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+American University of Science and Technology,university,,,,https://www.aust.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+American University of Technology,university,,,,http://www.aut.edu,wikidata,2026-05-02T14:06:40.199952Z
+Andaket,village/town/city in Lebanon,,,,http://andaket.org/,wikidata,2026-05-02T14:06:40.199952Z
+Armenian Evangelical Central High School,secondary school,,,,http://www.aechs.com,wikidata,2026-05-02T14:06:40.199952Z
+Armenian Evangelical Secondary School of Anjar,school,,,,http://www.evangelical-anjar.org/index.html,wikidata,2026-05-02T14:06:40.199952Z
+"Arts, Sciences and Technology University in Lebanon",private university,,,,http://www.aul.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Ashkal Alwan,organization,,,,http://www.ashkalalwan.org/,wikidata,2026-05-02T14:06:40.199952Z
+Credit Libanais,business,,,,http://www.creditlibanais.com/,osm|wikidata,2026-05-02T14:06:40.199952Z
+بنك الاعتماد الوطني,business,,,,http://www.bcnlb.com/,wikidata,2026-05-02T14:06:40.199952Z
+Bankmed,business,,,,http://www.bankmed.com.lb/,osm|wikidata,2026-05-02T14:06:40.199952Z
+MEAB bank,business,,,,http://www.meabank.com/,wikidata,2026-05-02T14:06:40.199952Z
+بنك الصناعة والعمل,business,,,,http://www.bitbank.com.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Intercontinental Bank of Lebanon (IBL),business,,,,http://www.ibl.com.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Bank of Beirut and the Arab Countries,business,,,,http://www.bbacbank.com/,wikidata,2026-05-02T14:06:40.199952Z
+بنك بيمو,business,,,,http://www.bemobank.com/,wikidata,2026-05-02T14:06:40.199952Z
+Federal Bank of Lebanon,business,,,,https://www.fbl.com.lb/,osm|wikidata,2026-05-02T14:06:40.199952Z
+LGB BANK,business,,,,http://www.lgbbank.com/,osm|wikidata,2026-05-02T14:06:40.199952Z
+BLOM Bank,business,,,,https://www.blombank.com/english/home,osm|wikidata,2026-05-02T14:06:40.199952Z
+Banque Misr Liban,business,,,,https://www.bml.com.lb/,wikidata,2026-05-02T14:06:40.199952Z
+البنك التجاري للشرق الأدنى,business,,,,http://www.necbbank.com/,wikidata,2026-05-02T14:06:40.199952Z
+Banque Libano-Française S.A.L.,business,,,,http://www.eblf.com,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese National Symphony Orchestra,orchestra,,,,http://www.lpo.gov.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Prime Minister of Lebanon,position,,,,http://www.pcm.gov.lb,wikidata,2026-05-02T14:06:40.199952Z
+Lebanon women's national basketball team,women's national basketball team,,,,https://lebanon.basketball/,wikidata,2026-05-02T14:06:40.199952Z
+Chittaha,village/town/city in Lebanon,,,,https://www.facebook.com/groups/5877854410/,wikidata,2026-05-02T14:06:40.199952Z
+Al-Abhath,scientific journal,مجلَّة الأبحاث، الجامعة الأميركيَّة في بيروت، مبنى الكولدج هول، ط. 4. ص. ب: 11-0236؛ رياض الصُلح، بيروت 1107-2020؛ لُبنان.,,mailto:alabhath@aub.edu.lb,https://brill.com/view/journals/alab/alab-overview.xml,wikidata,2026-05-02T14:06:40.199952Z
+Al-Abhath,scientific journal,"Al-Abhath, American University of Beirut, Collage Hall, 4th Floor. P.O. Box 11-0236; Riad El-Solh, Beirut 1107-2020, Lebanon.",,mailto:alabhath@aub.edu.lb,https://brill.com/view/journals/alab/alab-overview.xml,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Science Journal,scientific journal,,,,http://www.cnrs.edu.lb/index.php?option=com_content&view=article&id=108:presentation&catid=14:scientific-journal&Itemid=8,wikidata,2026-05-02T14:06:40.199952Z
+Tripoli Evangelical School,school,,,,http://www.tes.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+Tripoli railway station,railway station,,,,http://www.tripolirailway.org,wikidata,2026-05-02T14:06:40.199952Z
+Umam Documentation & Research,archives,,,,http://www.umam-dr.org/,wikidata,2026-05-02T14:06:40.199952Z
+Union of Lebanese Democratic Youth,juvenile political organization,,,,http://www.uldy.org/,wikidata,2026-05-02T14:06:40.199952Z
+ambassador of the United States to Lebanon,position,,,,http://lebanon.usembassy.gov/,wikidata,2026-05-02T14:06:40.199952Z
+University Of Tripoli Lebanon,private university,,,,https://new.ut.edu.lb/en/,wikidata,2026-05-02T14:06:40.199952Z
+Wellspring Learning Community,school,,,,http://www.wellspring.edu.lb,osm|wikidata,2026-05-02T14:06:40.199952Z
+Ya Libnan,periodical,,,,https://yalibnan.com/,wikidata,2026-05-02T14:06:40.199952Z
+Yeprem and Martha Philibosian Armenian Evangelical College,school,,,,http://aecalumnibeirut.com,wikidata,2026-05-02T14:06:40.199952Z
+Zartonk,daily newspaper,,,,https://zartonkdaily.net,wikidata,2026-05-02T14:06:40.199952Z
+École supérieure des affaires,business school,,,,http://www.esa.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+Imam al-Mahdi Scouts,,,,,http://www.almahdiscouts.net,wikidata,2026-05-02T14:06:40.199952Z
+"Embassy of Poland, Beirut",embassy,Av. President Suleiman Frangieh 52 Baabda – P.O. BOX 40-215,,,https://www.gov.pl/web/liban,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Rugby Union Federation,,,,,http://www.lruf.org/,wikidata,2026-05-02T14:06:40.199952Z
+Islamic University of Lebanon,Islamic university,,,,http://www.iul.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Dar Al-Marefah Printing & Publishing,publishing house,,,,https://www.marefah.com,wikidata,2026-05-02T14:06:40.199952Z
+Al-Zaytouna Centre for Studies and Consultations,institute,,,,https://www.alzaytouna.net/,wikidata,2026-05-02T14:06:40.199952Z
+Baawerta,municipality of Lebanon,,,,http://www.baawerta.com,wikidata,2026-05-02T14:06:40.199952Z
+Centre des Archives Nationales,national archives,"B.P. 6378/113, Rue Hamra, Centre Picadilly, Beyrouth",,,http://www.can.gov.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Banque de Syrie et du Liban,business,,,,http://www.bslbank.com,wikidata,2026-05-02T14:06:40.199952Z
+"Embassy of Norway, Beirut",embassy,"Omar Dauk Street, Mina el Hosn",,,https://www.norway.no/en/lebanon,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Academic Library Consortium,library consortium,,,,http://lalc.lau.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Volleyball Federation,sports governing body,,,,http://www.lebvolley.com/,wikidata,2026-05-02T14:06:40.199952Z
+Fenicia Bank,bank,,,,http://www.feniciabank.com/,osm|wikidata,2026-05-02T14:06:40.199952Z
+Al Mawed,magazine,,,,http://www.almawed.com,wikidata,2026-05-02T14:06:40.199952Z
+Ararad,newspaper,,,,https://araraddaily.com,wikidata,2026-05-02T14:06:40.199952Z
+Bourse De Beyrouth - Beirut Stock Exchange,stock exchange,,,,https://www.bse.com.lb,wikidata,2026-05-02T14:06:40.199952Z
+Deir Al-Ahmar,human settlement,,,,http://www.deirelahmar.com/,wikidata,2026-05-02T14:06:40.199952Z
+NRJ,radio station,,,,http://www.nrjlebanon.com/,wikidata,2026-05-02T14:06:40.199952Z
+Radio One,radio station,,,,http://www.radioone.fm/,wikidata,2026-05-02T14:06:40.199952Z
+Rotana Khalijiah,television station,,,,http://www.rotana.net,wikidata,2026-05-02T14:06:40.199952Z
+Dar Alfarabi,publishing house,,,,http://dar-alfarabi.com/,wikidata,2026-05-02T14:06:40.199952Z
+Dar El-Machreq Publishers,publishing house,,,mailto:communication@darelmachreq.com,https://www.darelmachreq.com/,wikidata,2026-05-02T14:06:40.199952Z
+"Kniseh, Tyre",village/town/city in Lebanon,,,,http://uotm.org/?page_id=226&lang=ar,wikidata,2026-05-02T14:06:40.199952Z
+AI-Hariri Foundation,institution,,,,http://hariri-foundation.org/,wikidata,2026-05-02T14:06:40.199952Z
+Radio Lebanon,radio station,,,mailto:radiolibanonline@hotmail.com,http://www.radioliban.gov.lb/,wikidata,2026-05-02T14:06:40.199952Z
+Al Riyadi Club Beirut,basketball team,,,,https://www.riyadi.com/,wikidata,2026-05-02T14:06:40.199952Z
+Al Shouf Cedar Nature Reserve,protected area,,,,http://www.shoufcedar.org,wikidata,2026-05-02T14:06:40.199952Z
+The Official Lebanese Top 20,Icosad,,,,http://www.olt20.com,wikidata,2026-05-02T14:06:40.199952Z
+Téléphérique,gondola lift,,,,https://www.teleferiquelb.com/,wikidata,2026-05-02T14:06:40.199952Z
+Middle East University,church college,,,,http://meu.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese International University,private university,,,,http://www.liu.edu.lb,osm|wikidata,2026-05-02T14:06:40.199952Z
+Yahchouch,human settlement,,,,http://www.yahchouch.org,wikidata,2026-05-02T14:06:40.199952Z
+Lebanon national rugby league team,national rugby league team,,,,https://lebanonrl.com/National-Teams/256215203,wikidata,2026-05-02T14:06:40.199952Z
+Arab Open University,university,,,,https://www.arabou.edu.kw/,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Basketball Federation,sports governing body,,,,https://lebanon.basketball/,wikidata,2026-05-02T14:06:40.199952Z
+Aramean Democratic Organization,political party,,,,http://www.aramaic-dem.org,wikidata,2026-05-02T14:06:40.199952Z
+Basilian Chouerite Order,institute of consecrated life,,,,http://www.opuslibani.org.lb/vida/OBCSJB/main1.html,wikidata,2026-05-02T14:06:40.199952Z
+Horsh Ehden,protected area,,,,http://www.horshehden.org/,wikidata,2026-05-02T14:06:40.199952Z
+Chbaniye,village,,,,http://www.chbaniye.com,wikidata,2026-05-02T14:06:40.199952Z
+مليتا,museum,,,,http://www.mleeta.com/,osm|wikidata,2026-05-02T14:06:40.199952Z
+صوت بيروت,internet radio,,,,https://www.sawtbeirut.com,wikidata,2026-05-02T14:06:40.199952Z
+Empire Sodeco,movie theater,"Sodeco Square, Achrafieh, Beirut",,,http://www.circuit-empire.com.lb,wikidata,2026-05-02T14:06:40.199952Z
+Lebanese Swiss Bank,business,,,,http://www.lebaneseswissbank.com/,osm|wikidata,2026-05-02T14:06:40.199952Z
+SKeyes Center for Media and Cultural Freedom,nonprofit organization,,,,http://www.skeyesmedia.org/ar/Home,wikidata,2026-05-02T14:06:40.199952Z
+The Lebanese Cinema Movie Guide Awards,award,,,,http://www.lbmovieguide/,wikidata,2026-05-02T14:06:40.199952Z
+Phoenicia University,private university,,,,http://www.pu.edu.lb,wikidata,2026-05-02T14:06:40.199952Z
+Lee Observatory,astronomical observatory,,,,http://www.aub.edu.lb/tour/nojava/b12.html,wikidata,2026-05-02T14:06:40.199952Z
+"Embassy of Russia, Beiruth",embassy,"Mar-Elias street, El-Tina",,,https://lebanon.mid.ru,wikidata,2026-05-02T14:06:40.199952Z
+list of World Heritage Sites in Lebanon,Wikimedia list article,,,,http://whc.unesco.org/en/statesparties/lb,wikidata,2026-05-02T14:06:40.199952Z
+AL-Salam Hospital,private hospital,,,,https://hopitaldelapaix.com/,wikidata,2026-05-02T14:06:40.199952Z
+Ahliah school,school,,,,http://www.ahliahschool.edu.lb/,wikidata,2026-05-02T14:06:40.199952Z
+كاري بلان,household_linen,شارع عبد الوهاب الانكليزي,,,http://carreblanc.whiteandmore.com.lb,osm,2026-05-02T14:06:40.197781Z
+ليل نهار,restaurant,Charles Malik,,,http://leilnhar.com/,osm,2026-05-02T14:06:40.197781Z
+يسايان,jewelry,,,,http://www.yessayan.com/,osm,2026-05-02T14:06:40.197781Z
+IPT,fuel,,,,https://www.iptgroup.com.lb,osm,2026-05-02T14:06:40.197781Z
+دلاعة,hospital,"شارع دلاعة, صيدا",,,http://www.dallaahospital.com,osm,2026-05-02T14:06:40.197781Z
+طيران الشرق الآوسط,travel_agency,,,,https://www.mea.com.lb/french/home,osm,2026-05-02T14:06:40.197781Z
+جمعية متخرجي الجامعة الأميركية في بيروت,association,Beyrouth,,,http://www.waaaub.org/,osm,2026-05-02T14:06:40.197781Z
+كبابجي,fast_food,,,,https://www.kababji.com/lb,osm,2026-05-02T14:06:40.197781Z
+Medco,fuel,,,,https://www.medco.com.lb,osm,2026-05-02T14:06:40.197781Z
+Latte Art,cafe,"شارع بليس, الحمراء",,,https://www.facebook.com/LatteArtLebanon/,osm,2026-05-02T14:06:40.197781Z
+ساكيه,restaurant,,,,http://www.sakebeirut.com/,osm,2026-05-02T14:06:40.197781Z
+ستاربكس,cafe,,,,https://starbucks.com,osm,2026-05-02T14:06:40.197781Z
+آلت سيتي,cafe,شارع الحمرا,,,http://www.altcity.me,osm,2026-05-02T14:06:40.197781Z
+محمصة الرفاعي ش.م.ل.,roastery,Corniche Mazraa,,,https://www.alrifai.com/,osm,2026-05-02T14:06:40.197781Z
+مرينوس,restaurant,,,,http://www.marinusrestaurant.com/,osm,2026-05-02T14:06:40.197781Z
+كرو,restaurant,شارع المقدسي,,,http://www.crulb.com/,osm,2026-05-02T14:06:40.197781Z
+القرية البيئية,hostel,,,,https://www.ecoecovillage.com/,osm,2026-05-02T14:06:40.197781Z
+أمباسي هوتيل,hotel,شارع المقدسي,,,https://embassyhotellebanon.com/,osm,2026-05-02T14:06:40.197781Z
+CompuSHOP,hifi,"Rue Principale de Maalaka, Zahlé",,,http://www.compushop.me,osm,2026-05-02T14:06:40.197781Z
+أبو خليل,supermarket,,,,http://www.boukhalil.com,osm,2026-05-02T14:06:40.197781Z
+فود 101,restaurant,,,,http://food101faculty.com/,osm,2026-05-02T14:06:40.197781Z
+مدكو,fuel,,,,https://www.medco.com.lb,osm,2026-05-02T14:06:40.197781Z
+Radio Beirut,pub,,,,https://www.radiobeirut.net/,osm,2026-05-02T14:06:40.197781Z
+M&W ZGHEIB SARL,gift,YESOUH EL MALAK AREA,,,http://www.mwzgheib.com,osm,2026-05-02T14:06:40.197781Z
+دي آش إل,post_office,"Rue de Damas, Beyrouth",,,http://www.dhl.com.lb,osm,2026-05-02T14:06:40.197781Z
+SGBL,bank,,,,http://www.sgbl.com.lb,osm,2026-05-02T14:06:40.197781Z
+هستل بيروت,hostel,"شارع 56, الجعيتاوي",,,http://hostelbeirut.com,osm,2026-05-02T14:06:40.197781Z
+ودن بيكري,bakery,Hazmieh,,,https://www.woodenbakery.com/,osm,2026-05-02T14:06:40.197781Z
+Hawa Chicken,deli,Hazmieh,,,http://www.hawachickenlb.com/en/Home,osm,2026-05-02T14:06:40.197781Z
+بنك بيروت,bank,,,,https://www.bankofbeirut.com/,osm,2026-05-02T14:06:40.197781Z
+بنك سوسيتيه جنرال في لبنان,bank,,,,http://www.sgbl.com.lb,osm,2026-05-02T14:06:40.197781Z
+سوسيتيه جنرال,bank,,,,http://www.sgbl.com.lb,osm,2026-05-02T14:06:40.197781Z
+سفارة الفلبين,diplomatic,Baabda,,,https://beirutpe.dfa.gov.ph/,osm,2026-05-02T14:06:40.197781Z
+وردية,fuel,,,,https://www.wardieh.com/,osm,2026-05-02T14:06:40.197781Z
+Coral,fuel,,,,https://www.coraloil.com/,osm,2026-05-02T14:06:40.197781Z
+برغر كنج,fast_food,,,,https://www.bklebanon.com/,osm,2026-05-02T14:06:40.197781Z
+Antoine iD,books,,,,https://antoineonline.com/,osm,2026-05-02T14:06:40.197781Z
+شجرة الزيتون,restaurant,"ساحة سوديكو, بيروت",,,http://the-olivetree.co,osm,2026-05-02T14:06:40.197781Z
+كريباواي,fast_food,,,,https://crepaway.com,osm,2026-05-02T14:06:40.197781Z
+Malak Al Tawouk,fast_food,,,,https://www.malakaltawouk.com/,osm,2026-05-02T14:06:40.197781Z
+Healthy Basket,supermarket,"شارع الكويت, Beyrouth",,,http://www.healthybasket.org,osm,2026-05-02T14:06:40.197781Z
+Le Charcutier Aoun,supermarket,,,,https://www.lecharcutier.com/en/branches/details/14/Sin-el-Fil,osm,2026-05-02T14:06:40.197781Z
+La Boulangère Bio,bakery,"شارع مار متر, Beyrouth",,,https://www.facebook.com/LaBoulangereBio,osm,2026-05-02T14:06:40.197781Z
+Bioland,supermarket,"شارع أثينا, Beyrouth",,,http://bioland-lb.com/store.php?store_id=1,osm,2026-05-02T14:06:40.197781Z
+Al-Marej Organic Food Store,supermarket,"شارع عبد الوهاب الانكليزي, بيروت",,,https://almarejorganicfood.wordpress.com/,osm,2026-05-02T14:06:40.197781Z
+طاولة,restaurant,"شارع أرمينيا, بيروث",,,https://www.soukeltayeb.com/tawlet,osm,2026-05-02T14:06:40.197781Z
+Abed Tahan,electronics,,,,https://www.abed-tahan.com/,osm,2026-05-02T14:06:40.197781Z
+خوري هوم,electronics,,,,https://www.khouryhome.com/,osm,2026-05-02T14:06:40.197781Z
+هيبرماركت بو خليل,supermarket,,,,http://www.boukhalil.com/,osm,2026-05-02T14:06:40.197781Z
+Brummana High School,university,,,,https://bhs.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+Le Royal,hotel,ضبيه,,,http://www.leroyalbeirut.com,osm,2026-05-02T14:06:40.197781Z
+SGBL,bank,ضبية‎‎,,,http://www.sgbl.com.lb,osm,2026-05-02T14:06:40.197781Z
+Crepaway,fast_food,,,,https://crepaway.com,osm,2026-05-02T14:06:40.197781Z
+al deraset,library,"abdel nour, الرويس",,info@deraset.com,https://deraset.com/,osm,2026-05-02T14:06:40.197781Z
+Exclusive Electronics - Jad Kamal Sawah,electronics,طلعة شاليه سويس / المحكمة,,info@exclusivelb.com,http://www.exclusivelb.com,osm,2026-05-02T14:06:40.197781Z
+Tiger House,hostel,,,,https://www.booking.com/hotel/lb/tiger-house.de.html,osm,2026-05-02T14:06:40.197781Z
+L'Escroc,restaurant,Antelias,,,http://lescroc.me,osm,2026-05-02T14:06:40.197781Z
+In Progress I.T.,computer,Rue de la municipalité,,inproit@gmail.com,http://www.inprogressit.com,osm,2026-05-02T14:06:40.197781Z
+كنيسة القدّيس جاورجيوس الأرثوذكسيّة,place_of_worship,شارع البلديّة,,,http://orthomina.com,osm,2026-05-02T14:06:40.197781Z
+Bartartine,restaurant,,,,https://bar-tartine.com/,osm,2026-05-02T14:06:40.197781Z
+top Limo wedding cars,car_rental,,,,http://www.toplimpweddings.com,osm,2026-05-02T14:06:40.197781Z
+Cargo,information,,,marwankary1711@gmail.com,http://cargomarwan.simdif.com,osm,2026-05-02T14:06:40.197781Z
+منزل وائل خداج,courthouse,,,alnojoom.wk@gmail.com,http://www.studionojoom.com,osm,2026-05-02T14:06:40.197781Z
+Antoine,books,,,,https://www.antoineonline.com,osm,2026-05-02T14:06:40.197781Z
+محمية أرز الشوف الكبيرة,attraction,,,,http://www.shoufcedar.org,osm,2026-05-02T14:06:40.197781Z
+فضة بازار,jewelry,,,,http://www.silverpazar.com,osm,2026-05-02T14:06:40.197781Z
+"منتجع ""جبلنا""",chalet,alMorghan Kobayat,,info@karams.org,http://www.karams.org,osm,2026-05-02T14:06:40.197781Z
+عيادة بروسمايل,clinic,,,wkattar@yahoo.com,https://www.prosmilelebanon.com/,osm,2026-05-02T14:06:40.197781Z
+معهد غوته,educational_institution,"شارع نهر ابراهيم, بيروت",,,https://www.goethe.de/libanon,osm,2026-05-02T14:06:40.197781Z
+السفارة البريطانية,diplomatic,بيروت,,,https://www.gov.uk/world/organisations/british-embassy-beirut,osm,2026-05-02T14:06:40.197781Z
+Classic Burger,restaurant,,,,https://cbj.me/,osm,2026-05-02T14:06:40.197781Z
+اسبنيز,supermarket,,,,https://spinneys.com/,osm,2026-05-02T14:06:40.197781Z
+SGBL,bank,طريق انطلياس بكفيا,,,http://www.sgbl.com.lb,osm,2026-05-02T14:06:40.197781Z
+سمكس,ngo,"شارع بدارو, بيروت",,,https://smex.org/,osm,2026-05-02T14:06:40.197781Z
+لامبا لابز – بيروت هاكر سبيس,coworking,"شارع المكحول, الحمراء",,contact@lambalabs.com,http://lambalabs.com,osm,2026-05-02T14:06:40.197781Z
+The Office Beirut,bar,"شارع غورو, Beyrouth",,info@theofficebeirut.com,https://www.theofficebeirut.com,osm,2026-05-02T14:06:40.197781Z
+رِواق بيروت,bar,"شارع أسد رستم, Beyrouth",,,https://www.facebook.com/RiwaqBeirut/,osm,2026-05-02T14:06:40.197781Z
+السفارة الألمانية,diplomatic,"Rue Dekwaneh, Sinn el Fil",,,https://beirut.diplo.de/,osm,2026-05-02T14:06:40.197781Z
+باتشيغ,restaurant,أنطلياس,,info@batchig.com,http://batchig.com,osm,2026-05-02T14:06:40.197781Z
+O Monot Boutique Hotel,hotel,شارع مونو,,,http://www.omonot.com,osm,2026-05-02T14:06:40.197781Z
+LibanPost,post_office,شارع فوزي قاوقجي,,,https://www.libanpost.com/,osm,2026-05-02T14:06:40.197781Z
+Phoenicia,fuel,,,,https://www.medco.com.lb,osm,2026-05-02T14:06:40.197781Z
+Classic Burger Joint,fast_food,,,,https://cbj.me/,osm,2026-05-02T14:06:40.197781Z
+Bashir Services,mobile_phone,"شارع ألفرد نوبل, الحمراء",,gamesms@ymail.com,http://facebook.com/bashirservices,osm,2026-05-02T14:06:40.197781Z
+Studio Flash Color,photo,"1576, طلعة نيو روضة",,studioflashcolor@gmail.com,http://studioflashcolor.com,osm,2026-05-02T14:06:40.197781Z
+طيران الإمارات,travel_agency,بيروت,,,https://www.emirates.com/lb/french/,osm,2026-05-02T14:06:40.197781Z
+كلاسيك برغر كفرديبان,fast_food,,,,https://cbj.me/,osm,2026-05-02T14:06:40.197781Z
+مترو المدينة,theatre,بيروت,,,https://metromadina.com/,osm,2026-05-02T14:06:40.197781Z
+سوبر جوس,beverages,,,fadel.joseph@yahoo.com,http://SuperJus-lb.com,osm,2026-05-02T14:06:40.197781Z
+مؤسسة كهرباء لبنان,government,,,,http://www.edl.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+تندر بار,restaurant,,,,https://tenderbar-co.com/,osm,2026-05-02T14:06:40.197781Z
+ليبان بوست - بكفيا,post_office,,,,https://www.libanpost.com,osm,2026-05-02T14:06:40.197781Z
+ملك الطاووق,fast_food,,,,https://www.malakaltawouk.com/,osm,2026-05-02T14:06:40.197781Z
+Malak Al Tawouk Head Office,fast_food,,,,https://www.malakaltawouk.com/,osm,2026-05-02T14:06:40.197781Z
+ملاك الطاووق,fast_food,,,,https://www.malakaltawouk.com/,osm,2026-05-02T14:06:40.197781Z
+ملاك الطاووق ستي مول,fast_food,,,,https://www.malakaltawouk.com/,osm,2026-05-02T14:06:40.197781Z
+حسن قصير,school,,,,http://www.amaleducation.com/en/college-6/schools-about/item/297-martyr-hasan-kassir-high-school,osm,2026-05-02T14:06:40.197781Z
+Macrotronics,computer,,,,https://macrotronics.net/,osm,2026-05-02T14:06:40.197781Z
+ب 018,nightclub,,,,http://www.b018.com,osm,2026-05-02T14:06:40.197781Z
+white,nightclub,,,,http://www.whitebeirut.com,osm,2026-05-02T14:06:40.197781Z
+بنك سوسيتي جينيرال,bank,,,,http://www.sgbl.com.lb,osm,2026-05-02T14:06:40.197781Z
+Notre Dame de la paix,place_of_worship,,,,http://www.pndpkfarhbab.com/,osm,2026-05-02T14:06:40.197781Z
+سفارة جمهورية العراق,diplomatic,"Farid Trad Street, بيروت",,brtemb@mofa.gov.iq,https://www.mofa.gov.iq/beirut/,osm,2026-05-02T14:06:40.197781Z
+Bois de Roses,events_venue,,,info@boisderoses.com,http://www.boisderoses.com,osm,2026-05-02T14:06:40.197781Z
+بيت مسك,apartment,,,,https://beitmisk.com/,osm,2026-05-02T14:06:40.197781Z
+بورغندي,restaurant,"752, شارع غورو, بيروت",,,https://burgundybeirut.com/,osm,2026-05-02T14:06:40.197781Z
+Eco 101,mall,,,,http://www.eco101mall.me/,osm,2026-05-02T14:06:40.197781Z
+كودي,educational_institution,,,,https://codi.tech/,osm,2026-05-02T14:06:40.197781Z
+دماسك روز دار ضيافة لبناني,guest_house,"36, Shawya street",,booking@damaskroselebaneseguesthouse.com,http://www.damaskroselebaneseguesthouse.com,osm,2026-05-02T14:06:40.197781Z
+الفيلا,events_venue,,,,http://www.thevillavenue.com/,osm,2026-05-02T14:06:40.197781Z
+Saidon Hostel,hostel,bqousts,,,http://www.saidonhostel.com,osm,2026-05-02T14:06:40.197781Z
+QUAD Digital Media,advertising_agency,"Bechara El Khoury, Tripoli",,,https://www.quad-bh.com/,osm,2026-05-02T14:06:40.197781Z
+Couqley,restaurant,,,,http://cougley.com,osm,2026-05-02T14:06:40.197781Z
+Skyfall Club,restaurant,,,,http://skyfallclub.com/,osm,2026-05-02T14:06:40.197781Z
+بنك الاعتماد اللبناني,bank,Fouad Shehab,,,https://www.creditlibanais.com.lb,osm,2026-05-02T14:06:40.197781Z
+مكتبة الفا,library,Debbiyeh Highway,,,http://www.elvaprint.com,osm,2026-05-02T14:06:40.197781Z
+Arab Image Foundation,library,"337, شارع غورو, Beyrouth",,hello@arabimagefoundation.org,http://www.arabimagefoundation.org,osm,2026-05-02T14:06:40.197781Z
+Fat Monk,bar,,,info@fatmonk.co,http://fatmonk.co,osm,2026-05-02T14:06:40.197781Z
+Auberge Hadath El Jebbeh,guest_house,,,,http://www.hadatheljebbeh.com,osm,2026-05-02T14:06:40.197781Z
+Old Town Guest House,apartment,Rue 105,,info@oldtownguesthouses.com,https://oldtownguesthouses.com/,osm,2026-05-02T14:06:40.197781Z
+The Concept,furniture,"Sultan Ibrahim, Bir Hassan",,,https://theconcept-lb.com/,osm,2026-05-02T14:06:40.197781Z
+Les Colombes,camp_site,عمشيت,,,https://campinglescolombes.com,osm,2026-05-02T14:06:40.197781Z
+Rami Sayegh Photography,photographer,"Route Principale de Qoubbeyaa, Qoubbeyaa",,info@ramisayegh.com,https://www.ramisayegh.com/,osm,2026-05-02T14:06:40.197781Z
+يونيون,restaurant,Madrid Street/Rue 56,,,https://www.uniuneatery.com/,osm,2026-05-02T14:06:40.197781Z
+الحدث طلعه السان تيريذ,apartment,سان تيريز,,kharsa11@gmail.com,http://www.truelinegroup.net,osm,2026-05-02T14:06:40.197781Z
+محمد الخرسه,apartment,شارع 4,,kharsa11@outlook.com,http://www.truelinegroup.net,osm,2026-05-02T14:06:40.197781Z
+Crepaway,restaurant,ريفون,,,https://crepaway.com,osm,2026-05-02T14:06:40.197781Z
+مدكو,fuel,حلبا,,,https://www.medco.com.lb,osm,2026-05-02T14:06:40.197781Z
+جامعة الشرق الأوسط,university,"شارع فردوس, متن",,,https://meu.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+Fiber Resto,restaurant,شارع الصيداني,,,http://www.fiberresto.com,osm,2026-05-02T14:06:40.197781Z
+Plat Du Sour,restaurant,,,,http://www.platdusour.com,osm,2026-05-02T14:06:40.197781Z
+Pâtisserie Noura,bakery,شارع إميل لحود,,,http://noura.com.lb/,osm,2026-05-02T14:06:40.197781Z
+Jammal,restaurant,,,,http://jammalrestaurant.com/,osm,2026-05-02T14:06:40.197781Z
+Groupe AJ,company,,,info@ajtradinggroup.com,http://ajtradinggroup.com/,osm,2026-05-02T14:06:40.197781Z
+صنوبر بلدي,convenience,طريق صيدا - جزين,,,https://pinenuts.vip,osm,2026-05-02T14:06:40.197781Z
+تعاونية صيادي الأسماك فدعوس,association,"طريق البحر فدعوس, فدعوس",,,https://www.facebook.com/people/Coop%C3%A9rative-Des-P%C3%AAcheurs-Fadous/100008857025850/,osm,2026-05-02T14:06:40.197781Z
+East Village,restaurant,"شارع بدارو, بيروت",,,https://eastvillagecuisine.com/,osm,2026-05-02T14:06:40.197781Z
+Grab'n Go,supermarket,,,,https://grabngolebanon.com,osm,2026-05-02T14:06:40.197781Z
+Château Rose,florist,"Régie, Ghazieh",,chateau.rose.ghazieh@gmail.com,https://chateau-rose.business.site/,osm,2026-05-02T14:06:40.197781Z
+Collège des Sœurs des Saints-Cœurs Aïn Najm,school,,,,https://ainnajm.sscc.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+Trop Cool Cafe,cafe,"idea, Beyrouth",,,https://nope.com/,osm,2026-05-02T14:06:40.197781Z
+lycee la Fontaine,school,"شارع عبد الغني عريسي, برج أبي حيدر",,,https://www.facebook.com/Lyc%C3%A9e-La-Fontaine-110012923769516/,osm,2026-05-02T14:06:40.197781Z
+ياسين مشوي,restaurant,"طريق الإمام الخميني, بيروت",,,https://broasted-yassine.com.lb,osm,2026-05-02T14:06:40.197781Z
+فلب بلاين,clothes,,,,https://www.plein.com,osm,2026-05-02T14:06:40.197781Z
+Kina Handcrafted Bar,bar,,,,https://www.instagram.com/kinahandcraftedbar/,osm,2026-05-02T14:06:40.197781Z
+Bar du Port,bar,Seaside Road,,,https://barduportbeirut.com,osm,2026-05-02T14:06:40.197781Z
+Sea Sweet Patisserie,pastry,Beyrouth,,,https://www.seasweet.com,osm,2026-05-02T14:06:40.197781Z
+Hamdan Surveying,surveyor,"Route Principale de Qoubbeyaa, Qoubbeyaa",,,https://hamdandesign.com,osm,2026-05-02T14:06:40.197781Z
+Ni Caffe,restaurant,,,,http://ni-cafe.com,osm,2026-05-02T14:06:40.197781Z
+Fattouh crypto,mobile_phone,,,,https://www.facebook.com/cryptofattouh,osm,2026-05-02T14:06:40.197781Z
+Tawlet Mar Mikhael,restaurant,,,,https://www.soukeltayeb.com/tawlet/1/tawlet-mar-mikhael,osm,2026-05-02T14:06:40.197781Z
+Multiverse,toys,شارع إميل أده,,,https://multiverselb.com/,osm,2026-05-02T14:06:40.197781Z
+بول ستوديو,photographer,"1, شارع الأندلس",,info@paul-studio.com,http://www.paul-studio.com,osm,2026-05-02T14:06:40.197781Z
+Dar Zefta,guest_house,"الزهراني - النبطية أوتوستراد, Nabatieh",,info@darzefta.com,https://www.darzefta.com,osm,2026-05-02T14:06:40.197781Z
+Bitcoin in Lebanon,bureau_de_change,,,,https://www.bitcoininlebanon.com/,osm,2026-05-02T14:06:40.197781Z
+Groupe W fzllc,consulting,"Rue Haouch El Oumara, Zahlé",,,https://www.groupwfzllc.com,osm,2026-05-02T14:06:40.197781Z
+بيت الكتائب,political_party,,,,https://www.kataeb.org/,osm,2026-05-02T14:06:40.197781Z
+وزارة السياحة اللبنانية,government,,,,http://mot.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+Tom & Mutz,restaurant,,,,https://www.tomandmutz.com/,osm,2026-05-02T14:06:40.197781Z
+Choueh Law Firm,lawyer,,,contact@chouehlawfirm.com,https://chouehlawfirm.com,osm,2026-05-02T14:06:40.197781Z
+Environment Protection Committee (EPC),ngo,"Farah Antoun, Al Mina, Tripoli الميناء، طرابلس",,,https://epcleb.com/,osm,2026-05-02T14:06:40.197781Z
+Rkein Motors,car,,,,https://www.rkeinmotors.com/,osm,2026-05-02T14:06:40.197781Z
+مركز قشمت للشطرنج,hobby,,,,https://keshmat.org,osm,2026-05-02T14:06:40.197781Z
+Odette's Taqueria,restaurant,"333, Rue Selm de Bustros",,,https://otaqueria.com,osm,2026-05-02T14:06:40.197781Z
+Al Fundok Hotel,hotel,Masser El Chouf,,,http://alfundok.com/,osm,2026-05-02T14:06:40.197781Z
+PRO X Riding Club,rental,,,,https://proxridingclub.com/,osm,2026-05-02T14:06:40.197781Z
+Living Room Beirut,cafe,شارع ابراهيم باشا,,,https://livingroombeirut.com/,osm,2026-05-02T14:06:40.197781Z
+La Casa Antigua,guest_house,,,,https://www.airbnb.fr/rooms/31164624?check_in=2024-07-22&check_out=2024-07-27&guests=1&adults=1&s=67&unique_share_id=f29569e5-08b4-484d-a563-2c4cd3d02240,osm,2026-05-02T14:06:40.197781Z
+Fuaki,health_food,شارع 14,,fuaki.info@gmail.com,https://fuaki.com/,osm,2026-05-02T14:06:40.197781Z
+Via Mina,hotel,,,,https://www.viamina.com,osm,2026-05-02T14:06:40.197781Z
+Solidarités International,ngo,,,,https://www.solidarites.org/en/,osm,2026-05-02T14:06:40.197781Z
+مؤسسة غانم,electrical,شارع نعوم لبكي,,,http://ghanemtrading.com,osm,2026-05-02T14:06:40.197781Z
+السنيور,restaurant,شارع 12,,,http://www.alsaniour.com/,osm,2026-05-02T14:06:40.197781Z
+حمامات الرومان,attraction,,,,http://www.beirutheritagetrail.com,osm,2026-05-02T14:06:40.197781Z
+أوجيرو خلدة,telecommunication,طريق البحر,,,http://ogero.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+Tasty Bees,beverages,أتستراد البحر,,,https://www.shop.tastybees.com/scanmenu/,osm,2026-05-02T14:06:40.197781Z
+Malik's Choueifat,stationery,أتستراد البحر,,,https://maliks.com/,osm,2026-05-02T14:06:40.197781Z
+أحمد العبدالله,restaurant,أتستراد البحر,,,https://ahmadalabdalla.com/,osm,2026-05-02T14:06:40.197781Z
+Sushi Star,restaurant,,,,https://sushistar.co/,osm,2026-05-02T14:06:40.197781Z
+Baytna,restaurant,,,,https://baytna.info,osm,2026-05-02T14:06:40.197781Z
+Brew,cafe,"شارع مدام كوري, قريطم",,,https://www.sirantowers.com/coffe_community,osm,2026-05-02T14:06:40.197781Z
+مؤسسة سلوى روضة شقير,museum,,,info@salouaraoudachoucair.com,https://salouaraoudachoucair.com/,osm,2026-05-02T14:06:40.197781Z
+Em Sherif Deli,fast_food,شارع رزق الله,,,https://emsherif.com/,osm,2026-05-02T14:06:40.197781Z
+أجهزة الكمبيوتر ومكوناتها,computer,,,,https://pcandparts.com/,osm,2026-05-02T14:06:40.197781Z
+Guita bed&bloom,guest_house,,,,http://www.guita.co/,osm,2026-05-02T14:06:40.197781Z
+بيوتي,hotel,+9613310200,,,https://www.bouyouti.com/,osm,2026-05-02T14:06:40.197781Z
+Nool Coffeeshop,cafe,"+9613086652, طريق بدنايل العام",,,https://www.noolcoffee.com/,osm,2026-05-02T14:06:40.197781Z
+HelouMed,pharmacy,"+96181272817, شارع 503 ت",,,https://heloumed.com/,osm,2026-05-02T14:06:40.197781Z
+Whish Money,money_transfer,"+9615807669, طريق صيدا القديمة",,,http://whish.money,osm,2026-05-02T14:06:40.197781Z
+Boombox Beirut,studio,,,,https://www.boombox-studios.com/,osm,2026-05-02T14:06:40.197781Z
+Sororité Candles,candles,"Baladieh Road, Choueifat",,support@sororitecandles.com,https://sororitecandles.com/,osm,2026-05-02T14:06:40.197781Z
+BYD Lebanon,car,"+9613188002, أتستراد البحر",,,https://www.byd.com/en-lb,osm,2026-05-02T14:06:40.197781Z
+محطة الحلبي بالقبة - مدكو,fuel,"+96176645565, الينار ١",,,https://www.medco.com.lb/,osm,2026-05-02T14:06:40.197781Z
+كتدي فليكس,cafe,"شارع فينيقيا, عين المريسة",,,https://candy-flakes.com/,osm,2026-05-02T14:06:40.197781Z
+برزخ,cafe,شارع القاهرة,,,https://brzkh.org/,osm,2026-05-02T14:06:40.197781Z
+3D Scapers,copyshop,"Baladieh Road, Choueifat",,support@3dscapers.com,https://3dscapers.com/,osm,2026-05-02T14:06:40.197781Z
+ELECTRO COMPUTER,electronics_repair,"123, شارع غيلان, برح حمود",,,https://l.facebook.com/l.php?u=https%3A%2F%2Felectro-computer.wixsite.com%2Fwebsite-1%3Ffbclid%3DIwZXh0bgNhZW0CMTAAYnJpZBExNWh6eFlqT1o5emJ1eDJnVXNydGMGYXBwX2lkEDIyMjAzOTE3ODgyMDA4OTIAAR7uwBAqEB-Su_lIXsb4k92Gc1sqiKB1cpK613K-H_KvyMQvaK1H0r_nR4LHoA_aem_nT_7c,osm,2026-05-02T14:06:40.197781Z
+Bassam Ghrawi Confectionery Kfarchima,confectionery,,,,https://ghrawi.com/,osm,2026-05-02T14:06:40.197781Z
+AKI The Lounge,bar,"Pink Center, Main Street, Kaslik 1899",,,https://www.akithelounge.com/,osm,2026-05-02T14:06:40.197781Z
+Birex Solutions,consulting,"Abi Samra, Tripoli",,,https://birexsolutions.com,osm,2026-05-02T14:06:40.197781Z
+دار العجزة الاسلامية,hospital,,,,https://www.dar-ajaza-islamia.org.lb/,osm,2026-05-02T14:06:40.197781Z
+الكلية العالية لادارة الاعمال,university,"289, شارع كليمنصو, بيروت",,,https://www.esa.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+مجلس النواب,government,"ساحة النجمة, Beyrouth",,,https://www.lp.gov.lb,osm,2026-05-02T14:06:40.197781Z
+الجامعة الأمريكية في بيروت,university,Beyrouth,,,http://www.aub.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+المتحف الوطني,museum,,,,http://www.beirutnationalmuseum.com/,osm,2026-05-02T14:06:40.197781Z
+Anjar,attraction,زحلة,,,"https://en.m.wikipedia.org/wiki/Anjar,_Lebanon",osm,2026-05-02T14:06:40.197781Z
+الليسه الكبرى الفرنسي اللبناني,school,,,,http://www.glfl.edu.lb,osm,2026-05-02T14:06:40.197781Z
+وزارة المالية,government,بيروت,,,https://www.finance.gov.lb/,osm,2026-05-02T14:06:40.197781Z
+سبينس,supermarket,,,,https://www.spinneys.com/,osm,2026-05-02T14:06:40.197781Z
+موبيل توب,furniture,,,,https://www.mobilitop.com/,osm,2026-05-02T14:06:40.197781Z
+الجامعة اللبنانية الأمريكية,university,بيروت,,,https://www.lau.edu.lb/locations/beirut.php,osm,2026-05-02T14:06:40.197781Z
+سيتي سنتر مول,mall,,,,https://www.citycentremallbeirut.com/,osm,2026-05-02T14:06:40.197781Z
+Global Outlets,clothes,,,,http://www.glowbaloutlets.com,osm,2026-05-02T14:06:40.197781Z
+الجامعة الأمريكية للعلوم والتكنولوجيا,university,"شارع ألفريد نقاش, Achrafiyé",,,https://www.aust.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+جامعة الكفاءات,university,"Route Principale Aïn Saadé, Aïn Saadé",,,http://www.aku.edu.lb,osm,2026-05-02T14:06:40.197781Z
+مخابز كيروز,bakery,,,,http://keyrouzbakery.com/,osm,2026-05-02T14:06:40.197781Z
+مدرسة مار يوسف عينطورة,school,,,,http://www.college-antoura.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+ثانوية القلب الاقدس,school,,,,https://www.sioufi.sscc.edu.lb,osm,2026-05-02T14:06:40.197781Z
+دون غاسيا بارك,theme_park,,,,http://dongassiapark.com/,osm,2026-05-02T14:06:40.197781Z
+مستشفى المشرق,hospital,سن الفيل,,,http://www.cliniquedulevant.com,osm,2026-05-02T14:06:40.197781Z
+مركز بيروت للأبحاث والإبتكار,research,"شارع الأب شانتور, Beyrouth",,,https://bric.lebcsr.org/,osm,2026-05-02T14:06:40.197781Z
+Animal City,zoo,,,,https://www.animalcitylebanon.com,osm,2026-05-02T14:06:40.197781Z
+"Armenian Genocide Orphans' ""Aram Bezikian"" Museum",museum,"Armenian Street, Byblos",,,https://www.facebook.com/agomuseum/,osm,2026-05-02T14:06:40.197781Z
+الجامعة اللبنانية كلية الهندسة روميه,university,,,,http://www.ulfg.ul.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+مدرسة يسوع ومريم,school,,,,https://www.jmrab.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+IFRC MENA Regional Office,ngo,,,,https://media.ifrc.org/ifrc/where-we-work/middle-east-and-north-africa/,osm,2026-05-02T14:06:40.197781Z
+السفارة الإسبانية الحدث,diplomatic,الحدث,,,http://www.exteriores.gob.es/Embajadas/BEIRUT,osm,2026-05-02T14:06:40.197781Z
+دير مار يوحنا - دير القلعة,place_of_worship,,,,http://www.deiralkalaa.com/website/,osm,2026-05-02T14:06:40.197781Z
+رعيّة مار الياس المارونيّة,place_of_worship,شارع فخر الدين,,,http://saint-elias.com/,osm,2026-05-02T14:06:40.197781Z
+وايت هوس سويتس,hotel,,,,http://www.whitehouse-lb.com/,osm,2026-05-02T14:06:40.197781Z
+الجامعة الإسلامية في لبنان,university,,,,http://www.iul.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+المديرية العامة للأمن العام اللبناني,government,بيروت,,,http://www.general-security.gov.lb,osm,2026-05-02T14:06:40.197781Z
+بيت بيروت,museum,بيروت,,,http://www.beitbeirut.org,osm,2026-05-02T14:06:40.197781Z
+لباي دور,bakery,,,,http://www.labeilledor.com,osm,2026-05-02T14:06:40.197781Z
+ليسيه فردان,school,,,,http://www.lycee-verdun.edu.lb,osm,2026-05-02T14:06:40.197781Z
+Radisson Blu Martinez,hotel,,,,https://www.radissonblu.com/en/hotel-beirut,osm,2026-05-02T14:06:40.197781Z
+مسجد الداعوق,place_of_worship,شارع بليس,,info@aldaouk.org,http://www.aldaouk.org,osm,2026-05-02T14:06:40.197781Z
+المدرسة الإنجيلية الفرنسية,school,"شارع مدام كوري, قريطم",,,https://www.cpf.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+أنتوورك,coworking,Beyrouth,,,https://www.antwork.com,osm,2026-05-02T14:06:40.197781Z
+أنتوورك,coworking,,,,https://www.antwork.com,osm,2026-05-02T14:06:40.197781Z
+آرت أن اسبيرز,gallery,,,,http://www.artonspears.com/,osm,2026-05-02T14:06:40.197781Z
+أومامي,wine,خربة قنفار,,info@umamiwinelebanon.com,http://umamiwinelebanon.com/,osm,2026-05-02T14:06:40.197781Z
+Nabu,museum,,,,https://www.nabumuseum.com/about,osm,2026-05-02T14:06:40.197781Z
+Crepaway,restaurant,"501, شارع 2",,,https://crepaway.com,osm,2026-05-02T14:06:40.197781Z
+Zita Fidar,guest_house,"87, Rue 104",,info@zita-fidar.com,https://zitafidar.com/,osm,2026-05-02T14:06:40.197781Z
+كلية اللاهوت للشرق الأدنى,college,بيروت,,,https://www.theonest.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+The World of Science for Private Tutoring,prep_school,"Haret Saida, Jebaa public street, Saida",,,https://www.facebook.com/WSPTC,osm,2026-05-02T14:06:40.197781Z
+مستشفى فقيه,hospital,,,,http://www.drnabilfakih.com/,osm,2026-05-02T14:06:40.197781Z
+Borderless,ngo,,,info@borderlessngo.org,https://www.borderlessngo.org/,osm,2026-05-02T14:06:40.197781Z
+Boulevard Mall Saida,mall,,,,https://www.facebook.com/boulevardmallsaida/,osm,2026-05-02T14:06:40.197781Z
+سِكّة صيدا,community_centre,,,hello@sikkasaida.org,https://sikkasaida.org,osm,2026-05-02T14:06:40.197781Z
+فندق ومنتجع كمبينسكي سمرلاند بيروت,hotel,,,,https://www.kempinski.com/en/beirut/kempinski-summerland-hotel-resort/,osm,2026-05-02T14:06:40.197781Z
+shawarma w bas,restaurant,"123, رأس النبع",,,http://shawarmawbas.com,osm,2026-05-02T14:06:40.197781Z
+Rayak Hospital,hospital,,,,http://rayakhospital.com/,osm,2026-05-02T14:06:40.197781Z
+Dhour Shweir Public Secondary School,school,,,,https://dspss.com,osm,2026-05-02T14:06:40.197781Z
+زحلة ديجيتال دستركت,government,"Rue Haouch El Oumara, Zahlé",,,https://www.zahledigitaldistrict.com,osm,2026-05-02T14:06:40.197781Z
+Bayt Nawal Guest house,guest_house,,,khoury.peter@hotmail.com,https://www.instagram.com/baytnawal/,osm,2026-05-02T14:06:40.197781Z
+USJ Campus des Sciences Humaines,university,,,,https://www.usj.edu.lb/universite/institutions.php?getinst=68,osm,2026-05-02T14:06:40.197781Z
+Beyt El Midan,guest_house,Ehden,,info@beytelmidan.com,https://www.beytelmidan.com/,osm,2026-05-02T14:06:40.197781Z
+الجامعة العالمية - فرع الدوحة,university,,,,https://gu.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+Les Filles De Papa Guest House,guest_house,"5441, دوق",,reservations@lesfillesdepapa.com,https://lesfillesdepapa.com,osm,2026-05-02T14:06:40.197781Z
+Miss Pinky,clothes,,,,https://api.whatsapp.com/message/GHPFRTXBCR6BP1?autoload=1&app_absent=0,osm,2026-05-02T14:06:40.197781Z
+ثانوية المقاصد الإسلامية,school,,,,https://mak-secondary.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+مدرسة عائشة أم المؤمنين المجانية,school,,,,https://mak-aisha.edu.lb/,osm,2026-05-02T14:06:40.197781Z
+الجامعة اللبنانية - كلية التكنولوجيا,university,,,,http://ft.ul.edu.lb,osm,2026-05-02T14:06:40.197781Z
+أوجيرو,telecommunication,صيدا,,,https://www.ogero.gov.lb/ar/,osm,2026-05-02T14:06:40.197781Z
+Al Moasat Association,social_facility,Al Moasat Street,,,https://www.almoasat.org/ar,osm,2026-05-02T14:06:40.197781Z
+سراي نسيب باشا,events_venue,"شراع القصور, برامية",,info@saraynassibbasha.com,http://www.saraynassibbasha.com/,osm,2026-05-02T14:06:40.197781Z
+مجمع قوى الأمن - تلة مار الياس,police,,,,https://isf.gov.lb/ar/,osm,2026-05-02T14:06:40.197781Z
+National Evangelical Institue For Boys & Girls,school,,,,https://neigb.edu.lb,osm,2026-05-02T14:06:40.197781Z
