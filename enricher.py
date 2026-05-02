@@ -163,5 +163,7 @@ def enrich(records: list[dict]) -> list[dict]:
         r.setdefault("facebook", None)
         r.setdefault("instagram", None)
         r.setdefault("website_live", None)
+        r.setdefault("rating", None)
+        r.setdefault("review_count", None)
 
     return records

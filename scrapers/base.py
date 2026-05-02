@@ -15,6 +15,8 @@ class BusinessRecord(TypedDict):
     website_live: bool | None
     facebook: str | None
     instagram: str | None
+    rating: float | None
+    review_count: int | None
     source: str
     scraped_at: str
     completeness_score: int

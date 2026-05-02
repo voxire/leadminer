@@ -31,6 +31,8 @@ jobs:
         run: uv pip install --system -r requirements.txt
 
       - name: Run scrapers
+        env:
+          GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
         run: python main.py
 
       - name: Commit updated CSVs

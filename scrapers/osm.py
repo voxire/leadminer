@@ -94,16 +94,18 @@ class OSMScraper(BaseScraper):
                 name=name,
                 category=category,
                 address=address,
-                region=None,  # filled by enricher
+                region=None,
                 lat=lat,
                 lon=lon,
                 phone=phone,
                 email=email,
                 website=website,
-                website_live=None,  # filled by enricher
+                website_live=None,
                 facebook=facebook,
                 instagram=instagram,
+                rating=None,
+                review_count=None,
                 source="osm",
                 scraped_at=scraped_at,
-                completeness_score=0,  # filled by enricher
+                completeness_score=0,
             )

@@ -83,6 +83,8 @@ class WikidataScraper(BaseScraper):
                 website_live=None,
                 facebook=None,
                 instagram=None,
+                rating=None,
+                review_count=None,
                 source="wikidata",
                 scraped_at=scraped_at,
                 completeness_score=0,

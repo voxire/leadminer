@@ -5,6 +5,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 
 from scrapers.osm import OSMScraper
 from scrapers.wikidata import WikidataScraper
+from scrapers.google_places import GooglePlacesScraper
 from dedup import dedup
 from enricher import enrich
 
@@ -12,7 +13,7 @@ FIELDS = [
     "name", "category", "region", "address", "lat", "lon",
     "phone", "email", "website", "website_live",
     "facebook", "instagram",
-    "completeness_score", "source", "scraped_at",
+    "rating", "review_count", "completeness_score", "source", "scraped_at",
 ]
 DATA_DIR = pathlib.Path("data")
 
@@ -28,7 +29,7 @@ def write_csv(path: pathlib.Path, records: list[dict]) -> None:
 def main() -> None:
     raw: list[dict] = []
 
-    scrapers = [OSMScraper(), WikidataScraper()]
+    scrapers = [OSMScraper(), WikidataScraper(), GooglePlacesScraper()]
 
     def run(scraper):
         return type(scraper).__name__, list(scraper.scrape())
