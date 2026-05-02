@@ -59,6 +59,10 @@ class OSMScraper(BaseScraper):
             if not name:
                 continue
 
+            # coordinates — nodes have lat/lon directly, ways have a center object
+            lat = el.get("lat") or (el.get("center") or {}).get("lat")
+            lon = el.get("lon") or (el.get("center") or {}).get("lon")
+
             category = (
                 tags.get("shop")
                 or tags.get("amenity")
@@ -80,6 +84,8 @@ class OSMScraper(BaseScraper):
             phone = tags.get("phone") or tags.get("contact:phone")
             email = tags.get("email") or tags.get("contact:email")
             website = tags.get("website") or tags.get("contact:website") or tags.get("url")
+            facebook = tags.get("contact:facebook") or tags.get("facebook")
+            instagram = tags.get("contact:instagram") or tags.get("instagram")
 
             if website and not website.startswith("http"):
                 website = "https://" + website
@@ -88,9 +94,16 @@ class OSMScraper(BaseScraper):
                 name=name,
                 category=category,
                 address=address,
+                region=None,  # filled by enricher
+                lat=lat,
+                lon=lon,
                 phone=phone,
                 email=email,
                 website=website,
+                website_live=None,  # filled by enricher
+                facebook=facebook,
+                instagram=instagram,
                 source="osm",
                 scraped_at=scraped_at,
+                completeness_score=0,  # filled by enricher
             )

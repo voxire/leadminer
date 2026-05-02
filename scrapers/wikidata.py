@@ -58,7 +58,7 @@ class WikidataScraper(BaseScraper):
 
         for row in results:
             name = row.get("itemLabel", {}).get("value")
-            if not name or name.startswith("Q"):  # skip unlabeled items
+            if not name or name.startswith("Q"):
                 continue
 
             website = row.get("websiteLabel", {}).get("value")
@@ -74,9 +74,16 @@ class WikidataScraper(BaseScraper):
                 name=name,
                 category=category,
                 address=address,
+                region=None,
+                lat=None,
+                lon=None,
                 phone=phone,
                 email=email,
                 website=website,
+                website_live=None,
+                facebook=None,
+                instagram=None,
                 source="wikidata",
                 scraped_at=scraped_at,
+                completeness_score=0,
             )

@@ -35,9 +35,10 @@ def _field_count(record: dict) -> int:
 
 
 def _merge(a: dict, b: dict) -> dict:
+    all_keys = set(a) | set(b)
     merged = {}
-    for key in a:
-        av, bv = a[key], b[key]
+    for key in all_keys:
+        av, bv = a.get(key), b.get(key)
         if av is None:
             merged[key] = bv
         elif bv is None:
