@@ -151,7 +151,10 @@ def enrich(records: list[dict]) -> list[dict]:
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
     for r in records:
-        r["region"] = infer_region(r.get("address"), r.get("lat"), r.get("lon"))
+        # Only infer region if the scraper hasn't already set one
+        # (Google Places sets KSA regions that this Lebanon-only inferer would clobber)
+        if not r.get("region"):
+            r["region"] = infer_region(r.get("address"), r.get("lat"), r.get("lon"))
         r["completeness_score"] = completeness_score(r)
 
     records = check_websites(records)
