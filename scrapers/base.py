@@ -7,6 +7,7 @@ class BusinessRecord(TypedDict):
     category: str | None
     address: str | None
     region: str | None
+    country: str | None
     lat: float | None
     lon: float | None
     phone: str | None
@@ -17,6 +18,8 @@ class BusinessRecord(TypedDict):
     instagram: str | None
     rating: float | None
     review_count: int | None
+    industry_priority: str | None
+    recommended_service: str | None
     source: str
     scraped_at: str
     completeness_score: int
