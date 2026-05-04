@@ -18,6 +18,7 @@ Run:
 
 import csv
 import pathlib
+import re
 import sys
 from concurrent.futures import ThreadPoolExecutor, as_completed
 
@@ -50,10 +51,13 @@ def write_csv(path: pathlib.Path, records: list[dict]) -> None:
 
 def has_any_contact(record: dict) -> bool:
     """Sales-ready threshold: phone OR email OR Instagram."""
+    phone = re.sub(r"\D", "", str(record.get("phone") or ""))
+    email = str(record.get("email") or "").strip()
+    instagram = str(record.get("instagram") or "").strip()
     return bool(
-        (record.get("phone") and len(str(record["phone"])) > 3)
-        or (record.get("email") and len(str(record["email"])) > 3)
-        or (record.get("instagram") and len(str(record["instagram"])) > 3)
+        len(phone) >= 7
+        or ("@" in email and len(email) > 5)
+        or len(instagram) > 3
     )
 
 

@@ -21,8 +21,8 @@ from typing import Iterator
 
 import requests
 
+from enricher import infer_region
 from .base import BaseScraper, BusinessRecord
-from .whitelist import is_business_category
 
 API_URL = "https://places.googleapis.com/v1/places:searchText"
 
@@ -121,41 +121,6 @@ KSA_QUERIES = [
     "hotels in Dammam",
 ]
 
-# Lebanon region inference - rough lat/lon boxes
-# (Replace with proper polygons later if precision matters)
-LEBANON_REGIONS = [
-    # (name, min_lat, max_lat, min_lon, max_lon)
-    ("Beirut",         33.85, 33.92, 35.45, 35.55),
-    ("Mount Lebanon",  33.70, 34.20, 35.40, 35.85),
-    ("North Lebanon",  34.20, 34.70, 35.70, 36.30),
-    ("Akkar",          34.40, 34.70, 35.90, 36.50),
-    ("Bekaa",          33.60, 34.40, 35.60, 36.50),
-    ("Baalbek-Hermel", 34.00, 34.65, 36.00, 36.70),
-    ("South Lebanon",  33.05, 33.55, 35.10, 35.65),
-    ("Nabatieh",       33.20, 33.70, 35.30, 35.75),
-]
-
-# KSA region inference
-KSA_REGIONS = [
-    # (name, min_lat, max_lat, min_lon, max_lon)
-    ("Riyadh", 24.40, 25.20, 46.40, 47.20),
-    ("Jeddah", 21.30, 21.80, 39.05, 39.45),
-    ("Dammam", 26.20, 26.65, 49.85, 50.30),
-    ("Mecca",  21.30, 21.55, 39.75, 40.00),
-    ("Medina", 24.30, 24.65, 39.45, 39.80),
-]
-
-
-def _infer_region(lat: float | None, lon: float | None, country: str) -> str | None:
-    if lat is None or lon is None:
-        return None
-    boxes = LEBANON_REGIONS if country == "LB" else KSA_REGIONS if country == "SA" else []
-    for name, min_lat, max_lat, min_lon, max_lon in boxes:
-        if min_lat <= lat <= max_lat and min_lon <= lon <= max_lon:
-            return name
-    return None
-
-
 def _country_from_query(query: str) -> str:
     q = query.lower()
     if "lebanon" in q or "beirut" in q:
@@ -192,20 +157,11 @@ class GooglePlacesScraper(BaseScraper):
         })
 
         seen_ids: set[str] = set()
-        kept = 0
-        skipped = 0
 
         for query in all_queries:
             country = _country_from_query(query)
-            for record in self._scrape_query(session, query, seen_ids, scraped_at, country):
-                if not is_business_category(record.category):
-                    skipped += 1
-                    continue
-                kept += 1
-                yield record
+            yield from self._scrape_query(session, query, seen_ids, scraped_at, country)
             time.sleep(0.5)  # polite to the API
-
-        print(f"[Google] Done. Kept {kept}, skipped {skipped} (whitelist).")
 
     def _scrape_query(
         self,
@@ -255,7 +211,7 @@ class GooglePlacesScraper(BaseScraper):
                 location = place.get("location") or {}
                 lat = location.get("latitude")
                 lon = location.get("longitude")
-                region = _infer_region(lat, lon, country)
+                region = infer_region(None, lat, lon, country=country)
 
                 # Pick the most specific Google "type" as our category
                 types = place.get("types") or []
