@@ -16,7 +16,9 @@ Set it in GitHub Actions Settings -> Secrets and variables -> Actions.
 
 import datetime
 import os
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Iterator
 
 import requests
@@ -133,9 +135,24 @@ def _country_from_query(query: str) -> str:
     return "LB"  # default
 
 
+# Max parallel workers for Google Places queries.
+# The Places API (New) doesn't publish a hard QPS limit but 5 concurrent
+# requests is conservative enough to avoid 429s in practice.
+_WORKERS = 5
+
+
 class GooglePlacesScraper(BaseScraper):
     def __init__(self) -> None:
         self._api_key = os.environ.get("GOOGLE_PLACES_API_KEY")
+
+    def _make_session(self) -> requests.Session:
+        s = requests.Session()
+        s.headers.update({
+            "X-Goog-Api-Key": self._api_key,
+            "X-Goog-FieldMask": FIELD_MASK,
+            "Content-Type": "application/json",
+        })
+        return s
 
     def scrape(self) -> Iterator[BusinessRecord]:
         if not self._api_key:
@@ -146,31 +163,40 @@ class GooglePlacesScraper(BaseScraper):
         all_queries = LEBANON_QUERIES + KSA_QUERIES
         print(
             f"[Google] Scraping {len(all_queries)} queries "
-            f"({len(LEBANON_QUERIES)} LB, {len(KSA_QUERIES)} SA) via Places API..."
+            f"({len(LEBANON_QUERIES)} LB, {len(KSA_QUERIES)} SA) "
+            f"with {_WORKERS} workers..."
         )
 
-        session = requests.Session()
-        session.headers.update({
-            "X-Goog-Api-Key": self._api_key,
-            "X-Goog-FieldMask": FIELD_MASK,
-            "Content-Type": "application/json",
-        })
-
         seen_ids: set[str] = set()
+        seen_lock = threading.Lock()
+        all_records: list[BusinessRecord] = []
+        records_lock = threading.Lock()
 
-        for query in all_queries:
+        def fetch_query(query: str) -> None:
             country = _country_from_query(query)
-            yield from self._scrape_query(session, query, seen_ids, scraped_at, country)
-            time.sleep(0.5)  # polite to the API
+            # Each thread gets its own session (requests.Session is not thread-safe)
+            session = self._make_session()
+            results = list(self._scrape_query(session, query, seen_ids, seen_lock, scraped_at, country))
+            with records_lock:
+                all_records.extend(results)
+
+        with ThreadPoolExecutor(max_workers=_WORKERS) as pool:
+            futures = [pool.submit(fetch_query, q) for q in all_queries]
+            for f in as_completed(futures):
+                f.result()  # re-raises any exception
+
+        yield from all_records
 
     def _scrape_query(
         self,
         session: requests.Session,
         query: str,
         seen_ids: set,
+        seen_lock: threading.Lock,
         scraped_at: str,
         country: str,
-    ) -> Iterator[BusinessRecord]:
+    ) -> list[BusinessRecord]:
+        records: list[BusinessRecord] = []
         page_token = None
         page = 0
 
@@ -183,15 +209,15 @@ class GooglePlacesScraper(BaseScraper):
                 resp = session.post(API_URL, json=body, timeout=30)
                 if resp.status_code == 401:
                     print("[Google] Invalid API key.")
-                    return
+                    return records
                 if resp.status_code == 429:
-                    print("[Google] Rate limited, waiting 60s...")
-                    time.sleep(60)
+                    print(f"[Google] Rate limited on '{query}', waiting 30s...")
+                    time.sleep(30)
                     continue
                 resp.raise_for_status()
             except requests.RequestException as e:
                 print(f"[Google] Request error for '{query}': {e}")
-                return
+                return records
 
             data = resp.json()
             places = data.get("places", [])
@@ -200,9 +226,12 @@ class GooglePlacesScraper(BaseScraper):
 
             for place in places:
                 place_id = place.get("id")
-                if not place_id or place_id in seen_ids:
+                if not place_id:
                     continue
-                seen_ids.add(place_id)
+                with seen_lock:
+                    if place_id in seen_ids:
+                        continue
+                    seen_ids.add(place_id)
 
                 name = (place.get("displayName") or {}).get("text") or ""
                 if not name:
@@ -217,7 +246,7 @@ class GooglePlacesScraper(BaseScraper):
                 types = place.get("types") or []
                 category = _pick_category(types)
 
-                yield BusinessRecord(
+                records.append(BusinessRecord(
                     name=name,
                     category=category,
                     region=region,
@@ -238,11 +267,11 @@ class GooglePlacesScraper(BaseScraper):
                     source="google_places",
                     scraped_at=scraped_at,
                     completeness_score=0,
-                )
+                ))
 
             page_token = data.get("nextPageToken")
             if not page_token:
-                return
+                return records
             time.sleep(2)  # required between paginated requests
 
 
