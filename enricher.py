@@ -54,8 +54,8 @@ _REGION_MAP: list[tuple[str, re.Pattern]] = [
 ]
 
 
-_COORD_REGIONS: list[tuple[str, float, float, float, float]] = [
-    # (region, lat_min, lat_max, lon_min, lon_max) — ordered most-specific first
+_LB_COORD_REGIONS: list[tuple[str, float, float, float, float]] = [
+    # (region, lat_min, lat_max, lon_min, lon_max) — most-specific first
     ("Beirut",          33.845, 33.920, 35.462, 35.545),
     ("Akkar",           34.380, 34.720, 35.980, 36.650),
     ("Baalbek-Hermel",  34.000, 34.720, 36.100, 36.850),
@@ -66,14 +66,28 @@ _COORD_REGIONS: list[tuple[str, float, float, float, float]] = [
     ("Mount Lebanon",   33.540, 34.120, 35.370, 35.950),
 ]
 
+_KSA_COORD_REGIONS: list[tuple[str, float, float, float, float]] = [
+    ("Riyadh", 24.40, 25.20, 46.40, 47.20),
+    ("Jeddah", 21.30, 21.80, 39.05, 39.45),
+    ("Dammam", 26.20, 26.65, 49.85, 50.30),
+    ("Mecca",  21.30, 21.55, 39.75, 40.00),
+    ("Medina", 24.30, 24.65, 39.45, 39.80),
+]
 
-def infer_region(address: str | None, lat: float | None, lon: float | None) -> str | None:
-    if address:
+
+def infer_region(
+    address: str | None,
+    lat: float | None,
+    lon: float | None,
+    country: str = "LB",
+) -> str | None:
+    if address and country == "LB":
         for region, pattern in _REGION_MAP:
             if pattern.search(address):
                 return region
     if lat is not None and lon is not None:
-        for region, lat_min, lat_max, lon_min, lon_max in _COORD_REGIONS:
+        boxes = _KSA_COORD_REGIONS if country == "SA" else _LB_COORD_REGIONS
+        for region, lat_min, lat_max, lon_min, lon_max in boxes:
             if lat_min <= lat <= lat_max and lon_min <= lon <= lon_max:
                 return region
     return None
@@ -151,7 +165,13 @@ def enrich(records: list[dict]) -> list[dict]:
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
     for r in records:
-        r["region"] = infer_region(r.get("address"), r.get("lat"), r.get("lon"))
+        # Only infer region if the scraper hasn't already set one
+        # (Google Places sets KSA regions that this Lebanon-only inferer would clobber)
+        if not r.get("region"):
+            r["region"] = infer_region(
+                r.get("address"), r.get("lat"), r.get("lon"),
+                country=r.get("country", "LB"),
+            )
         r["completeness_score"] = completeness_score(r)
 
     records = check_websites(records)
