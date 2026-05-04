@@ -2,18 +2,26 @@ import re
 import unicodedata
 
 
-def normalize_phone(phone: str) -> str:
+_COUNTRY_CODES = {
+    "LB": ("961", "+961"),
+    "SA": ("966", "+966"),
+}
+
+
+def normalize_phone(phone: str, country: str = "LB") -> str:
     digits = re.sub(r"\D", "", phone)
-    if digits.startswith("00961"):
-        digits = "961" + digits[5:]
-    elif digits.startswith("0961"):
-        digits = "961" + digits[4:]
-    if digits.startswith("961"):
+    cc, prefix = _COUNTRY_CODES.get(country, ("961", "+961"))
+    # Strip international prefixes
+    if digits.startswith("00" + cc):
+        digits = cc + digits[len(cc) + 2:]
+    elif digits.startswith("0" + cc):
+        digits = cc + digits[len(cc) + 1:]
+    if digits.startswith(cc):
         return "+" + digits
     if digits.startswith("0"):
-        return "+961" + digits[1:]
+        return prefix + digits[1:]
     if len(digits) >= 7:
-        return "+961" + digits
+        return prefix + digits
     return "+" + digits
 
 
@@ -60,7 +68,7 @@ def dedup(records: list[dict]) -> list[dict]:
     for record in records:
         raw_phone = record.get("phone")
         if raw_phone:
-            key = normalize_phone(raw_phone)
+            key = normalize_phone(raw_phone, record.get("country", "LB"))
             if key in phone_index:
                 phone_index[key] = _merge(phone_index[key], record)
             else:
@@ -82,7 +90,7 @@ def dedup(records: list[dict]) -> list[dict]:
     name_records = []
     for record in name_index.values():
         raw = record.get("phone")
-        if raw and normalize_phone(raw) in captured_phones:
+        if raw and normalize_phone(raw, record.get("country", "LB")) in captured_phones:
             continue
         name_records.append(record)
 

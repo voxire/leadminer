@@ -1,6 +1,7 @@
 import re
 import requests
 from concurrent.futures import ThreadPoolExecutor, as_completed
+from urllib.parse import urljoin, urlparse
 
 # ---------------------------------------------------------------------------
 # Region normalization
@@ -109,6 +110,10 @@ def completeness_score(record: dict) -> int:
         score += 1
     if record.get("facebook") or record.get("instagram"):
         score += 1
+    if record.get("whatsapp"):
+        score += 1
+    if record.get("linkedin"):
+        score += 1
     return score
 
 
@@ -157,6 +162,161 @@ def check_websites(records: list[dict], workers: int = 50) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
+# Website content scraper (email, Instagram, WhatsApp, LinkedIn extraction)
+# ---------------------------------------------------------------------------
+
+_EMAIL_RE = re.compile(
+    r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+)
+_INSTAGRAM_RE = re.compile(
+    r"(?:instagram\.com/|@)([a-zA-Z0-9_.]{2,30})/?",
+    re.IGNORECASE,
+)
+_WHATSAPP_RE = re.compile(
+    r"(?:wa\.me/|whatsapp\.com/send\?phone=|api\.whatsapp\.com/send\?phone=)"
+    r"(\d{7,15})",
+    re.IGNORECASE,
+)
+_LINKEDIN_RE = re.compile(
+    r"linkedin\.com/company/([a-zA-Z0-9\-_.]+)/?",
+    re.IGNORECASE,
+)
+
+_EMAIL_BLACKLIST = {
+    "example.com", "domain.com", "yourdomain.com", "email.com",
+    "sentry.io", "wixpress.com", "squarespace.com", "shopify.com",
+}
+_IG_BLACKLIST = {"instagram", "p", "explore", "accounts", "stories", "reel", "reels", "tv"}
+
+
+def _scrape_contact_info(url: str) -> dict:
+    """Fetch a website's HTML and extract contact signals."""
+    out: dict = {"email": None, "instagram": None, "whatsapp": None, "linkedin": None}
+    try:
+        r = _SESSION.get(url, timeout=12, allow_redirects=True, verify=False, stream=False)
+        if r.status_code >= 400:
+            return out
+        html = r.text[:200_000]  # cap at 200 KB to avoid huge pages
+    except Exception:
+        return out
+
+    # Email — prefer mailto: links, fall back to regex in text
+    mailto_hits = re.findall(r'href=["\']mailto:([^"\'>\s]+)', html, re.IGNORECASE)
+    all_emails = mailto_hits + _EMAIL_RE.findall(html)
+    for addr in all_emails:
+        domain = addr.split("@")[-1].lower()
+        if domain not in _EMAIL_BLACKLIST and not addr.endswith(".png"):
+            out["email"] = addr.lower()
+            break
+
+    # Instagram handle
+    for m in _INSTAGRAM_RE.finditer(html):
+        handle = m.group(1).strip("/").lower()
+        if handle not in _IG_BLACKLIST and len(handle) >= 2:
+            out["instagram"] = handle
+            break
+
+    # WhatsApp
+    m = _WHATSAPP_RE.search(html)
+    if m:
+        out["whatsapp"] = "+" + m.group(1).lstrip("+")
+
+    # LinkedIn company page
+    m = _LINKEDIN_RE.search(html)
+    if m:
+        slug = m.group(1).strip("/").lower()
+        if slug not in {"company", "in", "pub"}:
+            out["linkedin"] = f"https://linkedin.com/company/{slug}"
+
+    return out
+
+
+def scrape_website_contacts(records: list[dict], workers: int = 20) -> list[dict]:
+    """
+    For records with a live website that still lack email/instagram/whatsapp/linkedin,
+    fetch the page and fill in whatever we can find.
+    """
+    targets = [
+        (i, r["website"])
+        for i, r in enumerate(records)
+        if r.get("website") and r.get("website_live")
+        and not (r.get("email") and r.get("instagram") and r.get("whatsapp") and r.get("linkedin"))
+    ]
+    if not targets:
+        return records
+
+    print(f"[Enricher] Scraping contact info from {len(targets)} live websites ({workers} workers)...")
+
+    with ThreadPoolExecutor(max_workers=workers) as pool:
+        futures = {pool.submit(_scrape_contact_info, url): idx for idx, url in targets}
+        done = 0
+        for future in as_completed(futures):
+            idx = futures[future]
+            info = future.result()
+            r = records[idx]
+            if not r.get("email") and info["email"]:
+                r["email"] = info["email"]
+            if not r.get("instagram") and info["instagram"]:
+                r["instagram"] = info["instagram"]
+            if not r.get("whatsapp") and info["whatsapp"]:
+                r["whatsapp"] = info["whatsapp"]
+            if not r.get("linkedin") and info["linkedin"]:
+                r["linkedin"] = info["linkedin"]
+            done += 1
+            if done % 200 == 0:
+                print(f"[Enricher] {done}/{len(targets)} sites scraped...")
+
+    found_email = sum(1 for r in records if r.get("email"))
+    found_ig = sum(1 for r in records if r.get("instagram"))
+    found_wa = sum(1 for r in records if r.get("whatsapp"))
+    found_li = sum(1 for r in records if r.get("linkedin"))
+    print(
+        f"[Enricher] Contact totals after web scrape — "
+        f"email:{found_email} instagram:{found_ig} whatsapp:{found_wa} linkedin:{found_li}"
+    )
+    return records
+
+
+# ---------------------------------------------------------------------------
+# Lead quality score (0–100)
+# ---------------------------------------------------------------------------
+
+def lead_score(record: dict) -> int:
+    score = 0
+    phone = re.sub(r"\D", "", str(record.get("phone") or ""))
+
+    # Contact signals
+    if record.get("email"):
+        score += 20
+    if record.get("whatsapp"):
+        score += 15
+    if len(phone) >= 7:
+        score += 15
+    if record.get("instagram"):
+        score += 10
+    # Website signals
+    if record.get("website_live") is True:
+        score += 10
+    elif record.get("website") and record.get("website_live") is False:
+        score += 20  # dead website = sales opportunity
+    # Industry priority
+    priority = record.get("industry_priority")
+    if priority == "high":
+        score += 15
+    elif priority == "medium":
+        score += 8
+    # Low rating = pain point worth pitching
+    rating = record.get("rating")
+    if rating is not None and rating < 4.0:
+        score += 10
+    # Multi-source confirmation
+    if "|" in str(record.get("source") or ""):
+        score += 5
+
+    return min(score, 100)
+
+
+# ---------------------------------------------------------------------------
 # Main enrichment pipeline
 # ---------------------------------------------------------------------------
 
@@ -165,25 +325,26 @@ def enrich(records: list[dict]) -> list[dict]:
     urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
     for r in records:
-        # Only infer region if the scraper hasn't already set one
-        # (Google Places sets KSA regions that this Lebanon-only inferer would clobber)
         if not r.get("region"):
             r["region"] = infer_region(
                 r.get("address"), r.get("lat"), r.get("lon"),
                 country=r.get("country", "LB"),
             )
-        r["completeness_score"] = completeness_score(r)
 
     records = check_websites(records)
+    records = scrape_website_contacts(records)
 
-    # ensure all new fields exist on every record (Wikidata records have None)
     for r in records:
         r.setdefault("lat", None)
         r.setdefault("lon", None)
         r.setdefault("facebook", None)
         r.setdefault("instagram", None)
+        r.setdefault("whatsapp", None)
+        r.setdefault("linkedin", None)
         r.setdefault("website_live", None)
         r.setdefault("rating", None)
         r.setdefault("review_count", None)
+        r["completeness_score"] = completeness_score(r)
+        r["lead_score"] = lead_score(r)
 
     return records

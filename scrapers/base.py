@@ -16,10 +16,13 @@ class BusinessRecord(TypedDict):
     website_live: bool | None
     facebook: str | None
     instagram: str | None
+    whatsapp: str | None
+    linkedin: str | None
     rating: float | None
     review_count: int | None
     industry_priority: str | None
     recommended_service: str | None
+    lead_score: int
     source: str
     scraped_at: str
     completeness_score: int

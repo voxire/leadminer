@@ -26,15 +26,15 @@ from scrapers.osm import OSMScraper
 from scrapers.wikidata import WikidataScraper
 from scrapers.google_places import GooglePlacesScraper
 from scrapers.whitelist import is_business_category, industry_priority
-from dedup import dedup
+from dedup import dedup, normalize_phone
 from enricher import enrich
 from pitch_recommender import recommend_service
 
 FIELDS = [
     "name", "category", "region", "country", "address", "lat", "lon",
     "phone", "email", "website", "website_live",
-    "facebook", "instagram",
-    "rating", "review_count", "completeness_score",
+    "facebook", "instagram", "whatsapp", "linkedin",
+    "rating", "review_count", "completeness_score", "lead_score",
     "industry_priority", "recommended_service",
     "source", "scraped_at",
 ]
@@ -99,9 +99,18 @@ def main() -> None:
 
     # Tag each record with industry_priority and recommended_service.
     # Country is set by each scraper directly (LB for OSM/Wikidata, LB or SA for Google Places).
+    # Set industry tags and normalize phones before computing lead_score
     for r in records:
         r["industry_priority"] = industry_priority(r.get("category"))
         r["recommended_service"] = recommend_service(r)
+        raw = r.get("phone")
+        if raw:
+            r["phone"] = normalize_phone(raw, r.get("country", "LB"))
+
+    # Re-score after industry_priority is set (lead_score uses it)
+    from enricher import lead_score as _lead_score
+    for r in records:
+        r["lead_score"] = _lead_score(r)
 
     with_websites = [r for r in records if r.get("website")]
     without_websites = [r for r in records if not r.get("website")]
@@ -116,8 +125,11 @@ def main() -> None:
         if has_any_contact(r) and r.get("industry_priority") in ("high", "medium")
     ]
 
+    qualified = [r for r in records if r.get("completeness_score", 0) >= 1]
+
     DATA_DIR.mkdir(exist_ok=True)
     write_csv(DATA_DIR / "all_businesses.csv", records)
+    write_csv(DATA_DIR / "qualified_businesses.csv", qualified)
     write_csv(DATA_DIR / "with_websites.csv", with_websites)
     write_csv(DATA_DIR / "without_websites.csv", without_websites)
     write_csv(DATA_DIR / "sales_ready.csv", sales_ready)
@@ -127,6 +139,7 @@ def main() -> None:
 
     print(f"\nSummary:")
     print(f"  Total unique businesses : {len(records)}")
+    print(f"  Qualified (score >= 1)  : {len(qualified)}")
     print(f"  With website            : {len(with_websites)} ({live} live, {dead} dead)")
     print(f"  Without website         : {len(without_websites)}")
     print(f"  With social media       : {len(with_social)}")
