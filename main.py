@@ -1,16 +1,15 @@
 """
 leadminer entry point.
 
-Scrapes OSM, Wikidata, and Google Places, dedups, enriches, applies a category
-whitelist, tags every record with a recommended Voxire service to pitch, and
-writes four CSVs:
+Scrapes OSM, Wikidata, and Google Places, merges with the existing master CSV,
+dedups, enriches, applies a category whitelist, tags every record with a
+recommended Voxire service to pitch, and writes five CSVs:
 
-    data/all_businesses.csv   - everything that survived the whitelist
-    data/with_websites.csv    - subset with a website (sell SEO / rebuild / etc.)
-    data/without_websites.csv - subset with no website (sell new website)
-    data/sales_ready.csv      - actionable subset: at least one contact channel
-                                (phone OR email OR Instagram), priority/medium
-                                industries only, with recommended_service tag.
+    data/all_businesses.csv     - cumulative master (all time)
+    data/qualified_businesses.csv - completeness_score >= 1
+    data/with_websites.csv      - subset with a website
+    data/without_websites.csv   - subset with no website
+    data/sales_ready.csv        - actionable subset
 
 Run:
     python main.py
@@ -27,7 +26,7 @@ from scrapers.wikidata import WikidataScraper
 from scrapers.google_places import GooglePlacesScraper
 from scrapers.whitelist import is_business_category, industry_priority
 from dedup import dedup, normalize_phone
-from enricher import enrich
+from enricher import enrich, lead_score as _lead_score
 from pitch_recommender import recommend_service
 
 FIELDS = [
@@ -40,6 +39,37 @@ FIELDS = [
 ]
 DATA_DIR = pathlib.Path("data")
 
+_FLOAT_FIELDS = {"lat", "lon", "rating"}
+_INT_FIELDS = {"review_count", "completeness_score", "lead_score"}
+
+
+def load_master(path: pathlib.Path) -> list[dict]:
+    """Load an existing master CSV with proper type casting."""
+    if not path.exists():
+        return []
+    records = []
+    with open(path, newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            for k in list(row):
+                if row[k] == "":
+                    row[k] = None
+            for field in _FLOAT_FIELDS:
+                if row.get(field) is not None:
+                    try:
+                        row[field] = float(row[field])
+                    except (ValueError, TypeError):
+                        row[field] = None
+            for field in _INT_FIELDS:
+                if row.get(field) is not None:
+                    try:
+                        row[field] = int(float(row[field]))
+                    except (ValueError, TypeError):
+                        row[field] = None
+            wl = row.get("website_live")
+            row["website_live"] = True if wl == "True" else (False if wl == "False" else None)
+            records.append(row)
+    return records
+
 
 def write_csv(path: pathlib.Path, records: list[dict]) -> None:
     with open(path, "w", newline="", encoding="utf-8") as f:
@@ -50,7 +80,6 @@ def write_csv(path: pathlib.Path, records: list[dict]) -> None:
 
 
 def has_any_contact(record: dict) -> bool:
-    """Sales-ready threshold: phone OR email OR Instagram."""
     phone = re.sub(r"\D", "", str(record.get("phone") or ""))
     email = str(record.get("email") or "").strip()
     instagram = str(record.get("instagram") or "").strip()
@@ -62,8 +91,12 @@ def has_any_contact(record: dict) -> bool:
 
 
 def main() -> None:
-    raw: list[dict] = []
+    # Load existing master to accumulate across runs
+    master = load_master(DATA_DIR / "all_businesses.csv")
+    if master:
+        print(f"Loaded {len(master)} records from existing master CSV")
 
+    raw: list[dict] = []
     scrapers = [OSMScraper(), WikidataScraper(), GooglePlacesScraper()]
 
     def run(scraper):
@@ -77,54 +110,39 @@ def main() -> None:
                 print(f"[{name}] collected {len(batch)} records")
                 raw.extend(batch)
             except Exception as e:
-                print(
-                    f"[{type(futures[future]).__name__}] ERROR: {e}",
-                    file=sys.stderr,
-                )
+                print(f"[{type(futures[future]).__name__}] ERROR: {e}", file=sys.stderr)
 
-    print(f"\nTotal raw records: {len(raw)}")
+    print(f"\nTotal raw records from scrapers: {len(raw)}")
 
-    # Apply whitelist BEFORE dedup so the dedup pass operates on a clean set
     raw_filtered = [r for r in raw if is_business_category(r.get("category"))]
     print(
         f"After whitelist filter: {len(raw_filtered)} "
         f"(dropped {len(raw) - len(raw_filtered)})"
     )
 
-    records = dedup(raw_filtered)
-    print(f"After dedup: {len(records)} unique businesses")
+    # Merge new records with existing master, then dedup the combined set
+    combined = raw_filtered + master
+    records = dedup(combined)
+    print(f"After merge + dedup: {len(records)} unique businesses")
 
-    print("\nEnriching records (website liveness, completeness)...")
+    print("\nEnriching records (website liveness + contacts)...")
     records = enrich(records)
 
-    # Tag each record with industry_priority and recommended_service.
-    # Country is set by each scraper directly (LB for OSM/Wikidata, LB or SA for Google Places).
-    # Set industry tags and normalize phones before computing lead_score
     for r in records:
         r["industry_priority"] = industry_priority(r.get("category"))
         r["recommended_service"] = recommend_service(r)
-        raw = r.get("phone")
-        if raw:
-            r["phone"] = normalize_phone(raw, r.get("country", "LB"))
-
-    # Re-score after industry_priority is set (lead_score uses it)
-    from enricher import lead_score as _lead_score
-    for r in records:
+        raw_phone = r.get("phone")
+        if raw_phone:
+            r["phone"] = normalize_phone(raw_phone, r.get("country", "LB"))
         r["lead_score"] = _lead_score(r)
 
     with_websites = [r for r in records if r.get("website")]
     without_websites = [r for r in records if not r.get("website")]
-    with_social = [
-        r for r in records if r.get("facebook") or r.get("instagram")
-    ]
-
-    # Sales-ready: any contact channel + priority or medium industry
+    with_social = [r for r in records if r.get("facebook") or r.get("instagram")]
     sales_ready = [
-        r
-        for r in records
+        r for r in records
         if has_any_contact(r) and r.get("industry_priority") in ("high", "medium")
     ]
-
     qualified = [r for r in records if r.get("completeness_score", 0) >= 1]
 
     DATA_DIR.mkdir(exist_ok=True)
@@ -153,7 +171,6 @@ def main() -> None:
     for reg, count in sorted(by_region.items(), key=lambda x: -x[1]):
         print(f"    {reg:<20} {count}")
 
-    # Recommended-service breakdown for quick pulse on what helpers will pitch
     by_service = {}
     for r in sales_ready:
         svc = r.get("recommended_service") or "Unknown"

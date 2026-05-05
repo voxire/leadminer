@@ -19,11 +19,23 @@ jobs:
         with:
           python-version: '3.12'
 
-      - name: Install uv
-        run: pip install uv --quiet
-
       - name: Install dependencies
-        run: uv pip install --system -r requirements.txt
+        run: |
+          pip install uv --quiet
+          uv pip install --system -r requirements.txt
+          sudo apt-get install -y rclone -q
+
+      - name: Set up rclone
+        env:
+          RCLONE_CONFIG_CONTENT: ${{ secrets.RCLONE_CONFIG }}
+        run: |
+          mkdir -p ~/.config/rclone
+          echo "$RCLONE_CONFIG_CONTENT" > ~/.config/rclone/rclone.conf
+
+      - name: Download master CSVs
+        run: |
+          mkdir -p data/
+          rclone copy "gdrive:leads/" data/ --max-depth 1 --include "*.csv" --drive-chunk-size 8M || true
 
       - name: Run scrapers
         env:
@@ -32,11 +44,7 @@ jobs:
         run: python main.py
 
       - name: Upload to Google Drive
-        env:
-          RCLONE_CONFIG_CONTENT: ${{ secrets.RCLONE_CONFIG }}
         run: |
-          sudo apt-get install -y rclone -q
-          mkdir -p ~/.config/rclone
-          echo "$RCLONE_CONFIG_CONTENT" > ~/.config/rclone/rclone.conf
-          DATE=$(date -u +%Y-%m-%dT%H-%M)
-          rclone copy data/ "gdrive:leads/$DATE/" --drive-chunk-size 8M
+          TIMESTAMP=$(date -u +%Y-%m-%dT%H-%M)
+          rclone copy data/ "gdrive:leads/data/$TIMESTAMP/" --drive-chunk-size 8M
+          rclone copy data/ "gdrive:leads/" --include "*.csv" --drive-chunk-size 8M
