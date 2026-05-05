@@ -38,7 +38,5 @@ jobs:
           sudo apt-get install -y rclone -q
           mkdir -p ~/.config/rclone
           echo "$RCLONE_CONFIG_CONTENT" > ~/.config/rclone/rclone.conf
-          DATE=$(date -u +%Y-%m-%d)
-          echo "Uploading to gdrive:leads/$DATE/"
-          ls -lh data/
-          rclone copy data/ "gdrive:leads/$DATE/" --verbose --drive-chunk-size 8M
+          DATE=$(date -u +%Y-%m-%dT%H-%M)
+          rclone copy data/ "gdrive:leads/$DATE/" --drive-chunk-size 8M
