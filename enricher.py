@@ -118,69 +118,19 @@ def completeness_score(record: dict) -> int:
 
 
 # ---------------------------------------------------------------------------
-# Website liveness check
+# Combined website liveness + contact extraction (single HTTP pass)
 # ---------------------------------------------------------------------------
 
 _SESSION = requests.Session()
 _SESSION.headers["User-Agent"] = "Mozilla/5.0 (compatible; leadminer/1.0)"
 
-
-def _check_url(url: str) -> bool:
-    try:
-        r = _SESSION.head(url, timeout=8, allow_redirects=True, verify=False)
-        if r.status_code == 405:
-            r = _SESSION.get(url, timeout=8, allow_redirects=True, verify=False, stream=True)
-        return r.status_code < 500
-    except Exception:
-        return False
-
-
-def check_websites(records: list[dict], workers: int = 50) -> list[dict]:
-    urls = [(i, r["website"]) for i, r in enumerate(records) if r.get("website")]
-    if not urls:
-        return records
-
-    print(f"[Enricher] Checking liveness of {len(urls)} websites ({workers} workers)...")
-    results: dict[int, bool] = {}
-
-    with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(_check_url, url): idx for idx, url in urls}
-        done = 0
-        for future in as_completed(futures):
-            idx = futures[future]
-            results[idx] = future.result()
-            done += 1
-            if done % 100 == 0:
-                print(f"[Enricher] {done}/{len(urls)} checked...")
-
-    for idx, live in results.items():
-        records[idx]["website_live"] = live
-
-    live_count = sum(1 for v in results.values() if v)
-    print(f"[Enricher] {live_count} live / {len(urls) - live_count} dead websites")
-    return records
-
-
-# ---------------------------------------------------------------------------
-# Website content scraper (email, Instagram, WhatsApp, LinkedIn extraction)
-# ---------------------------------------------------------------------------
-
-_EMAIL_RE = re.compile(
-    r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-)
-_INSTAGRAM_RE = re.compile(
-    r"(?:instagram\.com/|@)([a-zA-Z0-9_.]{2,30})/?",
-    re.IGNORECASE,
-)
+_EMAIL_RE = re.compile(r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}")
+_INSTAGRAM_RE = re.compile(r"(?:instagram\.com/|@)([a-zA-Z0-9_.]{2,30})/?", re.IGNORECASE)
 _WHATSAPP_RE = re.compile(
-    r"(?:wa\.me/|whatsapp\.com/send\?phone=|api\.whatsapp\.com/send\?phone=)"
-    r"(\d{7,15})",
+    r"(?:wa\.me/|whatsapp\.com/send\?phone=|api\.whatsapp\.com/send\?phone=)(\d{7,15})",
     re.IGNORECASE,
 )
-_LINKEDIN_RE = re.compile(
-    r"linkedin\.com/company/([a-zA-Z0-9\-_.]+)/?",
-    re.IGNORECASE,
-)
+_LINKEDIN_RE = re.compile(r"linkedin\.com/company/([a-zA-Z0-9\-_.]+)/?", re.IGNORECASE)
 
 _EMAIL_BLACKLIST = {
     "example.com", "domain.com", "yourdomain.com", "email.com",
@@ -189,90 +139,83 @@ _EMAIL_BLACKLIST = {
 _IG_BLACKLIST = {"instagram", "p", "explore", "accounts", "stories", "reel", "reels", "tv"}
 
 
-def _scrape_contact_info(url: str) -> dict:
-    """Fetch a website's HTML and extract contact signals."""
-    out: dict = {"email": None, "instagram": None, "whatsapp": None, "linkedin": None}
+def _fetch_website(url: str) -> tuple[bool, dict]:
+    """Single GET — returns (is_live, contact_info)."""
+    contacts: dict = {"email": None, "instagram": None, "whatsapp": None, "linkedin": None}
     try:
-        r = _SESSION.get(url, timeout=12, allow_redirects=True, verify=False, stream=False)
-        if r.status_code >= 400:
-            return out
-        html = r.text[:200_000]  # cap at 200 KB to avoid huge pages
+        r = _SESSION.get(url, timeout=8, allow_redirects=True, verify=False)
+        live = r.status_code < 500
+        if not live or r.status_code >= 400:
+            return live, contacts
+        html = r.text[:200_000]
     except Exception:
-        return out
+        return False, contacts
 
-    # Email — prefer mailto: links, fall back to regex in text
     mailto_hits = re.findall(r'href=["\']mailto:([^"\'>\s]+)', html, re.IGNORECASE)
-    all_emails = mailto_hits + _EMAIL_RE.findall(html)
-    for addr in all_emails:
+    for addr in mailto_hits + _EMAIL_RE.findall(html):
         domain = addr.split("@")[-1].lower()
         if domain not in _EMAIL_BLACKLIST and not addr.endswith(".png"):
-            out["email"] = addr.lower()
+            contacts["email"] = addr.lower()
             break
 
-    # Instagram handle
     for m in _INSTAGRAM_RE.finditer(html):
         handle = m.group(1).strip("/").lower()
         if handle not in _IG_BLACKLIST and len(handle) >= 2:
-            out["instagram"] = handle
+            contacts["instagram"] = handle
             break
 
-    # WhatsApp
     m = _WHATSAPP_RE.search(html)
     if m:
-        out["whatsapp"] = "+" + m.group(1).lstrip("+")
+        contacts["whatsapp"] = "+" + m.group(1).lstrip("+")
 
-    # LinkedIn company page
     m = _LINKEDIN_RE.search(html)
     if m:
         slug = m.group(1).strip("/").lower()
         if slug not in {"company", "in", "pub"}:
-            out["linkedin"] = f"https://linkedin.com/company/{slug}"
+            contacts["linkedin"] = f"https://linkedin.com/company/{slug}"
 
-    return out
+    return True, contacts
 
 
-def scrape_website_contacts(records: list[dict], workers: int = 20) -> list[dict]:
-    """
-    For records with a live website that still lack email/instagram/whatsapp/linkedin,
-    fetch the page and fill in whatever we can find.
-    """
-    targets = [
-        (i, r["website"])
-        for i, r in enumerate(records)
-        if r.get("website") and r.get("website_live")
-        and not (r.get("email") and r.get("instagram") and r.get("whatsapp") and r.get("linkedin"))
-    ]
+def check_websites(records: list[dict], workers: int = 40) -> list[dict]:
+    """Single-pass: check liveness and extract contacts in one GET per site."""
+    targets = [(i, r["website"]) for i, r in enumerate(records) if r.get("website")]
     if not targets:
         return records
 
-    print(f"[Enricher] Scraping contact info from {len(targets)} live websites ({workers} workers)...")
+    print(f"[Enricher] Fetching {len(targets)} websites — liveness + contacts ({workers} workers)...")
 
     with ThreadPoolExecutor(max_workers=workers) as pool:
-        futures = {pool.submit(_scrape_contact_info, url): idx for idx, url in targets}
+        futures = {pool.submit(_fetch_website, url): idx for idx, url in targets}
         done = 0
         for future in as_completed(futures):
             idx = futures[future]
-            info = future.result()
+            live, contacts = future.result()
             r = records[idx]
-            if not r.get("email") and info["email"]:
-                r["email"] = info["email"]
-            if not r.get("instagram") and info["instagram"]:
-                r["instagram"] = info["instagram"]
-            if not r.get("whatsapp") and info["whatsapp"]:
-                r["whatsapp"] = info["whatsapp"]
-            if not r.get("linkedin") and info["linkedin"]:
-                r["linkedin"] = info["linkedin"]
+            r["website_live"] = live
+            if live:
+                if not r.get("email") and contacts["email"]:
+                    r["email"] = contacts["email"]
+                if not r.get("instagram") and contacts["instagram"]:
+                    r["instagram"] = contacts["instagram"]
+                if not r.get("whatsapp") and contacts["whatsapp"]:
+                    r["whatsapp"] = contacts["whatsapp"]
+                if not r.get("linkedin") and contacts["linkedin"]:
+                    r["linkedin"] = contacts["linkedin"]
             done += 1
             if done % 200 == 0:
-                print(f"[Enricher] {done}/{len(targets)} sites scraped...")
+                print(f"[Enricher] {done}/{len(targets)} done...")
 
+    live_count = sum(1 for r in records if r.get("website_live"))
+    dead_count = sum(1 for r in records if r.get("website_live") is False)
     found_email = sum(1 for r in records if r.get("email"))
     found_ig = sum(1 for r in records if r.get("instagram"))
     found_wa = sum(1 for r in records if r.get("whatsapp"))
     found_li = sum(1 for r in records if r.get("linkedin"))
+    print(f"[Enricher] {live_count} live / {dead_count} dead")
     print(
-        f"[Enricher] Contact totals after web scrape — "
-        f"email:{found_email} instagram:{found_ig} whatsapp:{found_wa} linkedin:{found_li}"
+        f"[Enricher] Contacts — email:{found_email} instagram:{found_ig} "
+        f"whatsapp:{found_wa} linkedin:{found_li}"
     )
     return records
 
@@ -332,7 +275,6 @@ def enrich(records: list[dict]) -> list[dict]:
             )
 
     records = check_websites(records)
-    records = scrape_website_contacts(records)
 
     for r in records:
         r.setdefault("lat", None)
