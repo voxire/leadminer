@@ -35,6 +35,13 @@ jobs:
           GOOGLE_PLACES_API_KEY: ${{ secrets.GOOGLE_PLACES_API_KEY }}
         run: python main.py
 
+      - name: Push to Google Sheets
+        if: ${{ env.SHEETS_ID != '' && env.GOOGLE_SERVICE_ACCOUNT_KEY != '' }}
+        env:
+          SHEETS_ID: ${{ secrets.SHEETS_ID }}
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+        run: python scripts/push_to_sheets.py --csv data/sales_ready.csv --tab Leads
+
       - name: Commit updated CSVs
         run: |
           git config user.name "github-actions[bot]"
