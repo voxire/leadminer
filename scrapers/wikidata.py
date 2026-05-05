@@ -1,4 +1,5 @@
 import datetime
+import os
 import time
 import requests
 from typing import Iterator
@@ -30,8 +31,9 @@ class WikidataScraper(BaseScraper):
         scraped_at = datetime.datetime.utcnow().isoformat() + "Z"
         print("[Wikidata] Fetching Lebanon businesses...")
 
+        email = os.environ.get("SCRAPER_EMAIL", "voxire.tech@gmail.com")
         headers = {
-            "User-Agent": "leadminer/1.0 (voxire.tech@gmail.com)",
+            "User-Agent": f"leadminer/1.0 ({email})",
             "Accept": "application/sparql-results+json",
         }
 

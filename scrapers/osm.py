@@ -1,4 +1,5 @@
 import datetime
+import os
 import time
 import requests
 from typing import Iterator
@@ -31,7 +32,8 @@ class OSMScraper(BaseScraper):
         print("[OSM] Fetching Lebanon businesses from Overpass API...")
 
         session = requests.Session()
-        session.headers["User-Agent"] = "leadminer/1.0 (voxire.tech@gmail.com)"
+        email = os.environ.get("SCRAPER_EMAIL", "voxire.tech@gmail.com")
+        session.headers["User-Agent"] = f"leadminer/1.0 ({email})"
 
         for attempt in range(3):
             try:
