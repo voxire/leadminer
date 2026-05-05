@@ -32,7 +32,10 @@ def _get_or_create_folder(service, name: str, parent_id: str) -> str:
         f"name='{name}' and mimeType='application/vnd.google-apps.folder'"
         f" and '{parent_id}' in parents and trashed=false"
     )
-    results = service.files().list(q=query, fields="files(id)").execute()
+    results = service.files().list(
+        q=query, fields="files(id)",
+        supportsAllDrives=True, includeItemsFromAllDrives=True,
+    ).execute()
     files = results.get("files", [])
     if files:
         return files[0]["id"]
@@ -42,7 +45,7 @@ def _get_or_create_folder(service, name: str, parent_id: str) -> str:
         "mimeType": "application/vnd.google-apps.folder",
         "parents": [parent_id],
     }
-    folder = service.files().create(body=meta, fields="id").execute()
+    folder = service.files().create(body=meta, fields="id", supportsAllDrives=True).execute()
     return folder["id"]
 
 
@@ -68,13 +71,18 @@ def upload(date_str: str | None = None) -> None:
         query = (
             f"name='{csv_path.name}' and '{date_folder_id}' in parents and trashed=false"
         )
-        existing = service.files().list(q=query, fields="files(id)").execute().get("files", [])
+        existing = service.files().list(
+            q=query, fields="files(id)",
+            supportsAllDrives=True, includeItemsFromAllDrives=True,
+        ).execute().get("files", [])
         if existing:
             service.files().update(
-                fileId=existing[0]["id"], media_body=media
+                fileId=existing[0]["id"], media_body=media, supportsAllDrives=True,
             ).execute()
         else:
-            service.files().create(body=meta, media_body=media, fields="id").execute()
+            service.files().create(
+                body=meta, media_body=media, fields="id", supportsAllDrives=True,
+            ).execute()
 
         print(f"[Drive]   {csv_path.name}")
 
