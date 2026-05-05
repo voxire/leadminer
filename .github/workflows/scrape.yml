@@ -33,10 +33,10 @@ jobs:
 
       - name: Upload to Google Drive
         env:
-          RCLONE_CONFIG: ${{ secrets.RCLONE_CONFIG }}
+          RCLONE_CONFIG_CONTENT: ${{ secrets.RCLONE_CONFIG }}
         run: |
           sudo apt-get install -y rclone -q
           mkdir -p ~/.config/rclone
-          echo "$RCLONE_CONFIG" > ~/.config/rclone/rclone.conf
+          echo "$RCLONE_CONFIG_CONTENT" > ~/.config/rclone/rclone.conf
           DATE=$(date -u +%Y-%m-%d)
           rclone copy data/ "gdrive:leads/$DATE/" --drive-chunk-size 8M
