@@ -33,6 +33,10 @@ jobs:
 
       - name: Upload to Google Drive
         env:
-          GOOGLE_DRIVE_CREDENTIALS: ${{ secrets.GOOGLE_DRIVE_CREDENTIALS }}
-          GOOGLE_DRIVE_FOLDER_ID: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
-        run: python drive_upload.py
+          RCLONE_CONFIG: ${{ secrets.RCLONE_CONFIG }}
+        run: |
+          curl -fsSL https://rclone.org/install.sh | sudo bash -s -- -q
+          mkdir -p ~/.config/rclone
+          echo "$RCLONE_CONFIG" > ~/.config/rclone/rclone.conf
+          DATE=$(date -u +%Y-%m-%d)
+          rclone copy data/ "gdrive:leads/$DATE/" --drive-chunk-size 8M
