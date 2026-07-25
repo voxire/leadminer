@@ -31,6 +31,13 @@ jobs:
           SCRAPER_EMAIL: ${{ secrets.SCRAPER_EMAIL }}
         run: python main.py
 
+      - name: Push to Google Sheets
+        if: ${{ env.SHEETS_ID != '' && env.GOOGLE_SERVICE_ACCOUNT_KEY != '' }}
+        env:
+          SHEETS_ID: ${{ secrets.SHEETS_ID }}
+          GOOGLE_SERVICE_ACCOUNT_KEY: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_KEY }}
+        run: python scripts/push_to_sheets.py --csv data/sales_ready.csv --tab Leads
+
       - name: Upload to Google Drive
         env:
           RCLONE_CONFIG_CONTENT: ${{ secrets.RCLONE_CONFIG }}

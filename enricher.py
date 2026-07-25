@@ -68,11 +68,20 @@ _LB_COORD_REGIONS: list[tuple[str, float, float, float, float]] = [
 ]
 
 _KSA_COORD_REGIONS: list[tuple[str, float, float, float, float]] = [
-    ("Riyadh", 24.40, 25.20, 46.40, 47.20),
-    ("Jeddah", 21.30, 21.80, 39.05, 39.45),
-    ("Dammam", 26.20, 26.65, 49.85, 50.30),
-    ("Mecca",  21.30, 21.55, 39.75, 40.00),
-    ("Medina", 24.30, 24.65, 39.45, 39.80),
+    # Smaller / more specific cities checked first to win against overlapping
+    # larger metros (e.g. Khobar overlaps with Dammam's eastern edge).
+    ("Khobar",   26.20, 26.40, 50.10, 50.30),
+    ("Yanbu",    24.00, 24.20, 38.00, 38.20),
+    ("Taif",     21.20, 21.40, 40.30, 40.50),
+    ("Buraydah", 26.30, 26.45, 43.95, 44.10),
+    ("Tabuk",    28.30, 28.55, 36.45, 36.70),
+    ("Abha",     18.15, 18.30, 42.45, 42.65),
+    ("Hail",     27.45, 27.60, 41.65, 41.80),
+    ("Mecca",    21.30, 21.55, 39.75, 40.00),
+    ("Medina",   24.30, 24.65, 39.45, 39.80),
+    ("Dammam",   26.20, 26.65, 49.85, 50.10),  # eastern bound trimmed for Khobar
+    ("Riyadh",   24.40, 25.20, 46.40, 47.20),
+    ("Jeddah",   21.30, 21.80, 39.05, 39.45),
 ]
 
 
@@ -138,6 +147,23 @@ _EMAIL_BLACKLIST = {
 }
 _IG_BLACKLIST = {"instagram", "p", "explore", "accounts", "stories", "reel", "reels", "tv"}
 
+_EMAIL_VALID_RE = re.compile(r"^[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$")
+
+
+def _clean_email(addr: str) -> str | None:
+    """Strip URL params, split on punctuation, validate format. None if junk."""
+    if not addr:
+        return None
+    addr = addr.strip().lower()
+    addr = addr.split("?")[0]                          # drop URL params (?subject=...)
+    addr = re.split(r"[;,\s<>]", addr, maxsplit=1)[0]  # take first if multiple
+    addr = addr.strip(".,;:'\"()[]{}")                 # strip stray punctuation
+    if not _EMAIL_VALID_RE.match(addr):
+        return None
+    if addr.endswith((".png", ".jpg", ".gif", ".svg", ".webp")):
+        return None
+    return addr
+
 
 def _fetch_website(url: str) -> tuple[bool, dict]:
     """Single GET — returns (is_live, contact_info)."""
@@ -153,9 +179,12 @@ def _fetch_website(url: str) -> tuple[bool, dict]:
 
     mailto_hits = re.findall(r'href=["\']mailto:([^"\'>\s]+)', html, re.IGNORECASE)
     for addr in mailto_hits + _EMAIL_RE.findall(html):
-        domain = addr.split("@")[-1].lower()
-        if domain not in _EMAIL_BLACKLIST and not addr.endswith(".png"):
-            contacts["email"] = addr.lower()
+        cleaned = _clean_email(addr)
+        if not cleaned:
+            continue
+        domain = cleaned.split("@")[-1]
+        if domain not in _EMAIL_BLACKLIST:
+            contacts["email"] = cleaned
             break
 
     for m in _INSTAGRAM_RE.finditer(html):
@@ -221,6 +250,36 @@ def check_websites(records: list[dict], workers: int = 40) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
+# Synthetic WhatsApp from phone (covers Lebanon/KSA/UAE/Qatar SMBs whose
+# websites don't include a wa.me link but who do answer WhatsApp on their
+# main phone — which is most of MENA).
+# ---------------------------------------------------------------------------
+
+_WHATSAPP_PHONE_RE = re.compile(r"^\+(961|966|971|974|973|968|965|962|970)\d{7,9}$")
+
+
+def synthesize_whatsapp_from_phone(records: list[dict]) -> list[dict]:
+    """
+    For records that have a phone but no whatsapp, synthesize the wa.me
+    equivalent. A real wa.me link extracted from the website always wins —
+    this only fills gaps.
+    """
+    filled = 0
+    for r in records:
+        if r.get("whatsapp"):
+            continue
+        phone = (r.get("phone") or "").strip()
+        if not phone:
+            continue
+        if _WHATSAPP_PHONE_RE.match(phone):
+            r["whatsapp"] = phone
+            filled += 1
+    if filled:
+        print(f"[Enricher] Synthesized {filled} WhatsApp numbers from phone field")
+    return records
+
+
+# ---------------------------------------------------------------------------
 # Lead quality score (0–100)
 # ---------------------------------------------------------------------------
 
@@ -250,8 +309,22 @@ def lead_score(record: dict) -> int:
         score += 8
     # Low rating = pain point worth pitching
     rating = record.get("rating")
-    if rating is not None and rating < 4.0:
+    try:
+        if rating is not None and float(rating) < 4.0:
+            score += 10
+    except (TypeError, ValueError):
+        pass
+    # Review count = signal of real customer base. Sorts the premium tier.
+    try:
+        rc = int(record.get("review_count") or 0)
+    except (TypeError, ValueError):
+        rc = 0
+    if rc >= 100:
         score += 10
+    elif rc >= 20:
+        score += 5
+    elif rc >= 5:
+        score += 2
     # Multi-source confirmation
     if "|" in str(record.get("source") or ""):
         score += 5
@@ -275,6 +348,8 @@ def enrich(records: list[dict]) -> list[dict]:
             )
 
     records = check_websites(records)
+    # Synthesize whatsapp AFTER website scrape so any real wa.me link wins
+    records = synthesize_whatsapp_from_phone(records)
 
     for r in records:
         r.setdefault("lat", None)
