@@ -1,0 +1,20 @@
+# 016 — Google Places category depends on array order
+
+## Verdict
+`_pick_category()` treats the first non-generic member of `places.types` as the business's category, so the same place and same set of types can yield different output as their order changes. That unstable string feeds the whitelist, `industry_priority()`, and `recommend_service()`; request Google's explicit `primaryType` and map it into a stable internal category taxonomy instead of relying on list position.
+
+## Findings
+
+### S1 — `types[0]` is not a stable primary-category contract
+- **Where:** `scrapers/google_places.py:31-42,245-247,281-296`; `main.py:117-125,131-144`; `scrapers/whitelist.py:105-145`; `pitch_recommender.py:50-96`
+- **Breaks:** `_pick_category()` returns the first type outside `_GENERIC_TYPES`. A set such as `['seafood_restaurant', 'restaurant', 'food', 'point_of_interest', 'establishment']` yields `seafood_restaurant`; the same set reordered to start with `restaurant` yields `restaurant`. Google documents `primaryType` as the single primary type when available, while `types` can contain multiple values (the docs' restaurant example includes specific and broad tags); the API contract does not make array position a stable key across responses. The source comment at line 281 is therefore not a safe selection rule. The current field mask requests `places.types`, but not `places.primaryType`.
+- **Trigger:** On the first ordering above, `seafood_restaurant` fails `is_business_category()` (it is neither allow-listed nor matched by the business-keyword fallback), so `main.py` drops the record at line 117. With `restaurant` first, the exact same business passes. If both category values reach downstream processing (for example via an already-loaded master row), `industry_priority('seafood_restaurant')` is `low` versus `industry_priority('restaurant') == 'high'`. With a live site, at least 20 reviews, a good rating, and social presence, `recommend_service()` returns the digital-marketing retainer for `seafood_restaurant` but the RTYLR pitch for `restaurant` (lines 67-76, 90-93). Its dedup identity is still phone or normalized name/city (`dedup.py:64-83`), not category; however, whichever category survives `_merge()` becomes the deduplicated record's category, so the dedup output and all category-derived labels are order-dependent too. This can also change whether a record enters `sales_ready` (`main.py:142-145`).
+- **Fix:** Add `places.primaryType` to `FIELD_MASK`; define an explicit mapping from Google types to the project's canonical categories and downstream labels (e.g. `seafood_restaurant` and `fast_food_restaurant` → `restaurant`, `beauty_salon` → `beauty`, `clothing_store` → `clothes`, `real_estate_agency` → `real_estate_agent`); use mapped `primaryType` first, then a documented fixed-priority ranking over mapped `types` as fallback, with a stable unknown-type fallback rather than the first response element. Keep aliases aligned with `PRIORITY_INDUSTRIES`, `ADJACENT_BUSINESSES`, `_ECOM_FRIENDLY`, `_RTYLR_TARGETS`, and `_LEAD_GEN_VERTICALS`.
+
+## Not a bug, but worth knowing
+- Google describes `types` as multiple category tags and separately exposes `primaryType`; its example shows a specific restaurant type alongside broad `restaurant`/`food` tags. This audit is about relying on array position, not a claim that Google will randomly reorder every response. Reference: [Google Places API (New): Place Types](https://developers.google.com/maps/documentation/places/web-service/place-types).
+- The dedup key itself is category-independent. The instability is in the category value retained on the deduplicated record and the pipeline stages that consume it, not in which phone/name-city bucket a record belongs to.
+
+## Recommended order of work
+1. Request `places.primaryType` and implement a deterministic Google-type-to-canonical-category mapping with a fixed-priority fallback.
+2. Align the mapping's outputs with the whitelist and both category-driven sales classifiers, then verify the example permutations produce the same category, priority, and recommendation.

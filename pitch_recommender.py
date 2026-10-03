@@ -29,8 +29,11 @@ def recommend_service(record: Mapping) -> str:
     will scan in seconds.
     """
     has_website = bool(record.get("website"))
+    # Distinguish "the server said it is broken" from "we could not reach it".
+    # website_live is None when the fetch failed, which is not a rebuild signal.
     website_live = record.get("website_live") is True
-    has_dead_website = has_website and not website_live
+    website_dead = record.get("website_live") is False
+    has_dead_website = has_website and website_dead
     has_email = bool(record.get("email"))
     has_phone = bool(record.get("phone"))
     has_instagram = bool(record.get("instagram"))

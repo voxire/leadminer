@@ -152,13 +152,15 @@ def main() -> None:
     write_csv(DATA_DIR / "without_websites.csv", without_websites)
     write_csv(DATA_DIR / "sales_ready.csv", sales_ready)
 
-    live = sum(1 for r in with_websites if r.get("website_live"))
+    live = sum(1 for r in with_websites if r.get("website_live") is True)
     dead = sum(1 for r in with_websites if r.get("website_live") is False)
+    unknown = sum(1 for r in with_websites if r.get("website_live") is None)
 
     print(f"\nSummary:")
     print(f"  Total unique businesses : {len(records)}")
     print(f"  Qualified (score >= 1)  : {len(qualified)}")
-    print(f"  With website            : {len(with_websites)} ({live} live, {dead} dead)")
+    print(f"  With website            : {len(with_websites)} "
+          f"({live} live, {dead} dead, {unknown} unreachable)")
     print(f"  Without website         : {len(without_websites)}")
     print(f"  With social media       : {len(with_social)}")
     print(f"  SALES-READY (actionable): {len(sales_ready)}")

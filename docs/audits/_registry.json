@@ -1,0 +1,63 @@
+{
+  "prefix": "node:delegated-task:command%3Amcp%3Af0010a7a-d62b-4f83-932e-ce0cf4c61002%3Adelegate-task%3A",
+  "verifiedModels": [
+    "opencode-go/gpt-6-luna",
+    "opencode/gemini-3.8-flash",
+    "opencode-go/deepseek-v4-pro"
+  ],
+  "bannedModels": {
+    "opencode-go/space-bunny-free": "emits a stub preamble then truncates the turn on multi-step delegate tasks; failed at only 4 concurrent"
+  },
+  "concurrencyLimit": 20,
+  "failedInB1": ["002", "011"],
+  "b1": {
+    "001": "aa8a4501-5790-4225-af66-a046da504816",
+    "002": "76c9f391-229e-44ee-a380-3c69f8b7536e",
+    "003": "81d6daaf-303a-48be-9af2-495579e12be7",
+    "004": "d700881f-1d1b-4ca1-b2e0-73429a22810a",
+    "005": "83fdcbbf-5912-4367-9848-132ac77042fb",
+    "006": "bfcfda8c-0f65-49ce-bdf0-11a5a7be0c64",
+    "007": "8f4fed3e-a2c5-4f9c-ba14-3bc14c0de7ca",
+    "008": "ecbcc107-097b-4b64-afd0-1feadd384f61",
+    "009": "1e26f97a-dc1f-45dc-9f4b-8f8a91056a32",
+    "010": "81306e1e-5db0-4f23-9a74-3a9de6ce08e0",
+    "011": "62332565-0bc9-4e85-ad6d-39db77763f7f",
+    "012": "7997860b-c926-4853-a45a-5b09572feb40",
+    "013": "2ea44036-18f6-4835-b6c8-05880c542ca3",
+    "014": "8fb8442c-2320-461c-aa9c-138eec44a801",
+    "015": "e15f93ec-deb2-48d8-a02e-d39169209564",
+    "016": "e8d07c82-b774-4b6c-a9c1-a5bc932a3f1d",
+    "017": "d0442116-ffba-43a2-84f8-7fdcf7bdc42b",
+    "018": "2bb45975-f16b-4b31-af94-89bd236bcbe1",
+    "019": "91ccd19e-9f92-4341-9b9b-f5d3f3e06db1",
+    "020": "5c7f9bab-fadb-406b-8867-6323bffe3629",
+    "021": "d0b0ced8-608c-48f0-8ced-f750bbc0438e"
+  },
+  "b2": {
+    "024": "c3736f7c-89ee-4b01-bf6c-9a68d7c371ca",
+    "025": "a9628e7d-540c-4d5c-99c5-bba13b291ea9",
+    "026": "8bc9f7d3-6811-4683-b131-67b83f5549e3",
+    "027": "63e6a4bd-9416-490c-8a6f-5543a82dda9a",
+    "028": "2a356604-e276-4911-9f5d-1b6edc68e02e",
+    "029": "5bc3e049-ed6e-43b7-849a-009bcf5a224f",
+    "030": "c86dd528-38a7-4150-a18d-6802df64152b",
+    "031": "918c9da7-2b97-4703-9343-936e556e9a84",
+    "032": "7af5ec36-d41a-496c-8316-b13539da1782",
+    "033": "fc98f106-561a-4bdd-b285-3eea530fd60a",
+    "034": "621470c0-5151-4333-8b22-7368e868c73f",
+    "035": "3f43e9b3-0066-47fe-be39-723d5af3e266",
+    "036": "1c7cb7b6-d726-4dac-a97d-1f8a1ece914e",
+    "037": "f5642159-9482-49ce-b895-4697db1f5f00",
+    "038": "bab0e442-291f-404a-9de7-02a5a94f4f26",
+    "039": "9ec6c8bd-d644-4538-856d-6c1d1e648931",
+    "040": "95103f3e-e3b7-4e44-8143-4a41204f6318",
+    "041": "d31407a0-2351-44d5-ba78-4b217619b2af",
+    "042": "cbe2338b-410c-409d-81e1-75bd20c078da",
+    "043": "50fcad5c-018d-4ec4-a1e8-c0878b129e44"
+  },
+  "notes": [
+    "t3_thread_list fails schema validation with includeSubagents - do not use.",
+    "86 concurrent collapsed the free-tier providers: ECONNRESET, ENOTFOUND opencode.ai, and stub summaries reporting success without writing anything. Keep batches at 20.",
+    "Agent summaries have claimed success for files that were never written. Always verify via scripts/audit_status.py."
+  ]
+}

@@ -139,17 +139,54 @@ _EMAIL_BLACKLIST = {
 _IG_BLACKLIST = {"instagram", "p", "explore", "accounts", "stories", "reel", "reels", "tv"}
 
 
-def _fetch_website(url: str) -> tuple[bool, dict]:
-    """Single GET — returns (is_live, contact_info)."""
+# Fetch outcomes. These must stay distinct: conflating them was the single
+# worst bug in the pipeline (see docs/audits/043-scoring-upgrade.md).
+#
+#   LIVE  - server answered 2xx. The site works.
+#   DEAD  - server answered 4xx/5xx. The site exists and is broken: a real
+#           rebuild pitch.
+#   BLOCKED / UNKNOWN - we never got an answer: DNS failure, TLS error,
+#           timeout, connection reset, Cloudflare challenge. We know nothing
+#           about the site. This is NOT a pitch signal.
+LIVE = "live"
+DEAD = "dead"
+UNKNOWN = "unknown"
+
+_MAX_BODY_BYTES = 200_000
+
+
+def _fetch_website(url: str) -> tuple[str, dict]:
+    """Single GET -> (outcome, contact_info).
+
+    outcome is LIVE, DEAD or UNKNOWN. Never infer "dead" from a transport
+    failure: a site that blocks our crawler is not a site that needs rebuilding,
+    and scoring it as one inverts the core lead signal.
+    """
     contacts: dict = {"email": None, "instagram": None, "whatsapp": None, "linkedin": None}
     try:
-        r = _SESSION.get(url, timeout=8, allow_redirects=True, verify=False)
-        live = r.status_code < 500
-        if not live or r.status_code >= 400:
-            return live, contacts
-        html = r.text[:200_000]
+        r = _SESSION.get(url, timeout=8, allow_redirects=True, verify=False, stream=True)
     except Exception:
-        return False, contacts
+        # DNS failure, TLS failure, timeout, reset, blocked. We learned nothing.
+        return UNKNOWN, contacts
+
+    try:
+        status = r.status_code
+        if status >= 400:
+            # A real response from a real server that says "not working".
+            return DEAD, contacts
+
+        # Cap the body before decoding it: r.text would materialise the whole
+        # response, and a hostile or misconfigured host can stream forever.
+        raw = r.raw.read(_MAX_BODY_BYTES, decode_content=True) or b""
+        html = raw.decode(r.encoding or "utf-8", errors="replace")
+    except Exception:
+        # Reached the host but could not read the body. Still unknown.
+        return UNKNOWN, contacts
+    finally:
+        try:
+            r.close()
+        except Exception:
+            pass
 
     mailto_hits = re.findall(r'href=["\']mailto:([^"\'>\s]+)', html, re.IGNORECASE)
     for addr in mailto_hits + _EMAIL_RE.findall(html):
@@ -174,11 +211,15 @@ def _fetch_website(url: str) -> tuple[bool, dict]:
         if slug not in {"company", "in", "pub"}:
             contacts["linkedin"] = f"https://linkedin.com/company/{slug}"
 
-    return True, contacts
+    return LIVE, contacts
 
 
 def check_websites(records: list[dict], workers: int = 40) -> list[dict]:
-    """Single-pass: check liveness and extract contacts in one GET per site."""
+    """Single-pass: check liveness and extract contacts in one GET per site.
+
+    website_live is set to True (LIVE), False (DEAD) or None (UNKNOWN), so a
+    site we merely failed to reach is never confused with a broken site.
+    """
     targets = [(i, r["website"]) for i, r in enumerate(records) if r.get("website")]
     if not targets:
         return records
@@ -190,10 +231,16 @@ def check_websites(records: list[dict], workers: int = 40) -> list[dict]:
         done = 0
         for future in as_completed(futures):
             idx = futures[future]
-            live, contacts = future.result()
+            try:
+                outcome, contacts = future.result()
+            except Exception:
+                # _fetch_website is already defensive, but never let one worker
+                # kill a multi-hour run.
+                outcome, contacts = UNKNOWN, {"email": None, "instagram": None,
+                                              "whatsapp": None, "linkedin": None}
             r = records[idx]
-            r["website_live"] = live
-            if live:
+            r["website_live"] = True if outcome == LIVE else (False if outcome == DEAD else None)
+            if outcome == LIVE:
                 if not r.get("email") and contacts["email"]:
                     r["email"] = contacts["email"]
                 if not r.get("instagram") and contacts["instagram"]:
@@ -206,13 +253,14 @@ def check_websites(records: list[dict], workers: int = 40) -> list[dict]:
             if done % 200 == 0:
                 print(f"[Enricher] {done}/{len(targets)} done...")
 
-    live_count = sum(1 for r in records if r.get("website_live"))
+    live_count = sum(1 for r in records if r.get("website_live") is True)
     dead_count = sum(1 for r in records if r.get("website_live") is False)
+    unknown_count = sum(1 for r in records if r.get("website") and r.get("website_live") is None)
     found_email = sum(1 for r in records if r.get("email"))
     found_ig = sum(1 for r in records if r.get("instagram"))
     found_wa = sum(1 for r in records if r.get("whatsapp"))
     found_li = sum(1 for r in records if r.get("linkedin"))
-    print(f"[Enricher] {live_count} live / {dead_count} dead")
+    print(f"[Enricher] {live_count} live / {dead_count} dead / {unknown_count} unreachable")
     print(
         f"[Enricher] Contacts — email:{found_email} instagram:{found_ig} "
         f"whatsapp:{found_wa} linkedin:{found_li}"
@@ -237,11 +285,15 @@ def lead_score(record: dict) -> int:
         score += 15
     if record.get("instagram"):
         score += 10
-    # Website signals
-    if record.get("website_live") is True:
+    # Website signals.
+    # Only a DEAD verdict (the server answered 4xx/5xx) counts as a sales
+    # opportunity. website_live is None when we could not reach the host at
+    # all, and that is not evidence the site is broken.
+    live = record.get("website_live")
+    if live is True:
         score += 10
-    elif record.get("website") and record.get("website_live") is False:
-        score += 20  # dead website = sales opportunity
+    elif record.get("website") and live is False:
+        score += 20  # server-confirmed dead site = rebuild pitch
     # Industry priority
     priority = record.get("industry_priority")
     if priority == "high":
