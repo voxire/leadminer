@@ -10,6 +10,7 @@ code. See docs/audits/043-scoring-upgrade.md and
 docs/audits/001-dedup-phone-normalization.md for the analyses.
 """
 
+import argparse
 import sys
 import tempfile
 import types
@@ -185,6 +186,82 @@ class TestAtomicCsvWrite(unittest.TestCase):
             rows = load_master(p)
             self.assertEqual(rows[0]["name"], "مقهى")
             self.assertNotIn("\ufeff", rows[0]["name"])
+
+
+class TestCli(unittest.TestCase):
+    """The CLI is what replaces 'python main.py', so its offline commands are
+    the first thing an operator reaches for when a run looks wrong."""
+
+    def _fixture(self, d: str, **overrides) -> str:
+        base = {
+            "name": "Cafe", "category": "cafe", "region": "Beirut", "country": "LB",
+            "address": "1 St, Beirut", "lat": "33.89", "lon": "35.50",
+            "phone": "70123456", "email": "", "website": "https://x.com",
+            "website_live": "True", "facebook": "", "instagram": "", "whatsapp": "",
+            "linkedin": "", "rating": "4.2", "review_count": "12",
+            "completeness_score": "2", "lead_score": "30",
+            "industry_priority": "high", "recommended_service": "SEO audit",
+            "source": "osm", "scraped_at": "2026-01-01T00:00:00Z",
+        }
+        base.update(overrides)
+        p = Path(d) / "f.csv"
+        write_csv(p, [base])
+        return str(p)
+
+    def test_stats_handles_tri_state_website_live(self):
+        import contextlib
+        import io
+
+        from cli import cmd_stats
+
+        with tempfile.TemporaryDirectory() as d:
+            p = self._fixture(d)
+            ns = argparse.Namespace(file=p)
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
+                rc = cmd_stats(ns)
+            out = buf.getvalue()
+        self.assertEqual(rc, 0)
+        self.assertIn("website live    : 1", out)
+        self.assertIn("unreachable", out)
+
+    def test_validate_rejects_out_of_range_rating(self):
+        import contextlib
+        import io
+
+        from cli import cmd_validate
+
+        with tempfile.TemporaryDirectory() as d:
+            p = self._fixture(d, rating="9.9")
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
+                rc = cmd_validate(argparse.Namespace(file=p))
+            self.assertEqual(rc, 1, "must fail the gate")
+            self.assertIn("outside 0-5", buf.getvalue())
+
+    def test_validate_accepts_clean_data(self):
+        import contextlib
+        import io
+
+        from cli import cmd_validate
+
+        with tempfile.TemporaryDirectory() as d:
+            p = self._fixture(d)
+            buf = io.StringIO()
+            with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
+                rc = cmd_validate(argparse.Namespace(file=p))
+            self.assertEqual(rc, 0, buf.getvalue())
+
+    def test_missing_file_is_an_error_not_a_traceback(self):
+        import contextlib
+        import io
+
+        from cli import cmd_stats
+
+        buf = io.StringIO()
+        with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
+            rc = cmd_stats(argparse.Namespace(file="/nonexistent/nope.csv"))
+        self.assertEqual(rc, 2)
 
 
 if __name__ == "__main__":

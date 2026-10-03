@@ -1,0 +1,78 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "leadminer"
+version = "0.2.0"
+description = "B2B lead generation for Lebanon and Saudi Arabia: scrape, deduplicate, enrich, score, pitch."
+readme = "README.md"
+requires-python = ">=3.12"
+license = { text = "Proprietary" }
+
+# Lower bounds are what we have actually exercised against live APIs; the
+# previous requirements.txt pinned exact versions of three direct deps and
+# nothing else, so every transitive dependency floated.
+dependencies = [
+    "requests>=2.32.3,<3",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0",
+    "pytest-cov>=5.0",
+    "hypothesis>=6.100",
+    "ruff>=0.6",
+    "mypy>=1.11",
+    "types-requests>=2.32",
+]
+# Heavy, optional, and deliberately not required to run the pipeline.
+geo = ["phonenumbers>=8.13"]
+
+[project.scripts]
+leadminer = "cli:main"
+
+[tool.hatch.build.targets.wheel]
+# The package imports a top-level sibling module, so both must ship.
+include = ["scrapers/"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.ruff.lint]
+select = [
+    "E", "W",    # pycodestyle
+    "F",         # pyflakes
+    "I",         # isort
+    "B",         # bugbear
+    "C4",        # comprehensions
+    "UP",        # pyupgrade
+    "SIM",       # simplify
+    "RET",       # return
+    "PTH",       # pathlib
+    "RUF",
+]
+ignore = [
+    "E501",    # line length is handled by the formatter
+]
+
+[tool.ruff.lint.per-file-ignores]
+# The audit work is not finished; legacy modules are annotated as we go.
+"tests/*" = ["S101"]
+
+[tool.mypy]
+python_version = "3.12"
+strict = true
+warn_unreachable = true
+disallow_any_explicit = false
+
+[[tool.mypy.overrides]]
+# Third-party stubs are incomplete for these.
+module = ["requests.*", "urllib3.*"]
+ignore_missing_imports = true
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+filterwarnings = ["ignore::DeprecationWarning"]
