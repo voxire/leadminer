@@ -62,7 +62,7 @@ def _stub_requests() -> None:
 
 _stub_requests()
 
-from dedup import normalize_phone  # noqa: E402
+from dedup import _merge, normalize_phone  # noqa: E402
 from enricher import DEAD, LIVE, UNKNOWN, infer_region, lead_score  # noqa: E402
 from main import load_master, resolve_country, write_csv  # noqa: E402
 from pitch_recommender import recommend_service  # noqa: E402
@@ -262,6 +262,68 @@ class TestCli(unittest.TestCase):
         with contextlib.redirect_stdout(buf), contextlib.redirect_stderr(buf):
             rc = cmd_stats(argparse.Namespace(file="/nonexistent/nope.csv"))
         self.assertEqual(rc, 2)
+
+
+class TestMergeSurvivorship(unittest.TestCase):
+    """Regression: _merge used to pick every conflicting field from whichever
+    WHOLE record had more populated fields."""
+
+    GOOGLE = {"name": "Cafe", "phone": "+96170123456",
+              "website": "https://maps.example", "rating": 4.2,
+              "source": "google_places"}
+    OSM = {"name": "Cafe", "phone": "+96170123456",
+           "website": "http://cafe-real.example", "email": "real@cafe.example",
+           "source": "osm"}
+
+    def test_trust_is_per_field_not_per_record(self):
+        m = _merge(self.GOOGLE, self.OSM)
+        # OSM is trusted for website, Google is not, even though the Google
+        # record has more fields.
+        self.assertEqual(m["website"], "http://cafe-real.example")
+        self.assertEqual(m["rating"], 4.2)
+        self.assertEqual(m["email"], "real@cafe.example")
+
+    def test_empty_string_does_not_beat_a_real_value(self):
+        rich = {"name": "X", "phone": "1", "a": 1, "b": 2, "c": 3,
+                "website": "https://real.example"}
+        blank = {"name": "X", "phone": "1", "website": ""}
+        self.assertEqual(_merge(rich, blank)["website"], "https://real.example")
+
+    def test_merge_is_order_independent(self):
+        a = {"name": "X", "phone": "1", "website": "https://a.example", "source": "osm"}
+        b = {"name": "X", "phone": "1", "website": "https://b.example", "source": "osm"}
+        self.assertEqual(_merge(a, b)["website"], _merge(b, a)["website"])
+
+    def test_invalid_value_loses_to_valid_one(self):
+        bad = {"name": "X", "phone": "1", "email": "not-an-email", "source": "osm"}
+        good = {"name": "X", "phone": "1", "email": "a@b.com", "source": "osm"}
+        self.assertEqual(_merge(bad, good)["email"], "a@b.com")
+        self.assertEqual(_merge(good, bad)["email"], "a@b.com")
+
+    def test_volatile_field_prefers_the_fresher_observation(self):
+        old = {"name": "X", "phone": "1", "rating": 3.0,
+               "scraped_at": "2026-01-01T00:00:00+00:00", "source": "google_places"}
+        new = {"name": "X", "phone": "1", "rating": 4.8,
+               "scraped_at": "2026-09-01T00:00:00+00:00", "source": "google_places"}
+        self.assertEqual(_merge(old, new)["rating"], 4.8)
+        self.assertEqual(_merge(new, old)["rating"], 4.8)
+
+    def test_out_of_range_rating_is_rejected(self):
+        broken = {"name": "X", "phone": "1", "rating": 99, "source": "google_places"}
+        real = {"name": "X", "phone": "1", "rating": 4.0, "source": "google_places"}
+        self.assertEqual(_merge(broken, real)["rating"], 4.0)
+
+    def test_sources_are_unioned_and_ordered(self):
+        m = _merge(self.GOOGLE, self.OSM)
+        self.assertEqual(m["source"], "google_places|osm")
+        self.assertEqual(_merge(self.OSM, self.GOOGLE)["source"], "google_places|osm")
+
+    def test_no_field_is_lost(self):
+        m = _merge(self.GOOGLE, self.OSM)
+        self.assertEqual(m["website"], "http://cafe-real.example")
+        self.assertEqual(m["rating"], 4.2)
+        self.assertEqual(m["email"], "real@cafe.example")
+        self.assertEqual(m["name"], "Cafe")
 
 
 if __name__ == "__main__":

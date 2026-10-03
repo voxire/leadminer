@@ -76,26 +76,121 @@ def _extract_city(address: str | None) -> str:
     return parts[-1] if parts else ""
 
 
-def _field_count(record: dict) -> int:
-    return sum(1 for v in record.values() if v is not None)
+def _is_missing(value) -> bool:
+    """True when a field carries no information.
+
+    The previous check was `is None`, which meant an empty string counted as
+    present: merging a rich record with a sparse record whose website was ""
+    produced website="", silently discarding a real URL.
+    """
+    if value is None:
+        return True
+    if isinstance(value, str):
+        return not value.strip()
+    return False
+
+
+# How much each source is trusted per field. Google knows ratings, review
+# counts and coordinates because they are its own data; OSM carries contact
+# tags that Google does not expose at all. Trust therefore has to be per-field,
+# not per-record.
+_SOURCE_TRUST: dict[str, dict[str, int]] = {
+    "google_places": {
+        "rating": 3, "review_count": 3, "lat": 3, "lon": 3,
+        "name": 3, "address": 3, "category": 3, "website": 2, "phone": 2,
+    },
+    "osm": {
+        "email": 3, "website": 3, "facebook": 3, "instagram": 3, "whatsapp": 3,
+        "phone": 2, "name": 2, "address": 2, "category": 2,
+    },
+    "wikidata": {
+        "email": 2, "website": 2, "phone": 2,
+        "name": 2, "address": 2, "category": 1,
+    },
+}
+_DEFAULT_TRUST = 1
+
+# Fields whose value changes over time, so the fresher observation wins.
+_VOLATILE = {"rating", "review_count", "website_live", "website"}
+
+_EMAIL_OK = re.compile(r"^[^@\s]+@[^@\s]+\.[^@\s]+$")
+_URL_OK = re.compile(r"^https?://[^\s/]+\.[^\s]+", re.IGNORECASE)
+
+
+def _validity(field: str, value) -> int:
+    """0-3 bonus for whether a value is merely present or actually plausible."""
+    if _is_missing(value):
+        return -100
+    if field == "email":
+        return 3 if _EMAIL_OK.match(str(value).strip()) else 0
+    if field == "website":
+        return 3 if _URL_OK.match(str(value).strip()) else 0
+    if field in ("lat", "lon"):
+        try:
+            float(value)
+        except (TypeError, ValueError):
+            return 0
+        return 3
+    if field == "rating":
+        try:
+            v = float(value)
+        except (TypeError, ValueError):
+            return 0
+        return 3 if 0 <= v <= 5 else 0
+    return 1
+
+
+def _sources_of(record: dict) -> set[str]:
+    raw = str(record.get("source") or "")
+    return {s for s in raw.split("|") if s}
+
+
+def _trust_for(field: str, record: dict) -> int:
+    best = _DEFAULT_TRUST
+    for src in _sources_of(record):
+        best = max(best, _SOURCE_TRUST.get(src, {}).get(field, _DEFAULT_TRUST))
+    return best
+
+
+def _recency(record: dict) -> str:
+    return str(record.get("scraped_at") or "")
+
+
+def _pick(field: str, a: dict, b: dict) -> object:
+    """Choose the surviving value for one field, deterministically.
+
+    Replaces the previous rule, which picked every conflicting field from
+    whichever whole record happened to have more populated fields. That made
+    the merge order-dependent and let a low-quality value in a rich record
+    beat a high-quality value in a sparse one.
+    """
+    av, bv = a.get(field), b.get(field)
+    if _is_missing(av):
+        return bv
+    if _is_missing(bv):
+        return av
+
+    if field == "source":
+        return "|".join(sorted(_sources_of(a) | _sources_of(b)))
+
+    if field == "scraped_at":
+        return max(av, bv)
+
+    def rank(rec: dict, value) -> tuple:
+        return (
+            _trust_for(field, rec),
+            _validity(field, value),
+            _recency(rec) if field in _VOLATILE else "",
+            str(value),  # deterministic final tiebreak
+        )
+
+    return av if rank(a, av) >= rank(b, bv) else bv
 
 
 def _merge(a: dict, b: dict) -> dict:
-    all_keys = set(a) | set(b)
     merged = {}
-    for key in all_keys:
-        av, bv = a.get(key), b.get(key)
-        if av is None:
-            merged[key] = bv
-        elif bv is None:
-            merged[key] = av
-        elif key == "source":
-            sources = set(av.split("|")) | set(bv.split("|"))
-            merged[key] = "|".join(sorted(sources))
-        elif key == "scraped_at":
-            merged[key] = max(av, bv)
-        else:
-            merged[key] = av if _field_count(a) >= _field_count(b) else bv
+    for key in set(a) | set(b):
+        merged[key] = _pick(key, a, b)
     return merged
 
 
