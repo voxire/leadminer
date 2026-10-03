@@ -16,6 +16,7 @@ Run:
 """
 
 import csv
+import os
 import pathlib
 import re
 import sys
@@ -43,12 +44,45 @@ _FLOAT_FIELDS = {"lat", "lon", "rating"}
 _INT_FIELDS = {"review_count", "completeness_score", "lead_score"}
 
 
+_DEFAULT_COUNTRY = "LB"
+
+
+def resolve_country(record: dict) -> str:
+    """Country code for a record, defaulting to Lebanon.
+
+    `record.get("country", "LB")` looks correct but is not: load_master turns
+    blank cells into None, and None is a *present* key, so the default never
+    fires. Every master record without an explicit country got country=None,
+    which disabled address-based region inference in enricher.infer_region
+    and made normalize_phone assume a country it should not have.
+    """
+    value = record.get("country")
+    if isinstance(value, str) and value.strip():
+        code = value.strip().upper()
+        if code in ("LB", "SA"):
+            return code
+        if code in ("LEB", "LBN"):
+            return "LB"
+        if code in ("KSA", "SAU", "SAU-AR"):
+            return "SA"
+    # Fall back to a phone in unambiguous international form.
+    phone = str(record.get("phone") or "")
+    if "+966" in phone or "00966" in phone:
+        return "SA"
+    if "+961" in phone or "00961" in phone:
+        return "LB"
+    return _DEFAULT_COUNTRY
+
+
 def load_master(path: pathlib.Path) -> list[dict]:
     """Load an existing master CSV with proper type casting."""
     if not path.exists():
         return []
     records = []
-    with open(path, newline="", encoding="utf-8") as f:
+    # utf-8-sig strips the BOM on read. Reading as plain utf-8 would leave the
+    # BOM glued to the first column name, turning "name" into "\ufeffname",
+    # which silently breaks every name-keyed dedup match.
+    with open(path, newline="", encoding="utf-8-sig") as f:
         for row in csv.DictReader(f):
             for k in list(row):
                 if row[k] == "":
@@ -72,10 +106,31 @@ def load_master(path: pathlib.Path) -> list[dict]:
 
 
 def write_csv(path: pathlib.Path, records: list[dict]) -> None:
-    with open(path, "w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=FIELDS, extrasaction="ignore")
-        writer.writeheader()
-        writer.writerows(records)
+    """Write a CSV atomically.
+
+    The previous version opened the target with "w", which truncates it
+    immediately. A crash, an OOM or the workflow's 300-minute timeout part-way
+    through a 500k-row write destroyed the cumulative master irrecoverably.
+    Write to a temp file in the same directory, flush and fsync, then rename,
+    which is atomic on POSIX. The reader therefore only ever sees a complete
+    previous version or a complete new one.
+
+    encoding is utf-8-sig so Excel and Google Sheets detect UTF-8 and render
+    Arabic business names correctly instead of mojibake.
+    """
+    path.parent.mkdir(parents=True, exist_ok=True)
+    tmp = path.with_suffix(path.suffix + ".tmp")
+    try:
+        with open(tmp, "w", newline="", encoding="utf-8-sig") as f:
+            writer = csv.DictWriter(f, fieldnames=FIELDS, extrasaction="ignore")
+            writer.writeheader()
+            writer.writerows(records)
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp, path)
+    except BaseException:
+        tmp.unlink(missing_ok=True)
+        raise
     print(f"  Written: {path} ({len(records)} records)")
 
 
@@ -125,6 +180,9 @@ def main() -> None:
     records = dedup(combined)
     print(f"After merge + dedup: {len(records)} unique businesses")
 
+    for r in records:
+        r["country"] = resolve_country(r)
+
     print("\nEnriching records (website liveness + contacts)...")
     records = enrich(records)
 
@@ -133,7 +191,9 @@ def main() -> None:
         r["recommended_service"] = recommend_service(r)
         raw_phone = r.get("phone")
         if raw_phone:
-            r["phone"] = normalize_phone(raw_phone, r.get("country", "LB"))
+            r["phone"] = normalize_phone(raw_phone, r.get("country") or _DEFAULT_COUNTRY)
+        # enrich() computed lead_score before industry_priority was set, so
+        # recompute here where the priority is known.
         r["lead_score"] = _lead_score(r)
 
     with_websites = [r for r in records if r.get("website")]

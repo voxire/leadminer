@@ -11,6 +11,7 @@ docs/audits/001-dedup-phone-normalization.md for the analyses.
 """
 
 import sys
+import tempfile
 import types
 import unittest
 from pathlib import Path
@@ -61,7 +62,8 @@ def _stub_requests() -> None:
 _stub_requests()
 
 from dedup import normalize_phone  # noqa: E402
-from enricher import DEAD, LIVE, UNKNOWN, lead_score  # noqa: E402
+from enricher import DEAD, LIVE, UNKNOWN, infer_region, lead_score  # noqa: E402
+from main import load_master, resolve_country, write_csv  # noqa: E402
 from pitch_recommender import recommend_service  # noqa: E402
 
 
@@ -118,6 +120,71 @@ class TestNormalizePhone(unittest.TestCase):
         self.assertEqual(
             normalize_phone("+962 51 234 5678", "LB").replace("2", "2"), "+962512345678"
         )
+
+
+class TestResolveCountry(unittest.TestCase):
+    """Regression: `.get("country", "LB")` never fires its default because
+    load_master turns blank cells into None, and None is a present key."""
+
+    def test_none_country_falls_back(self):
+        self.assertEqual(resolve_country({"country": None}), "LB")
+        self.assertEqual(resolve_country({}), "LB")
+        self.assertEqual(resolve_country({"country": "  "}), "LB")
+
+    def test_explicit_country_is_preserved(self):
+        self.assertEqual(resolve_country({"country": "SA"}), "SA")
+        self.assertEqual(resolve_country({"country": "sa"}), "SA")
+
+    def test_aliases(self):
+        self.assertEqual(resolve_country({"country": "Lebanon"}), "LB")
+        self.assertEqual(resolve_country({"country": "KSA"}), "SA")
+
+    def test_phone_is_used_to_disambiguate(self):
+        self.assertEqual(resolve_country({"country": None, "phone": "+966501234567"}), "SA")
+        self.assertEqual(resolve_country({"country": None, "phone": "+96170123456"}), "LB")
+
+    def test_region_inference_is_not_disabled_by_none_country(self):
+        """The bug that made every master record fall out of address-based
+        region inference: infer_region checks `country == "LB"`."""
+        r = {"country": None, "address": "Hamra, Beirut, Lebanon"}
+        self.assertEqual(
+            infer_region(r["address"], None, None, resolve_country(r)), "Beirut"
+        )
+
+
+class TestAtomicCsvWrite(unittest.TestCase):
+    def test_partial_write_does_not_destroy_the_previous_file(self):
+        """A crash mid-write must leave the old master intact, not truncated."""
+
+        class Boom(dict):
+            # csv.DictWriter with extrasaction="ignore" never calls .keys();
+            # it builds each row via rowdict.get(field, restval).
+            def get(self, *a, **k):
+                raise RuntimeError("simulated OOM mid-write")
+
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "master.csv"
+            good = [{"name": "Acme", "country": "LB"}]
+            write_csv(p, good)
+            before = p.read_text(encoding="utf-8-sig")
+            self.assertIn("Acme", before)
+
+            with self.assertRaises(RuntimeError):
+                write_csv(p, [Boom()])
+
+            self.assertEqual(p.read_text(encoding="utf-8-sig"), before,
+                             "master was damaged by a failed write")
+            self.assertFalse(p.with_suffix(".csv.tmp").exists(), "temp file left behind")
+
+    def test_bom_is_written_and_stripped_on_read(self):
+        with tempfile.TemporaryDirectory() as d:
+            p = Path(d) / "m.csv"
+            write_csv(p, [{"name": "مقهى", "country": "LB"}])
+            raw = p.read_bytes()
+            self.assertTrue(raw.startswith(b"\xef\xbb\xbf"), "missing UTF-8 BOM for Excel")
+            rows = load_master(p)
+            self.assertEqual(rows[0]["name"], "مقهى")
+            self.assertNotIn("\ufeff", rows[0]["name"])
 
 
 if __name__ == "__main__":
