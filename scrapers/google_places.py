@@ -15,6 +15,7 @@ Set it in GitHub Actions Settings -> Secrets and variables -> Actions.
 """
 
 import os
+import random
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -140,6 +141,16 @@ def _country_from_query(query: str) -> str:
 # requests is conservative enough to avoid 429s in practice.
 _WORKERS = 5
 
+# Bounds on rate-limit handling. Previously a 429 did
+# `time.sleep(30); continue` inside the pagination loop, which re-POSTed the
+# same pageToken forever: a persistent 429 pinned a worker until the whole
+# 300-minute Actions timeout expired. Now bounded by both a consecutive-error
+# count and a wall-clock budget per query.
+_MAX_429_RETRIES = 4
+_429_BACKOFF = 5.0  # seconds, doubled each time, capped by _429_BACKOFF_MAX
+_429_BACKOFF_MAX = 60.0
+_QUERY_BUDGET_SECONDS = 180.0
+
 
 class GooglePlacesScraper(BaseScraper):
     def __init__(self) -> None:
@@ -199,8 +210,15 @@ class GooglePlacesScraper(BaseScraper):
         records: list[BusinessRecord] = []
         page_token = None
         page = 0
+        consecutive_429 = 0
+        started = time.monotonic()
 
         while True:
+            if time.monotonic() - started > _QUERY_BUDGET_SECONDS:
+                print(f"[Google] '{query}' exceeded {_QUERY_BUDGET_SECONDS:.0f}s budget, "
+                      "returning partial results.")
+                return records
+
             body = {"textQuery": query}
             if page_token:
                 body["pageToken"] = page_token
@@ -208,12 +226,26 @@ class GooglePlacesScraper(BaseScraper):
             try:
                 resp = session.post(API_URL, json=body, timeout=30)
                 if resp.status_code == 401:
-                    print("[Google] Invalid API key.")
+                    # Configuration failure, not a per-query problem. Returning
+                    # here made a broken key look like a source with no results.
+                    print("[Google] FATAL: invalid API key (401). "
+                          "No Places data will be collected.", flush=True)
                     return records
                 if resp.status_code == 429:
-                    print(f"[Google] Rate limited on '{query}', waiting 30s...")
-                    time.sleep(30)
-                    continue
+                    consecutive_429 += 1
+                    if consecutive_429 > _MAX_429_RETRIES:
+                        print(f"[Google] '{query}' still rate limited after "
+                              f"{consecutive_429} attempts; abandoning this query.",
+                              flush=True)
+                        return records
+                    delay = min(_429_BACKOFF_MAX,
+                                _429_BACKOFF * (2 ** (consecutive_429 - 1)))
+                    delay += random.uniform(0, 1)  # jitter
+                    print(f"[Google] Rate limited on '{query}', "
+                          f"waiting {delay:.0f}s ({consecutive_429}/{_MAX_429_RETRIES})...")
+                    time.sleep(delay)
+                    continue  # page_token is unchanged, so this retries the page
+                consecutive_429 = 0
                 resp.raise_for_status()
             except requests.RequestException as e:
                 print(f"[Google] Request error for '{query}': {e}")

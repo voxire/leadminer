@@ -1,9 +1,23 @@
-name: Scrape Lebanon Businesses
+name: Scrape Lebanon and Saudi Businesses
 
 on:
-  # schedule:
-  #   - cron: '0 3 * * 1'  # Every Monday at 03:00 UTC
+  schedule:
+    # Weekly, Monday 03:00 UTC. Previously commented out while the README
+    # still claimed a monthly run, so nothing refreshed automatically and
+    # operators believed it did. The cron is the source of truth; the README
+    # documents it.
+    - cron: '0 3 * * 1'
   workflow_dispatch:       # Manual trigger for testing
+
+# Two runs must never race on data/ or on the Drive master. Without this,
+# a manual run started while a scheduled run is in flight downloads the same
+# master and both upload, silently losing one run's leads.
+concurrency:
+  group: leadminer-scrape
+  cancel-in-progress: false
+
+permissions:
+  contents: read          # checkout only; the job never commits
 
 jobs:
   scrape:
@@ -30,12 +44,23 @@ jobs:
           RCLONE_CONFIG_CONTENT: ${{ secrets.RCLONE_CONFIG }}
         run: |
           mkdir -p ~/.config/rclone
-          echo "$RCLONE_CONFIG_CONTENT" > ~/.config/rclone/rclone.conf
+          # 0600: the credential must not be world-readable to later steps.
+          (umask 077 && echo "$RCLONE_CONFIG_CONTENT" > ~/.config/rclone/rclone.conf)
 
       - name: Download master CSVs
         run: |
           mkdir -p data/
-          rclone copy "gdrive:leads/" data/ --max-depth 1 --include "*.csv" --drive-chunk-size 8M || true
+          # Fail closed. This used to end in `|| true`, so a failed download
+          # produced an empty data/ and the run then uploaded that empty state
+          # over months of cumulative leads on Drive.
+          rclone copy "gdrive:leads/" data/ --max-depth 1 --include "*.csv" --drive-chunk-size 8M
+          if [ -f data/all_businesses.csv ]; then
+            echo "master downloaded: $(wc -l < data/all_businesses.csv) lines"
+          else
+            echo "::error::master CSV missing from Drive - refusing to continue."
+            echo "A missing master would be treated as first run and overwrite history."
+            exit 1
+          fi
 
       - name: Run scrapers
         env:
@@ -43,8 +68,31 @@ jobs:
           SCRAPER_EMAIL: ${{ secrets.SCRAPER_EMAIL }}
         run: python main.py
 
+      - name: Validate output before publishing
+        run: |
+          # Never upload a run whose outputs are obviously broken.
+          if [ ! -s data/all_businesses.csv ]; then
+            echo "::error::all_businesses.csv is empty - refusing to publish"
+            exit 1
+          fi
+          ROWS=$(($(wc -l < data/all_businesses.csv) - 1))
+          echo "rows: $ROWS"
+          if [ "$ROWS" -lt 100 ]; then
+            echo "::error::only $ROWS rows - almost certainly a broken source"
+            exit 1
+          fi
+
       - name: Upload to Google Drive
         run: |
           TIMESTAMP=$(date -u +%Y-%m-%dT%H-%M)
           rclone copy data/ "gdrive:leads/data/$TIMESTAMP/" --drive-chunk-size 8M
           rclone copy data/ "gdrive:leads/" --include "*.csv" --drive-chunk-size 8M
+
+      - name: Upload run artifacts
+        # Always run, so a failed run still produces something to diagnose.
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: run-output
+          path: data/
+          retention-days: 14

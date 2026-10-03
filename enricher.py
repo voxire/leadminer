@@ -167,7 +167,12 @@ def _fetch_website(url: str) -> tuple[str, dict]:
     """
     contacts: dict = {"email": None, "instagram": None, "whatsapp": None, "linkedin": None}
     try:
-        r = get_session().get(url, timeout=8, allow_redirects=True, verify=False, stream=True)
+        # verify=True. This was verify=False, which accepted any MITM
+        # certificate and let attacker-controlled HTML inject contacts into the
+        # export. A host with an invalid certificate now raises, and the
+        # exception path returns UNKNOWN -- which is the correct outcome,
+        # because an unverifiable site is not evidence of a broken one.
+        r = get_session().get(url, timeout=8, allow_redirects=True, stream=True)
     except Exception:
         # DNS failure, TLS failure, timeout, reset, blocked. We learned nothing.
         return UNKNOWN, contacts
