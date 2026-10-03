@@ -121,8 +121,11 @@ def completeness_score(record: dict) -> int:
 # Combined website liveness + contact extraction (single HTTP pass)
 # ---------------------------------------------------------------------------
 
-_SESSION = requests.Session()
-_SESSION.headers["User-Agent"] = "Mozilla/5.0 (compatible; leadminer/1.0)"
+# One Session per thread rather than one shared across the pool.
+# requests.Session is explicitly documented as NOT thread-safe: its cookie
+# jar, header state and urllib3 connection pool are all mutated per request.
+# The previous module-level _SESSION was shared by 40 workers.
+from httpclient import DEFAULT_MAX_BODY_BYTES, get_session
 
 _EMAIL_RE = re.compile(r"[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}")
 _INSTAGRAM_RE = re.compile(r"(?:instagram\.com/|@)([a-zA-Z0-9_.]{2,30})/?", re.IGNORECASE)
@@ -152,7 +155,7 @@ LIVE = "live"
 DEAD = "dead"
 UNKNOWN = "unknown"
 
-_MAX_BODY_BYTES = 200_000
+_MAX_BODY_BYTES = DEFAULT_MAX_BODY_BYTES
 
 
 def _fetch_website(url: str) -> tuple[str, dict]:
@@ -164,7 +167,7 @@ def _fetch_website(url: str) -> tuple[str, dict]:
     """
     contacts: dict = {"email": None, "instagram": None, "whatsapp": None, "linkedin": None}
     try:
-        r = _SESSION.get(url, timeout=8, allow_redirects=True, verify=False, stream=True)
+        r = get_session().get(url, timeout=8, allow_redirects=True, verify=False, stream=True)
     except Exception:
         # DNS failure, TLS failure, timeout, reset, blocked. We learned nothing.
         return UNKNOWN, contacts

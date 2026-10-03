@@ -1,9 +1,10 @@
-import datetime
-import os
-import time
-import requests
+import logging
 from typing import Iterator
+
+from httpclient import fetch_with_retry, get_session, utc_now_iso
 from .base import BaseScraper, BusinessRecord
+
+log = logging.getLogger(__name__)
 
 OVERPASS_URL = "https://overpass-api.de/api/interpreter"
 
@@ -28,31 +29,33 @@ out center tags;
 
 class OSMScraper(BaseScraper):
     def scrape(self) -> Iterator[BusinessRecord]:
-        scraped_at = datetime.datetime.utcnow().isoformat() + "Z"
+        scraped_at = utc_now_iso()
         print("[OSM] Fetching Lebanon businesses from Overpass API...")
 
-        session = requests.Session()
-        email = os.environ.get("SCRAPER_EMAIL", "voxire.tech@gmail.com")
-        session.headers["User-Agent"] = f"leadminer/1.0 ({email})"
+        session = get_session()
 
-        for attempt in range(3):
-            try:
-                resp = session.post(
-                    OVERPASS_URL,
-                    data={"data": OVERPASS_QUERY},
-                    timeout=200,
-                )
-                resp.raise_for_status()
-                break
-            except requests.RequestException as e:
-                print(f"[OSM] Attempt {attempt + 1} failed: {e}")
-                if attempt < 2:
-                    time.sleep(30)
-                else:
-                    print("[OSM] All retries exhausted, skipping.")
-                    return
+        # Centralised retry with exponential backoff and full jitter replaces
+        # the previous fixed 30s sleep loop, which retried in lockstep.
+        result = fetch_with_retry(
+            "POST",
+            OVERPASS_URL,
+            session=session,
+            data={"data": OVERPASS_QUERY},
+            timeout=200,
+            retries=3,
+        )
+        if not result.ok:
+            # Previously this was `print` then `return`, indistinguishable from
+            # "OSM legitimately had nothing to return". A broken source must
+            # not look like an empty one.
+            print(
+                f"[OSM] FAILED after {result.attempts} attempts: {result.error}. "
+                "Continuing without OSM data.",
+                flush=True,
+            )
+            return
 
-        elements = resp.json().get("elements", [])
+        elements = result.json().get("elements", [])
         print(f"[OSM] Got {len(elements)} elements.")
 
         for el in elements:

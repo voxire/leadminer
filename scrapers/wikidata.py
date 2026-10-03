@@ -1,9 +1,10 @@
-import datetime
-import os
-import time
-import requests
+import logging
 from typing import Iterator
+
+from httpclient import fetch_with_retry, get_session, utc_now_iso
 from .base import BaseScraper, BusinessRecord
+
+log = logging.getLogger(__name__)
 
 SPARQL_ENDPOINT = "https://query.wikidata.org/sparql"
 
@@ -28,34 +29,27 @@ LIMIT 5000
 
 class WikidataScraper(BaseScraper):
     def scrape(self) -> Iterator[BusinessRecord]:
-        scraped_at = datetime.datetime.utcnow().isoformat() + "Z"
+        scraped_at = utc_now_iso()
         print("[Wikidata] Fetching Lebanon businesses...")
 
-        email = os.environ.get("SCRAPER_EMAIL", "voxire.tech@gmail.com")
-        headers = {
-            "User-Agent": f"leadminer/1.0 ({email})",
-            "Accept": "application/sparql-results+json",
-        }
+        result = fetch_with_retry(
+            "GET",
+            SPARQL_ENDPOINT,
+            session=get_session(),
+            params={"query": SPARQL_QUERY, "format": "json"},
+            timeout=90,
+            retries=3,
+            headers={"Accept": "application/sparql-results+json"},
+        )
+        if not result.ok:
+            print(
+                f"[Wikidata] FAILED after {result.attempts} attempts: {result.error}. "
+                "Continuing without Wikidata data.",
+                flush=True,
+            )
+            return
 
-        for attempt in range(3):
-            try:
-                resp = requests.get(
-                    SPARQL_ENDPOINT,
-                    params={"query": SPARQL_QUERY, "format": "json"},
-                    headers=headers,
-                    timeout=90,
-                )
-                resp.raise_for_status()
-                break
-            except requests.RequestException as e:
-                print(f"[Wikidata] Attempt {attempt + 1} failed: {e}")
-                if attempt < 2:
-                    time.sleep(15)
-                else:
-                    print("[Wikidata] All retries exhausted, skipping.")
-                    return
-
-        results = resp.json().get("results", {}).get("bindings", [])
+        results = result.json().get("results", {}).get("bindings", [])
         print(f"[Wikidata] Got {len(results)} results.")
 
         for row in results:

@@ -14,7 +14,6 @@ Requires GOOGLE_PLACES_API_KEY environment variable.
 Set it in GitHub Actions Settings -> Secrets and variables -> Actions.
 """
 
-import datetime
 import os
 import threading
 import time
@@ -24,6 +23,7 @@ from typing import Iterator
 import requests
 
 from enricher import infer_region
+from httpclient import utc_now_iso
 from .base import BaseScraper, BusinessRecord
 
 API_URL = "https://places.googleapis.com/v1/places:searchText"
@@ -159,7 +159,7 @@ class GooglePlacesScraper(BaseScraper):
             print("[Google] GOOGLE_PLACES_API_KEY not set, skipping.")
             return
 
-        scraped_at = datetime.datetime.utcnow().isoformat() + "Z"
+        scraped_at = utc_now_iso()
         all_queries = LEBANON_QUERIES + KSA_QUERIES
         print(
             f"[Google] Scraping {len(all_queries)} queries "
